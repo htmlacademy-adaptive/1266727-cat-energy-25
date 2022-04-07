@@ -1,5 +1,7 @@
 // Начните писать стили здесь
 
+@use "./fonts.scss";
+
 @use "./blocks/address.scss";
 @use "./blocks/choice.scss";
 @use "./blocks/choices.scss";
@@ -16,3 +18,4 @@
 @use "./blocks/reasons.scss";
 @use "./blocks/slider.scss";
 @use "./blocks/social-links.scss";
+@use "./blocks/visually-hidden";

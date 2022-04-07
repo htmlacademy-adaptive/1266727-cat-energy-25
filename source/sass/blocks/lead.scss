@@ -1,0 +1,17 @@
+@use "../variables.scss";
+
+.lead {
+    background-image: url('../../img/lead-background.png');
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-color: variables.$primary-color;
+    font-family: variables.$heading-font;
+    text-align: center;
+    color: variables.$secondary-color;
+}
+
+.lead__title {
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: 400;
+}
