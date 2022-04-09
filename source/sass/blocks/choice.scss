@@ -1,0 +1,44 @@
+@use "../variables.scss";
+
+.choice {
+    background-color: variables.$basic-grey;
+    color: variables.$special-grey;
+    padding: 30px 33px 20px 20px;
+    border: 1px solid variables.$light-grey;
+
+    &:not(:last-child) {
+        margin-bottom: 20px;
+    }
+}
+
+.choice__title {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 30px;
+    font-family: variables.$primary-font;
+    font-size: 24px;
+    line-height: 37px;
+    color: variables.$basic-black;
+    text-transform: uppercase;
+}
+
+.choice__text {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 23px;
+    margin-bottom: 15px;
+    font-family: variables.$secondary-font;
+    font-size: 14px;
+    line-height: 18px;
+    color: variables.$basic-black;
+    border-bottom: 1px solid variables.$light-grey;
+}
+
+.choice__link {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: variables.$basic-black;
+    font-family: variables.$primary-font;
+    font-size: 16px;
+    line-height: 16px;
+}
