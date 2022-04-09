@@ -1,0 +1,16 @@
+@use "../variables.scss";
+
+.button {
+    border: none;
+    width: 100%;
+    align-items: center;
+    padding: 8px 44px;
+    text-align: center;
+    text-transform: uppercase;
+    height: 40px;
+
+    &--primary {
+        background-color: variables.$primary-color;
+        color: variables.$secondary-color;
+    }
+}
