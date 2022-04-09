@@ -9,3 +9,9 @@
     margin: 0;
     padding: 0;
 }
+
+.choices__item {
+    &:not(:last-child) {
+        margin-bottom: 20px;
+    }
+}
