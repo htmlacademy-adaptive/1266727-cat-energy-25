@@ -1,11 +1,13 @@
 @use "../variables.scss";
 
 .slider {
-    width: 243px;
+    width: 280px;
+    text-align: center;
 }
 
 .slider__image {
     display: none;
+    margin-bottom: 15px;
 }
 
 .slider__input:checked + .slider__image {
