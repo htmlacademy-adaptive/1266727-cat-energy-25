@@ -1,0 +1,60 @@
+@use "../variables.scss";
+
+.field {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+.field__label {
+    font-family: variables.$primary-font;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 400;
+    color: variables.$special-dark-grey;
+    text-transform: uppercase;
+    margin-right: 13px;
+}
+
+.field__label--radio {
+    color: variables.$special-dark-grey-2;
+    position: relative;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+
+    &::before {
+        content: '';
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        border: 1px solid variables.$special-grey;
+        border-radius: 50%;
+        margin-right: 13px;
+    }
+}
+
+input:checked + .field__label--radio {
+    &::after {
+        content: '';
+        position: absolute;
+        top: 9px;
+        left: 10px;
+        width: 13px;
+        height: 13px;
+        border-radius: 50%;
+        background-color: variables.$basic-green;
+    }
+}
+
+.field__input {
+    border: 1px solid variables.$basic-light-grey-2;
+    font-family: variables.$primary-font;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 400;
+    color: variables.$special-dark-grey;
+    text-transform: uppercase;
+    padding: 14px;
+    flex-grow: 1;
+}

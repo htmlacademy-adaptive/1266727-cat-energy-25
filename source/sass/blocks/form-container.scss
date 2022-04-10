@@ -1,0 +1,32 @@
+@use "../variables.scss";
+
+.form-container {
+    padding: 27px 0;
+}
+
+.form-container__title {
+    padding: 0 20px;
+    margin: 0;
+    margin-bottom: 37px;
+    font-family: variables.$primary-font;
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: 400;
+    color: variables.$basic-black;
+}
+
+.form-container__text {
+    padding: 0 74px 0 20px;
+    margin: 0;
+    margin-bottom: 39px;
+    font-family: variables.$primary-font;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+    color: variables.$basic-black;
+    text-transform: uppercase;
+}
+
+.form-container__fields {
+    margin-bottom: 22px;
+}
