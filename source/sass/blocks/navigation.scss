@@ -1,0 +1,35 @@
+@use "../variables.scss";
+
+.navigation {
+    position: absolute;
+}
+
+.navigation__list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    background-color: variables.$basic-white;
+}
+
+.navigation__item {
+    padding: 0;
+    margin: 0;
+    padding: 22px 0 24px;
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid variables.$basic-light-grey;
+
+    &:first-child {
+        border-top: 1px solid variables.$basic-light-grey;
+    }
+}
+
+.navigation__link {
+    font-family: variables.$primary-font;
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 500;
+    text-decoration: none;
+    color: variables.$basic-black;
+    text-transform: uppercase;
+}
