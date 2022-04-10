@@ -83,23 +83,25 @@
                     <dt class="detail__number">60 дней</dt>
                     <dd class="detail__description">снижение веса</dd>
                 </div>
-                <div class="example__detail detail">
+                <div class="example__detail--wide detail detail--line">
                     <dt class="detail__number">15 000 руб</dt>
-                    <dd class="detail__description">Затраты на питание</dd>
+                    <dd class="detail__description">Затраты на питание:&nbsp;</dd>
                 </div>
             </dl>
             <div class="example__slider slider">
-                <div class="slider__images">
-                    <img class="slider__image slider__image--before" src="img/example-before.png" width="280"
-                        height="277" alt="Изображение до">
-                    <img class="slider__image slider__image--after" src="img/example-after.png" width="280" height="277"
-                        alt="Изображение после">
-                </div>
-                <div class="slider__controls">
-                    <button class="slider__button slider__button--before" type="button">было</button>
-                    <span class="slider__switch"></span>
-                    <button class="slider__button slider__button--after" type="button">стало</button>
-                </div>
+                <input class="visually-hidden slider__input slider__input--left" type="radio" name="slider"
+                    value="before" id="slider-before" checked>
+                <img class="slider__image slider__image--before" src="img/example-before.png" width="280"
+                    height="232" alt="Изображение до">
+                <input class="visually-hidden slider__input slider__input--right" type="radio" name="slider"
+                    value="after" id="slider-after">
+                <img class="slider__image slider__image--after" src="img/example-after.png" width="243" height="232"
+                    alt="Изображение после">
+                <label class="slider__label slider__label--before" for="slider-before">
+                    было
+                </label><label class="slider__label slider__label--after" for="slider-after">
+                    стало
+                </label>
             </div>
         </section>
     </main>
