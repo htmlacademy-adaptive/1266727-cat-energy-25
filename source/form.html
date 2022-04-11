@@ -70,7 +70,7 @@
                         </li>
                     </ul>
                 </fieldset>
-                <fieldset class="form-container__fields fields">
+                <fieldset class="form-container__fields fields fields--with-legend">
                     <legend class="fields__legend">
                         Контактные данные (владельца кота)
                     </legend>
@@ -87,42 +87,44 @@
                         </li>
                     </ul>
                 </fieldset>
-                <fieldset class="form-container__fields fields">
+                <fieldset class="form-container__fields fields fields--with-legend">
                     <legend class="fields__legend">
                         Комментарий
                     </legend>
-                    <p class="field">
-                        <label class="visually-hidden" for="comment">Дополнительный комментарий</label>
-                        <textarea class="field__input" id="comment" name="comment"
-                            placeholder="Расскажите обо всех повАдках кота"></textarea>
-                    </p>
+                    <div class="fields__list">
+                        <p class="field">
+                            <label class="visually-hidden" for="comment">Дополнительный комментарий</label>
+                            <textarea class="field__input field__input--textarea" id="comment" name="comment"
+                                placeholder="Расскажите обо всех повАдках кота"></textarea>
+                        </p>
+                    </div>
                 </fieldset>
-                <fieldset class="form-container__fields fields">
+                <fieldset class="form-container__fields fields fields--with-legend">
                     <legend class="fields__legend">
                         Дополнительно
                     </legend>
                     <ul class="fields__list">
                         <li class="fields__item field">
-                            <label>
-                                <input type="checkbox" name="additions" value="sweetener" checked>
+                            <input class="visually-hidden" type="checkbox" name="additions" value="sweetener" id="additions-sweetener" checked>
+                            <label class="field__label field__label--checkbox" for="additions-sweetener">
                                 сахарозаменитель
                             </label>
                         </li>
                         <li class="fields__item field">
-                            <label>
-                                <input type="checkbox" name="additions" value="water">
+                            <input class="visually-hidden" type="checkbox" name="additions" value="water" id="additions-water">
+                            <label class="field__label field__label--checkbox" for="additions-water">
                                 питьевая вода
                             </label>
                         </li>
                         <li class="fields__item field">
-                            <label>
-                                <input type="checkbox" name="additions" value="milk">
+                            <input class="visually-hidden" type="checkbox" name="additions" value="milk" id="additions-milk">
+                            <label class="field__label field__label--checkbox" for="additions-milk">
                                 молоко
                             </label>
                         </li>
                         <li class="fields__item field">
-                            <label>
-                                <input type="checkbox" name="additions" value="vitamin">
+                            <input class="visually-hidden" type="checkbox" name="additions" value="vitamin" id="additions-vitamin">
+                            <label class="field__label field__label--checkbox" for="additions-vitamin">
                                 витамины
                             </label>
                         </li>
@@ -140,7 +142,7 @@
         </section>
     </main>
     <footer class="main-footer footer">
-        <section class="footer__address address">
+        <section class="footer__address address address--with-background">
             <h2 class="visually-hidden">Контактные данные</h2>
             <p class="address__note">Приглашаем к сотрудничеству дилеров!</p>
             <p class="address__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>

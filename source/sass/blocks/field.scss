@@ -47,6 +47,35 @@ input:checked + .field__label--radio {
     }
 }
 
+.field__label--checkbox {
+    color: variables.$special-dark-grey-2;
+    position: relative;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+
+    &::before {
+        content: '';
+        display: inline-block;
+        width: 26px;
+        height: 26px;
+        border: 1px solid variables.$special-grey;
+        margin-right: 13px;
+    }
+}
+
+input:checked + .field__label--checkbox {
+    &::after {
+        content: '';
+        position: absolute;
+        top: 7px;
+        left: 6px;
+        width: 18px;
+        height: 14px;
+        background-image: url('../../img/checkbox-mark.svg');
+    }
+}
+
 .field__input {
     border: 1px solid variables.$basic-light-grey-2;
     font-family: variables.$primary-font;
@@ -57,4 +86,9 @@ input:checked + .field__label--radio {
     text-transform: uppercase;
     padding: 14px;
     flex-grow: 1;
+
+    &--textarea {
+        resize: none;
+        height: 150px;
+    }
 }

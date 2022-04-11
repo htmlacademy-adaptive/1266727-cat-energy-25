@@ -5,6 +5,10 @@
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
+
+    &--with-background {
+        background-color: variables.$basic-grey;
+    }
 }
 
 .address__note {

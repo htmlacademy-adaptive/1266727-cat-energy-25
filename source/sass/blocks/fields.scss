@@ -1,14 +1,33 @@
 @use "../variables.scss";
 
 .fields {
+    padding: 0;
+    margin: 0;
     border: none;
     border-bottom: 1px solid variables.$light-grey;
-    padding: 0 20px 11px;
+
+    &--with-legend {
+        border-top: 2px solid variables.$basic-green;
+    }
+}
+
+.fields__legend {
+    padding: 0;
+    padding-left: 20px;
+    padding-right: 15px;
+    margin: 0;
+    margin-bottom: 35px;
+    font-family: variables.$primary-font;
+    font-size: 24px;
+    line-height: 26px;
+    font-weight: 400;
+    color: variables.$basic-black;
+    max-width: 187px;
 }
 
 .fields__list {
     margin: 0;
-    padding: 0;
+    padding: 0 20px 11px;
     list-style: none;
 }
 
