@@ -1,0 +1,25 @@
+@use "../variables.scss";
+
+.product-details {
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-family: variables.$secondary-font;
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 400;
+    color: variables.$special-dark-grey;
+}
+
+.product-details__attribute,
+.product-details__value {
+    margin-bottom: 6px;
+}
+
+.product-details__value {
+    text-align: right;
+
+    &--price {
+        text-transform: uppercase;
+    }
+}

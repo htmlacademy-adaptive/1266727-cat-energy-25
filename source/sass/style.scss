@@ -2,8 +2,11 @@
 
 @use "./fonts.scss";
 
+@use "./blocks/addition.scss";
+@use "./blocks/additions.scss";
 @use "./blocks/address.scss";
 @use "./blocks/button.scss";
+@use "./blocks/catalog-container.scss";
 @use "./blocks/choice.scss";
 @use "./blocks/choices.scss";
 @use "./blocks/copyright.scss";
@@ -17,10 +20,12 @@
 @use "./blocks/header.scss";
 @use "./blocks/lead.scss";
 @use "./blocks/main-container.scss";
-@use "./blocks/main-footer.scss";
-@use "./blocks/main-header.scss";
 @use "./blocks/navigation.scss";
 @use "./blocks/page.scss";
+@use "./blocks/product.scss";
+@use "./blocks/product-details.scss";
+@use "./blocks/products.scss";
+@use "./blocks/promo.scss";
 @use "./blocks/reason.scss";
 @use "./blocks/reasons.scss";
 @use "./blocks/slider.scss";

@@ -13,4 +13,9 @@
         background-color: variables.$basic-green;
         color: variables.$basic-white;
     }
+
+    &--secondary {
+        background-color: variables.$basic-grey;
+        color: variables.$special-dark-grey;
+    }
 }

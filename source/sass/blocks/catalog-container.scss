@@ -1,0 +1,16 @@
+@use "../variables.scss";
+
+.catalog-container {
+    padding: 0 0 15px;
+}
+
+.catalog-container__title {
+    padding: 27px 20px 41px;
+    margin: 0;
+    font-family: variables.$primary-font;
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: 400;
+    color: variables.$basic-black;
+    border-bottom: 1px solid variables.$special-grey-2;
+}
