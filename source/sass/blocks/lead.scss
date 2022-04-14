@@ -8,6 +8,10 @@
     padding: 27px 20px 0;
     box-sizing: border-box;
 
+    @media (min-width: variables.$tablet-width) {
+        color: variables.$basic-black;
+    }
+
     &::before {
         content: "";
         position: absolute;
@@ -19,6 +23,10 @@
         background-position: 0 0;
         background-repeat: no-repeat;
         z-index: -1;
+
+        @media (min-width: variables.$tablet-width) {
+            display: none;
+        }
     }
 
     &::after {
@@ -31,6 +39,10 @@
         background-color: variables.$basic-green;
         opacity: 0.85;
         z-index: -1;
+
+        @media (min-width: variables.$tablet-width) {
+            display: none;
+        }
     }
 }
 
