@@ -1,7 +1,6 @@
 @use "../variables.scss";
 
 .navigation {
-    position: absolute;
 }
 
 .navigation__list {
@@ -9,6 +8,12 @@
     margin: 0;
     list-style: none;
     background-color: variables.$basic-white;
+    display: flex;
+    flex-flow: column nowrap;
+
+    @media (min-width: variables.$tablet-width) {
+        flex-flow: row nowrap;
+    }
 }
 
 .navigation__item {
