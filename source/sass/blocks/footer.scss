@@ -1,3 +1,28 @@
+@use "../variables.scss";
+
 .footer__map {
     display: block;
+    width: 100%;
+}
+
+.footer__container {
+    display: flex;
+    flex-flow: column nowrap;
+    background-color: variables.$basic-grey;
+
+    @media (min-width: variables.$tablet-width) {
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.footer__social-links {
+    border-top: 1px solid variables.$light-grey;
+    border-bottom: 1px solid variables.$light-grey;
+
+    @media (min-width: variables.$tablet-width) {
+        border: none;
+        width: 200px;
+    }
 }
