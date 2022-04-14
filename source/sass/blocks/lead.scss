@@ -1,0 +1,51 @@
+@use "../variables.scss";
+
+.lead {
+    position: relative;
+    font-family: variables.$primary-font;
+    color: variables.$basic-white;
+    text-align: center;
+    padding: 27px 20px 0;
+    box-sizing: border-box;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 320px;
+        height: 302px;
+        background-image: url("../../img/lead-background.png");
+        background-position: 0 0;
+        background-repeat: no-repeat;
+        z-index: -1;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 320px;
+        height: 302px;
+        background-color: variables.$basic-green;
+        opacity: 0.85;
+        z-index: -1;
+    }
+}
+
+.lead__title {
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 25px;
+}
+
+.lead__text {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 29px;
+    text-transform: uppercase;
+}

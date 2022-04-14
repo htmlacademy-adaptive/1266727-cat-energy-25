@@ -1,0 +1,21 @@
+@use "../variables.scss";
+
+.reason {
+    font-family: variables.$secondary-font;
+    font-size: 14px;
+    line-height: 18px;
+    color: variables.$special-dark-grey;
+    position: relative;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+
+    &::before {
+        content: '';
+        min-width: 60px;
+        height: 60px;
+        flex-basis: 60px;
+        margin-right: 20px;
+        background-color: variables.$basic-green;
+    }
+}

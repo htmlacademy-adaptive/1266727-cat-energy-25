@@ -4,29 +4,32 @@
 <head>
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
+    <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body class="page__body">
-    <header class="form-header header">
-        <a class="header__logo">
-            <img src="img/logo.svg" width="33" height="38" alt="Логотип Кэт Энерджи">
-        </a>
-        <a class="header__text-logo">
-            <img src="img/text-logo-header.svg" width="101" height="18" alt="Текстовый логотип Кэт Энерджи">
-        </a>
-        <nav class="header__navigation navigation">
+    <header class="header">
+        <div class="header__container">
+            <a class="header__logo" href="#">
+                <img class="header__img" src="img/logo.svg" width="33" height="38" alt="Логотип Кэт Энерджи">
+            </a>
+            <a class="header__text-logo" href="#">
+                <img class="header__img" src="img/text-logo-header.svg" width="101" height="18" alt="Текстовый логотип Кэт Энерджи">
+            </a>
+            <button class="header__toggle header__toggle--closed" type="button"></button>
+        </div>
+        <nav class="header__navigation header__navigation--closed navigation">
             <ul class="navigation__list">
-                <li class="navigation__item"><a href="index.html">Главная</a></li>
-                <li class="navigation__item"><a href="catalog.html">Каталог продукции</a></li>
-                <li class="navigation__item navigation__item--active"><a href="form.html">Подбор программы</a></li>
+                <li class="navigation__item navigation__item--active"><a class="navigation__link" href="index.html">Главная</a></li>
+                <li class="navigation__item"><a class="navigation__link" href="catalog.html">Каталог продукции</a></li>
+                <li class="navigation__item"><a class="navigation__link" href="form.html">Подбор программы</a></li>
             </ul>
         </nav>
-        <div class="header__toggle"></div>
     </header>
     <main class="form-container">
         <h1 class="form-container__title">Подбор программы</h1>
         <p class="form-container__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
-        <section class="form-container__form form">
+        <section class="form-container__form">
             <h2 class="visually-hidden">Поля анкеты</h2>
             <form action="https://echo.htmlacademy.ru">
                 <fieldset class="form-container__fields fields">
@@ -48,26 +51,26 @@
                 <fieldset class="form-container__fields fields">
                     <ul class="fields__list">
                         <li class="fields__item field">
-                            <label>
-                                <input type="radio" name="goal" value="lose-weight" checked>
+                            <input class="visually-hidden" type="radio" name="goal" value="lose-weight" id="goal-lose-weight" checked>
+                            <label class="field__label field__label--radio" for="goal-lose-weight">
                                 Похудение
                             </label>
                         </li>
                         <li class="fields__item field">
-                            <label>
-                                <input type="radio" name="goal" value="gain-weight">
+                            <input class="visually-hidden" type="radio" name="goal" value="gain-weight" id="goal-gain-weight">
+                            <label class="field__label field__label--radio" for="goal-gain-weight">
                                 Набор массы
                             </label>
                         </li>
                         <li class="fields__item field">
-                            <label>
-                                <input type="radio" name="goal" value="need-advice">
+                            <input class="visually-hidden" type="radio" name="goal" value="need-advice" id="goal-need-advice">
+                            <label class="field__label field__label--radio" for="goal-need-advice">
                                 Не знаю (Нужен ваш совет)
                             </label>
                         </li>
                     </ul>
                 </fieldset>
-                <fieldset class="form-container__fields fields">
+                <fieldset class="form-container__fields fields fields--with-legend">
                     <legend class="fields__legend">
                         Контактные данные (владельца кота)
                     </legend>
@@ -84,42 +87,44 @@
                         </li>
                     </ul>
                 </fieldset>
-                <fieldset class="form-container__fields fields">
+                <fieldset class="form-container__fields fields fields--with-legend">
                     <legend class="fields__legend">
                         Комментарий
                     </legend>
-                    <p class="field">
-                        <label class="visually-hidden" for="comment">Дополнительный комментарий</label>
-                        <textarea class="field__input" id="comment" name="comment"
-                            placeholder="Расскажите обо всех повАдках кота"></textarea>
-                    </p>
+                    <div class="fields__list">
+                        <p class="field">
+                            <label class="visually-hidden" for="comment">Дополнительный комментарий</label>
+                            <textarea class="field__input field__input--textarea" id="comment" name="comment"
+                                placeholder="Расскажите обо всех повАдках кота"></textarea>
+                        </p>
+                    </div>
                 </fieldset>
-                <fieldset class="form-container__fields fields">
+                <fieldset class="form-container__fields fields fields--with-legend">
                     <legend class="fields__legend">
                         Дополнительно
                     </legend>
                     <ul class="fields__list">
                         <li class="fields__item field">
-                            <label>
-                                <input type="checkbox" name="additions" value="sweetener" checked>
+                            <input class="visually-hidden" type="checkbox" name="additions" value="sweetener" id="additions-sweetener" checked>
+                            <label class="field__label field__label--checkbox" for="additions-sweetener">
                                 сахарозаменитель
                             </label>
                         </li>
                         <li class="fields__item field">
-                            <label>
-                                <input type="checkbox" name="additions" value="water">
+                            <input class="visually-hidden" type="checkbox" name="additions" value="water" id="additions-water">
+                            <label class="field__label field__label--checkbox" for="additions-water">
                                 питьевая вода
                             </label>
                         </li>
                         <li class="fields__item field">
-                            <label>
-                                <input type="checkbox" name="additions" value="milk">
+                            <input class="visually-hidden" type="checkbox" name="additions" value="milk" id="additions-milk">
+                            <label class="field__label field__label--checkbox" for="additions-milk">
                                 молоко
                             </label>
                         </li>
                         <li class="fields__item field">
-                            <label>
-                                <input type="checkbox" name="additions" value="vitamin">
+                            <input class="visually-hidden" type="checkbox" name="additions" value="vitamin" id="additions-vitamin">
+                            <label class="field__label field__label--checkbox" for="additions-vitamin">
                                 витамины
                             </label>
                         </li>
@@ -136,17 +141,15 @@
             </form>
         </section>
     </main>
-    <footer class="form-footer footer">
-        <section class="footer__address address">
+    <footer class="footer">
+        <section class="footer__address address address--with-background">
             <h2 class="visually-hidden">Контактные данные</h2>
-            <p class="address__title">Приглашаем к сотрудничеству дилеров!</p>
+            <p class="address__note">Приглашаем к сотрудничеству дилеров!</p>
             <p class="address__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
-            <div class="address__map">
-                <img src="img/map.png" width="320" height="362" alt="Где мы находимся на карте">
-            </div>
         </section>
+        <img class="footer__map" src="img/map.png" width="320" height="362" alt="Где мы находимся на карте"></div>
         <div class="footer__logo footer-logo">
-            <a class="footer-logo__link">
+            <a class="footer-logo__link" href="#">
                 <img src="img/text-logo-footer.svg" width="128" height="24" alt="Текстовый логотип Кэт Энерджи">
             </a>
         </div>
@@ -166,7 +169,7 @@
         <div class="footer__copyright copyright">
             <span class="copyright__text">HTML Academy</span>
             <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-                <img src="img/htmlacademy.svg" width="27" height="34" alt="Логотип HTML Academy">
+                <img class="copyright__logo" src="img/copyright-logo.svg" width="27" height="34" alt="Логотип HTML Academy">
             </a>
         </div>
     </footer>

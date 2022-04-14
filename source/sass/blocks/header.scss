@@ -1,0 +1,51 @@
+@use "../variables.scss";
+
+.header {
+    position: relative;
+    z-index: 1;
+}
+
+.header__container {
+    padding: 10px 20px 17px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid variables.$basic-light-grey;
+}
+
+.header__toggle {
+    position: relative;
+    background-color: variables.$basic-white;
+    border: none;
+}
+
+.header__toggle::before {
+    content: "";
+    display: block;
+    background-repeat: no-repeat;
+}
+
+.header__toggle--opened::before {
+    background-image: url("../../img/toggle-close.svg");
+    width: 20px;
+    height: 20px;
+}
+
+.header__toggle--closed::before {
+    background-image: url("../../img/toggle-open.svg");
+    width: 24px;
+    height: 18px;
+}
+
+.header__img {
+    display: block;
+}
+
+.header__navigation {
+    width: 100%;
+
+    &--closed {
+        display: none;
+    }
+}

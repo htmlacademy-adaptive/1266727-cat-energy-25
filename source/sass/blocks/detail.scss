@@ -1,0 +1,78 @@
+@use "../variables.scss";
+
+.detail {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    position: relative;
+    padding-top: 14px;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 124px;
+        height: 56px;
+        box-sizing: border-box;
+        border: 1px solid variables.$special-grey;
+        border-radius: 3px;
+    }
+
+    &--line {
+        flex-flow: row nowrap;
+        justify-content: center;
+        padding: 0;
+
+        &::before {
+            display: none;
+        }
+    }
+}
+
+.detail__number {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 9px;
+    font-family: variables.$primary-font;
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 400;
+    color: variables.$basic-black;
+    text-transform: uppercase;
+}
+
+.detail__description {
+    padding: 0 10px;
+    margin: 0 20px;
+    font-family: variables.$secondary-font;
+    font-size: 12px;
+    line-height: 12px;
+    font-weight: 400;
+    color: variables.$special-dark-grey;
+    background-color: variables.$special-light-grey;
+    width: 87px;
+    text-align: center;
+    box-sizing: border-box;
+    z-index: 1;
+}
+
+.detail--line .detail__number {
+    margin: 0;
+    order: 2;
+    font-size: 14px;
+    line-height: 20px;
+    text-transform: uppercase;
+}
+
+.detail--line .detail__description {
+    padding: 0;
+    margin: 0;
+    order: 1;
+    width: initial;
+    font-family: variables.$primary-font;
+    color: variables.$basic-black;
+    font-size: 14px;
+    line-height: 20px;
+    text-transform: uppercase;
+}

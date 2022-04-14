@@ -1,0 +1,28 @@
+@use "../variables.scss";
+
+.additions {
+    padding: 25px 20px;
+}
+
+.additions__title {
+    margin: 0;
+    margin-bottom: 36px;
+    padding: 0;
+    font-family: variables.$primary-font;
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 400;
+    color: variables.$basic-black;
+}
+
+.additions__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    border-top: 1px solid variables.$special-grey;
+}
+
+.additions__item {
+    margin: 0;
+    border-bottom: 1px solid variables.$special-grey;
+}

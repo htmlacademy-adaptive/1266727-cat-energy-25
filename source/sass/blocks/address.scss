@@ -1,0 +1,35 @@
+@use "../variables.scss";
+
+.address {
+    padding: 26px 20px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+
+    &--with-background {
+        background-color: variables.$basic-grey;
+    }
+}
+
+.address__note {
+    padding: 0;
+    margin: 0;
+    font-family: variables.$primary-font;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+    color: variables.$special-black;
+    text-transform: uppercase;
+    flex: 1 1 0;
+}
+
+.address__text {
+    padding: 0;
+    margin: 0;
+    font-family: variables.$secondary-font;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    color: variables.$special-dark-grey;
+    flex: 1 1 0;
+}

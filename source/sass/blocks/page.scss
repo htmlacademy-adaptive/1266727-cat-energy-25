@@ -1,0 +1,10 @@
+@use "./variables.scss";
+
+.page {
+    font-family: variables.$secondary-font;
+    font-weight: normal;
+}
+
+.page__body {
+    width: 320px;
+}
