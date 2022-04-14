@@ -6,6 +6,10 @@
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
+
+    @media (min-width: variables.$tablet-width) {
+        background-color: variables.$basic-white;
+    }
 }
 
 .example__title {
@@ -38,6 +42,10 @@
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
+
+    @media (min-width: variables.$tablet-width) {
+        width: 100%;
+    }
 }
 
 .example__detail {
@@ -48,5 +56,18 @@
     &--wide {
         flex: 1;
         margin-top: 20px;
+
+        @media (min-width: variables.$tablet-width) {
+            margin-left: auto;
+        }
+    }
+}
+
+.example__slider {
+    width: 280px;
+
+    @media (min-width: variables.$tablet-width) {
+        width: 100%;
+        background-color: variables.$special-light-grey;
     }
 }

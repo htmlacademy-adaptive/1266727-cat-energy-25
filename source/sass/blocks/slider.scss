@@ -1,13 +1,16 @@
 @use "../variables.scss";
 
 .slider {
-    width: 280px;
     text-align: center;
 }
 
 .slider__image {
     display: none;
     margin-bottom: 15px;
+
+    @media (min-width: variables.$tablet-width) {
+        margin: 0 auto 15px auto;
+    }
 }
 
 .slider__input:checked + .slider__image {
