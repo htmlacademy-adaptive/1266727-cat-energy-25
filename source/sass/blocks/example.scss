@@ -13,6 +13,27 @@
     }
 }
 
+.example__outer-container {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+
+    @media (min-width: variables.$desktop-width) {
+        display: flex;
+        flex-flow: row nowrap;
+    }
+}
+
+.example__inner-container {
+    @media (min-width: variables.$desktop-width) {
+        background-color: variables.$special-light-grey;
+        height: 100%;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+    }
+}
+
 .example__title {
     align-self: flex-start;
     margin: 0;
@@ -68,6 +89,7 @@
 
     @media (min-width: variables.$desktop-width) {
         padding: 0 110px;
+        margin-bottom: 0;
     }
 }
 
@@ -92,6 +114,5 @@
     @media (min-width: variables.$tablet-width) {
         padding: 30px 0;
         width: 100%;
-        background-color: variables.$special-light-grey;
     }
 }

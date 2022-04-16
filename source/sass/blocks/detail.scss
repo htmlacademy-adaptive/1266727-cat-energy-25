@@ -63,6 +63,10 @@
     @media (min-width: variables.$tablet-width) {
         background-color: variables.$basic-white;
     }
+
+    @media (min-width: variables.$desktop-width) {
+        background-color: variables.$special-light-grey;
+    }
 }
 
 .detail--line .detail__number {
