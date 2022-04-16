@@ -9,6 +9,13 @@
     &--with-legend {
         border-top: 2px solid variables.$basic-green;
     }
+
+    &--weight {
+        @media (min-width: variables.$tablet-width) {
+            border: 1px solid variables.$light-grey;
+            padding: 25px;
+        }
+    }
 }
 
 .fields__legend {
@@ -29,6 +36,13 @@
     margin: 0;
     padding: 0 20px 11px;
     list-style: none;
+
+    &--additions {
+        @media (min-width: variables.$tablet-width) {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+    }
 }
 
 .fields__item {

@@ -29,10 +29,30 @@
 
 .form-container__fields {
     margin-bottom: 22px;
+
+    &--weight {
+        @media (min-width: variables.$tablet-width) {
+            margin: 41px;
+        }
+    }
+}
+
+.form-container__container {
+    display: flex;
+    flex-flow: column nowrap;
+
+    @media (min-width: variables.$tablet-width) {
+        flex-flow: row nowrap;
+        align-items: center;
+    }
 }
 
 .form-container__buttons {
     padding: 0 20px;
+
+    @media (min-width: variables.$tablet-width) {
+        flex: 1 1 0;
+    }
 }
 
 .form-container__note {
@@ -44,4 +64,9 @@
     font-weight: 400;
     color: variables.$basic-black;
     text-align: center;
+
+    @media (min-width: variables.$tablet-width) {
+        flex: 1 1 0;
+        text-align: left;
+    }
 }

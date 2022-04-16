@@ -9,7 +9,7 @@
     width: 320px;
     margin: 0 auto;
     position: relative;
-    // outline: 5px solid red;
+    outline: 5px solid red;
 
     @media (min-width: variables.$tablet-width) {
         width: 768px;
@@ -20,7 +20,7 @@
     }
 }
 
-.page__container {
+.page__container--index {
     @media (min-width: variables.$desktop-width) {
         &::before {
             content: "";
