@@ -1,8 +1,5 @@
 @use "../variables.scss";
 
-.navigation {
-}
-
 .navigation__list {
     padding: 0;
     margin: 0;
@@ -22,9 +19,8 @@
 }
 
 .navigation__item {
-    padding: 0;
-    margin: 0;
     padding: 22px 0 24px;
+    margin: 0;
     width: 100%;
     text-align: center;
     border-bottom: 1px solid variables.$basic-light-grey;
