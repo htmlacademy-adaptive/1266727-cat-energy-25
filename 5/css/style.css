@@ -695,7 +695,7 @@ input:checked + .field__label--checkbox::after {
     justify-content: space-between;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 1440px) {
   .header {
     padding: 53px 110px 0;
   }
@@ -1162,7 +1162,7 @@ input:checked + .field__label--checkbox::after {
     padding: 0 30px;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 1440px) {
   .reasons {
     padding: 0 110px;
   }
