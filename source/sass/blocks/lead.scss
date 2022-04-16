@@ -10,6 +10,7 @@
 
     @media (min-width: variables.$tablet-width) {
         color: variables.$basic-black;
+        height: 410px;
     }
 
     &::before {
@@ -60,4 +61,18 @@
     margin: 0;
     margin-bottom: 29px;
     text-transform: uppercase;
+}
+
+.lead__image {
+    @media (min-width: variables.$tablet-width) {
+        position: absolute;
+        bottom: 0;
+        z-index: -1;
+    }
+}
+
+.lead__button {
+    @media (min-width: variables.$tablet-width) {
+        width: 244px;
+    }
 }

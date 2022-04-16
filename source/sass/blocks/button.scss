@@ -18,4 +18,8 @@
         background-color: variables.$basic-grey;
         color: variables.$special-dark-grey;
     }
+
+    @media (min-width: variables.$tablet-width) {
+        padding: 14px 26px;
+    }
 }

@@ -2,6 +2,10 @@
 
 .reasons {
     padding: 0 20px;
+
+    @media (min-width: variables.$tablet-width) {
+        padding: 0 30px;
+    }
 }
 
 .reasons__title {

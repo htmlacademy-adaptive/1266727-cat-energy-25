@@ -8,6 +8,7 @@
     align-items: center;
 
     @media (min-width: variables.$tablet-width) {
+        padding: 0;
         background-color: variables.$basic-white;
     }
 }
@@ -22,6 +23,10 @@
     line-height: 40px;
     color: variables.$basic-black;
     margin-bottom: 40px;
+
+    @media (min-width: variables.$tablet-width) {
+        padding: 0 30px;
+    }
 }
 
 .example__text {
@@ -33,6 +38,10 @@
     font-weight: 400;
     color: variables.$special-dark-grey;
     margin-bottom: 20px;
+
+    @media (min-width: variables.$tablet-width) {
+        padding: 0 30px;
+    }
 }
 
 .example__details {
@@ -44,7 +53,9 @@
     justify-content: space-between;
 
     @media (min-width: variables.$tablet-width) {
+        padding: 0 30px;
         width: 100%;
+        box-sizing: border-box;
     }
 }
 
@@ -67,6 +78,7 @@
     width: 280px;
 
     @media (min-width: variables.$tablet-width) {
+        padding: 30px 0;
         width: 100%;
         background-color: variables.$special-light-grey;
     }

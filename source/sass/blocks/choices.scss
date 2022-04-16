@@ -2,16 +2,33 @@
 
 .choices {
     padding: 0 20px;
+
+    @media (min-width: variables.$tablet-width) {
+        padding: 0 30px;
+    }
 }
 
 .choices__list {
     list-style: none;
     margin: 0;
     padding: 0;
+
+    @media (min-width: variables.$desktop-width) {
+        display: flex;
+        flex-flow: row nowrap;
+    }
 }
 
 .choices__item {
     &:not(:last-child) {
         margin-bottom: 20px;
+    }
+
+    @media (min-width: variables.$desktop-width) {
+        height: 374px;
+
+        &:not(:last-child) {
+            margin-right: 80px;
+        }
     }
 }
