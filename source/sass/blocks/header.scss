@@ -8,6 +8,8 @@
 
     @media (min-width: variables.$tablet-width) {
         flex-flow: row nowrap;
+        justify-content: space-between;
+        border-bottom: 1px solid variables.$basic-light-grey;
     }
 }
 
@@ -63,5 +65,10 @@
     @media (min-width: variables.$tablet-width) {
         display: block;
         position: relative;
+        width: 500px;
+    }
+
+    @media (min-width: variables.$desktop-width) {
+        width: 600px;
     }
 }

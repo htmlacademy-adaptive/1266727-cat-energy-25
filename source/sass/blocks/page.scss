@@ -8,8 +8,28 @@
 .page__body {
     width: 320px;
     margin: 0 auto;
+    position: relative;
 
     @media (min-width: variables.$tablet-width) {
         width: 768px;
+    }
+
+    @media (min-width: variables.$desktop-width) {
+        width: 1440px;
+    }
+}
+
+.page__container {
+    @media (min-width: variables.$desktop-width) {
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 720px;
+            height: 694px;
+            z-index: -1;
+            background-color: variables.$basic-green;
+        }
     }
 }
