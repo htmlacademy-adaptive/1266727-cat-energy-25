@@ -3,19 +3,6 @@
 .fields {
     padding: 0;
     margin: 0;
-    border: none;
-    border-bottom: 1px solid variables.$light-grey;
-
-    &--with-legend {
-        border-top: 2px solid variables.$basic-green;
-    }
-
-    &--weight {
-        @media (min-width: variables.$tablet-width) {
-            border: 1px solid variables.$light-grey;
-            padding: 25px;
-        }
-    }
 }
 
 .fields__legend {
@@ -42,9 +29,33 @@
             display: grid;
             grid-template-columns: 1fr 1fr;
         }
+
+        @media (min-width: variables.$desktop-width) {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+        }
+    }
+
+    &--contacts {
+        @media (min-width: variables.$desktop-width) {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+        }
     }
 }
 
 .fields__item {
     margin-bottom: 13px;
+
+    &--contact {
+        @media (min-width: variables.$desktop-width) {
+            flex: 1 1 0;
+        }
+
+        &:not(:last-child) {
+            margin-right: 50px;
+        }
+    }
 }

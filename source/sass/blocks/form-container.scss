@@ -27,12 +27,42 @@
     text-transform: uppercase;
 }
 
+.form-container__fields-container {
+    display: flex;
+    flex-flow: column nowrap;
+
+    @media (min-width: variables.$desktop-width) {
+        flex-flow: row nowrap;
+    }
+}
+
 .form-container__fields {
     margin-bottom: 22px;
+    border: none;
+    border-bottom: 1px solid variables.$light-grey;
+
+    &--with-legend {
+        border-top: 2px solid variables.$basic-green;
+    }
+
+    &--column {
+        @media (min-width: variables.$desktop-width) {
+            flex: 1 1 0;
+            margin: 10px;
+            border: none;
+        }
+    }
 
     &--weight {
         @media (min-width: variables.$tablet-width) {
             margin: 41px;
+            border: 1px solid variables.$light-grey;
+            padding: 25px;
+            padding-bottom: 0;
+        }
+
+        @media (min-width: variables.$desktop-width) {
+            margin: 0;
         }
     }
 }

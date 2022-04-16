@@ -34,62 +34,64 @@
             <section class="form-container__form">
                 <h2 class="visually-hidden">Поля анкеты</h2>
                 <form action="https://echo.htmlacademy.ru">
-                    <fieldset class="form-container__fields fields">
-                        <ul class="fields__list">
-                            <li class="fields__item field">
-                                <label class="field__label" for="name">Имя:*</label>
-                                <input class="field__input" id="name" type="text" name="name" placeholder="Барсик" required>
-                            </li>
-                            <li class="fields__item field">
-                                <label class="field__label" for="weight">Вес (кг):*</label>
-                                <input class="field__input" id="weight" type="text" name="weight" placeholder="7" required>
-                            </li>
-                            <li class="fields__item field">
-                                <label class="field__label" for="age">Возраст (лет):</label>
-                                <input class="field__input" id="age" type="text" name="age" placeholder="7">
-                            </li>
-                        </ul>
-                    </fieldset>
-                    <fieldset class="form-container__fields form-container__fields--weight fields--weight">
-                        <ul class="fields__list">
-                            <li class="fields__item field">
-                                <input class="visually-hidden" type="radio" name="goal" value="lose-weight" id="goal-lose-weight" checked>
-                                <label class="field__label field__label--radio" for="goal-lose-weight">
-                                    Похудение
-                                </label>
-                            </li>
-                            <li class="fields__item field">
-                                <input class="visually-hidden" type="radio" name="goal" value="gain-weight" id="goal-gain-weight">
-                                <label class="field__label field__label--radio" for="goal-gain-weight">
-                                    Набор массы
-                                </label>
-                            </li>
-                            <li class="fields__item field">
-                                <input class="visually-hidden" type="radio" name="goal" value="need-advice" id="goal-need-advice">
-                                <label class="field__label field__label--radio" for="goal-need-advice">
-                                    Не знаю (Нужен ваш совет)
-                                </label>
-                            </li>
-                        </ul>
-                    </fieldset>
-                    <fieldset class="form-container__fields fields fields--with-legend">
+                    <div class="form-container__fields-container">
+                        <fieldset class="form-container__fields form-container__fields--column fields">
+                            <ul class="fields__list">
+                                <li class="fields__item field">
+                                    <label class="field__label" for="name">Имя:*</label>
+                                    <input class="field__input" id="name" type="text" name="name" placeholder="Барсик" required>
+                                </li>
+                                <li class="fields__item field">
+                                    <label class="field__label" for="weight">Вес (кг):*</label>
+                                    <input class="field__input" id="weight" type="text" name="weight" placeholder="7" required>
+                                </li>
+                                <li class="fields__item field">
+                                    <label class="field__label" for="age">Возраст (лет):</label>
+                                    <input class="field__input" id="age" type="text" name="age" placeholder="7">
+                                </li>
+                            </ul>
+                        </fieldset>
+                        <fieldset class="form-container__fields form-container__fields--column form-container__fields--weight fields--weight">
+                            <ul class="fields__list">
+                                <li class="fields__item field">
+                                    <input class="visually-hidden" type="radio" name="goal" value="lose-weight" id="goal-lose-weight" checked>
+                                    <label class="field__label field__label--radio" for="goal-lose-weight">
+                                        Похудение
+                                    </label>
+                                </li>
+                                <li class="fields__item field">
+                                    <input class="visually-hidden" type="radio" name="goal" value="gain-weight" id="goal-gain-weight">
+                                    <label class="field__label field__label--radio" for="goal-gain-weight">
+                                        Набор массы
+                                    </label>
+                                </li>
+                                <li class="fields__item field">
+                                    <input class="visually-hidden" type="radio" name="goal" value="need-advice" id="goal-need-advice">
+                                    <label class="field__label field__label--radio" for="goal-need-advice">
+                                        Не знаю (Нужен ваш совет)
+                                    </label>
+                                </li>
+                            </ul>
+                        </fieldset>
+                    </div>
+                    <fieldset class="form-container__fields form-container__fields--with-border fields">
                         <legend class="fields__legend">
                             Контактные данные (владельца кота)
                         </legend>
-                        <ul class="fields__list">
-                            <li class="fields__item field">
+                        <ul class="fields__list fields__list--contacts">
+                            <li class="fields__item fields__item--contact field">
                                 <label class="field__label" for="email">E-mail:*</label>
                                 <input class="field__input" id="email" type="text" name="email"
                                     placeholder="kuklachev@gmail.com" required>
                             </li>
-                            <li class="fields__item field">
+                            <li class="fields__item fields__item--contact field">
                                 <label class="field__label" for="phone">Телефон:*</label>
                                 <input class="field__input" id="phone" type="text" name="phone"
                                     placeholder="8 (960) 900-60-90" required>
                             </li>
                         </ul>
                     </fieldset>
-                    <fieldset class="form-container__fields fields fields--with-legend">
+                    <fieldset class="form-container__fields form-container__fields--with-border fields">
                         <legend class="fields__legend">
                             Комментарий
                         </legend>
@@ -101,7 +103,7 @@
                             </p>
                         </div>
                     </fieldset>
-                    <fieldset class="form-container__fields fields fields--with-legend">
+                    <fieldset class="form-container__fields form-container__fields--with-border fields">
                         <legend class="fields__legend">
                             Дополнительно
                         </legend>
