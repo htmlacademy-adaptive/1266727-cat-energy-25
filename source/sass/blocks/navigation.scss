@@ -38,12 +38,6 @@
             margin-right: 0;
         }
     }
-
-    @media (min-width: variables.$desktop-width) {
-        &:last-child {
-            margin-right: 35px;
-        }
-    }
 }
 
 .navigation__link {

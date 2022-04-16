@@ -6,6 +6,10 @@
     @media (min-width: variables.$tablet-width) {
         padding: 0 30px;
     }
+
+    @media (min-width: variables.$tablet-width) {
+        padding: 0 110px;
+    }
 }
 
 .reasons__title {
@@ -28,6 +32,11 @@
         grid-template-columns: 1fr 1fr;
         column-gap: 153px;
     }
+
+    @media (min-width: variables.$desktop-width) {
+        display: flex;
+        flex-flow: row nowrap;
+    }
 }
 
 .reasons__item {
@@ -37,6 +46,11 @@
 
     @media (min-width: variables.$tablet-width) {
         width: 230px;
+        height: 280px;
+    }
+
+    @media (min-width: variables.$desktop-width) {
+        width: 246px;
         height: 280px;
     }
 }

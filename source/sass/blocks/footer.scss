@@ -1,5 +1,9 @@
 @use "../variables.scss";
 
+.footer {
+    position: relative;
+}
+
 .footer__map {
     display: block;
     width: 100%;
@@ -24,5 +28,17 @@
     @media (min-width: variables.$tablet-width) {
         border: none;
         width: 200px;
+    }
+}
+
+.footer__address {
+    background-color: variables.$basic-white;
+
+    @media (min-width: variables.$desktop-width) {
+        position: absolute;
+        top: 95px;
+        left: 110px;
+        width: 565px;
+        height: 100px;
     }
 }

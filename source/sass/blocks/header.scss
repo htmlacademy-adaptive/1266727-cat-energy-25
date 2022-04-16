@@ -12,6 +12,10 @@
         flex-flow: row nowrap;
         justify-content: space-between;
     }
+
+    @media (min-width: variables.$tablet-width) {
+        padding: 53px 110px 0;
+    }
 }
 
 .header__container {

@@ -27,6 +27,10 @@
     @media (min-width: variables.$tablet-width) {
         padding: 0 30px;
     }
+
+    @media (min-width: variables.$desktop-width) {
+        padding: 0 110px;
+    }
 }
 
 .example__text {
@@ -42,6 +46,10 @@
     @media (min-width: variables.$tablet-width) {
         padding: 0 30px;
     }
+
+    @media (min-width: variables.$desktop-width) {
+        padding: 0 110px;
+    }
 }
 
 .example__details {
@@ -56,6 +64,10 @@
         padding: 0 30px;
         width: 100%;
         box-sizing: border-box;
+    }
+
+    @media (min-width: variables.$desktop-width) {
+        padding: 0 110px;
     }
 }
 
