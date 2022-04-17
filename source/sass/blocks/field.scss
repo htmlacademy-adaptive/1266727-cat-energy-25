@@ -24,7 +24,7 @@
     align-items: center;
 
     &::before {
-        content: '';
+        content: "";
         display: inline-block;
         width: 30px;
         height: 30px;
@@ -36,7 +36,7 @@
 
 input:checked + .field__label--radio {
     &::after {
-        content: '';
+        content: "";
         position: absolute;
         top: 9px;
         left: 10px;
@@ -55,7 +55,7 @@ input:checked + .field__label--radio {
     align-items: center;
 
     &::before {
-        content: '';
+        content: "";
         display: inline-block;
         width: 26px;
         height: 26px;
@@ -66,13 +66,13 @@ input:checked + .field__label--radio {
 
 input:checked + .field__label--checkbox {
     &::after {
-        content: '';
+        content: "";
         position: absolute;
         top: 7px;
         left: 6px;
         width: 18px;
         height: 14px;
-        background-image: url('../../img/checkbox-mark.svg');
+        background-image: url("../../img/checkbox-mark.svg");
     }
 }
 

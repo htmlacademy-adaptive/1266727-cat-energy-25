@@ -1,23 +1,39 @@
 @use "../variables.scss";
 
-.navigation {
-    position: absolute;
-}
-
 .navigation__list {
     padding: 0;
     margin: 0;
     list-style: none;
     background-color: variables.$basic-white;
+    display: flex;
+    flex-flow: column nowrap;
+
+    @media (min-width: variables.$tablet-width) {
+        flex-flow: row nowrap;
+        justify-content: flex-end;
+    }
+
+    @media (min-width: variables.$desktop-width) {
+        background-color: variables.$basic-green;
+    }
 }
 
 .navigation__item {
-    padding: 0;
-    margin: 0;
     padding: 22px 0 24px;
+    margin: 0;
     width: 100%;
     text-align: center;
     border-bottom: 1px solid variables.$basic-light-grey;
+
+    @media (min-width: variables.$tablet-width) {
+        border: none;
+        width: auto;
+        margin-right: 35px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
 }
 
 .navigation__link {
@@ -28,4 +44,15 @@
     text-decoration: none;
     color: variables.$basic-black;
     text-transform: uppercase;
+
+    @media (min-width: variables.$tablet-width) {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    @media (min-width: variables.$desktop-width) {
+        font-size: 20px;
+        line-height: 30px;
+        color: variables.$basic-white;
+    }
 }

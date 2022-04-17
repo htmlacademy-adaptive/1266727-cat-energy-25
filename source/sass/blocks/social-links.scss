@@ -1,7 +1,6 @@
 @use "../variables.scss";
 
 .social-links {
-    background-color: variables.$basic-grey;
     padding: 0 20px;
 }
 
@@ -9,8 +8,6 @@
     padding: 20px;
     margin: 0 auto;
     list-style: none;
-    border-top: 1px solid variables.$light-grey;
-    border-bottom: 1px solid variables.$light-grey;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;

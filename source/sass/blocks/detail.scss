@@ -27,6 +27,10 @@
         &::before {
             display: none;
         }
+
+        @media (min-width: variables.$tablet-width) {
+            justify-content: flex-end;
+        }
     }
 }
 
@@ -55,6 +59,14 @@
     text-align: center;
     box-sizing: border-box;
     z-index: 1;
+
+    @media (min-width: variables.$tablet-width) {
+        background-color: variables.$basic-white;
+    }
+
+    @media (min-width: variables.$desktop-width) {
+        background-color: variables.$special-light-grey;
+    }
 }
 
 .detail--line .detail__number {
