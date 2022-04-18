@@ -20,7 +20,7 @@
     }
 }
 
-.page__container {
+.page__container--index {
     @media (min-width: variables.$desktop-width) {
         &::before {
             content: "";

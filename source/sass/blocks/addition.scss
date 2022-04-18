@@ -2,6 +2,19 @@
 
 .addition {
     padding: 13px 0 19px;
+    display: flex;
+    flex-flow: column nowrap;
+
+    @media (min-width: variables.$tablet-width) {
+        flex-flow: row wrap;
+        justify-content: space-between;
+    }
+
+    @media (min-width: variables.$desktop-width) {
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+    }
 }
 
 .addition__name {
@@ -15,7 +28,7 @@
     text-transform: uppercase;
 }
 
-.addition_info {
+.addition__info {
     margin: 0;
     margin-bottom: 15px;
     padding: 0;
@@ -29,6 +42,22 @@
     color: variables.$special-dark-grey;
 }
 
+.addition__amount {
+    @media (min-width: variables.$tablet-width) {
+        margin-right: 50px;
+    }
+}
+
 .addition__price {
     text-transform: uppercase;
+}
+
+.addition__button {
+    @media (min-width: variables.$tablet-width) {
+        width: 100%;
+    }
+
+    @media (min-width: variables.$tablet-width) {
+        width: auto;
+    }
 }

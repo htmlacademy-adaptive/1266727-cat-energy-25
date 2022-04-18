@@ -96,6 +96,8 @@
 }
 
 .lead__button {
+    width: 100%;
+
     @media (min-width: variables.$tablet-width) {
         width: 244px;
     }

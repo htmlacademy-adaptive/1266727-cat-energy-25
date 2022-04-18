@@ -4,8 +4,22 @@
     margin: 0;
     padding: 0;
     list-style: none;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
 }
 
-.product__item {
+.products__item {
     margin: 0;
+    width: 320px;
+
+    @media (min-width: variables.$tablet-width) {
+        width: 324px;
+        box-sizing: border-box;
+    }
+
+    @media (min-width: variables.$desktop-width) {
+        width: 245px;
+        box-sizing: border-box;
+    }
 }

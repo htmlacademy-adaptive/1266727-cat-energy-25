@@ -13,4 +13,34 @@
     font-weight: 400;
     color: variables.$basic-black;
     border-bottom: 1px solid variables.$special-grey-2;
+
+    @media (min-width: variables.$tablet-width) {
+        padding: 30px;
+    }
+
+    @media (min-width: variables.$desktop-width) {
+        padding: 30px 110px;
+    }
+}
+
+.catalog-container__products {
+    @media (min-width: variables.$tablet-width) {
+        padding: 0 30px;
+    }
+
+    @media (min-width: variables.$desktop-width) {
+        padding: 0 110px;
+    }
+}
+
+.catalog-container__additions {
+    padding: 25px 20px;
+
+    @media (min-width: variables.$tablet-width) {
+        padding: 25px 30px;
+    }
+
+    @media (min-width: variables.$desktop-width) {
+        padding: 25px 110px;
+    }
 }

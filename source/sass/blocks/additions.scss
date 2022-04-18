@@ -1,7 +1,13 @@
 @use "../variables.scss";
 
-.additions {
-    padding: 25px 20px;
+.additions__container {
+    display: flex;
+    flex-flow: column nowrap;
+
+    @media (min-width: variables.$desktop-width) {
+        flex-flow: row nowrap;
+        justify-content: space-between;
+    }
 }
 
 .additions__title {
@@ -20,9 +26,30 @@
     padding: 0;
     list-style: none;
     border-top: 1px solid variables.$special-grey;
+
+    @media (min-width: variables.$desktop-width) {
+        flex-grow: 1;
+        margin-right: 80px;
+    }
 }
 
 .additions__item {
     margin: 0;
     border-bottom: 1px solid variables.$special-grey;
+}
+
+.additions__promo {
+    margin: 0;
+    border-bottom: 1px solid variables.$special-grey;
+    width: 280px;
+    height: 290px;
+
+    @media (min-width: variables.$tablet-width) {
+        width: 100%;
+    }
+
+    @media (min-width: variables.$desktop-width) {
+        width: 280px;
+        height: 290px;
+    }
 }

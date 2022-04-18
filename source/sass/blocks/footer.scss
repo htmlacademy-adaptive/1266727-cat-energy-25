@@ -32,8 +32,6 @@
 }
 
 .footer__address {
-    background-color: variables.$basic-white;
-
     @media (min-width: variables.$desktop-width) {
         position: absolute;
         top: 95px;

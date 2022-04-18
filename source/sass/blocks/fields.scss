@@ -3,12 +3,6 @@
 .fields {
     padding: 0;
     margin: 0;
-    border: none;
-    border-bottom: 1px solid variables.$light-grey;
-
-    &--with-legend {
-        border-top: 2px solid variables.$basic-green;
-    }
 }
 
 .fields__legend {
@@ -29,8 +23,39 @@
     margin: 0;
     padding: 0 20px 11px;
     list-style: none;
+
+    &--additions {
+        @media (min-width: variables.$tablet-width) {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        @media (min-width: variables.$desktop-width) {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+        }
+    }
+
+    &--contacts {
+        @media (min-width: variables.$desktop-width) {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+        }
+    }
 }
 
 .fields__item {
     margin-bottom: 13px;
+
+    &--contact {
+        @media (min-width: variables.$desktop-width) {
+            flex: 1 1 0;
+        }
+
+        &:not(:last-child) {
+            margin-right: 50px;
+        }
+    }
 }
