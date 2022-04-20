@@ -1,16 +1,20 @@
 @use "../variables.scss";
 
 .lead {
+    padding: 27px 20px 0;
     position: relative;
     font-family: variables.$primary-font;
     color: variables.$basic-white;
     text-align: center;
-    padding: 27px 20px 0;
     box-sizing: border-box;
+    // outline: 2px solid blue;
 
     @media (min-width: variables.$tablet-width) {
+        padding: 62px 30px 0px;
         color: variables.$basic-black;
-        height: 410px;
+        height: 872px;
+        width: 768px;
+        text-align: left;
     }
 
     @media (min-width: variables.$desktop-width) {
@@ -35,6 +39,7 @@
 
         @media (min-width: variables.$tablet-width) {
             display: none;
+            background-image: url("../../img/lead-background.png");
         }
     }
 
@@ -55,6 +60,12 @@
     }
 }
 
+.lead__container {
+    @media (min-width: variables.$tablet-width) {
+        padding: 0 87px;
+    }
+}
+
 .lead__title {
     font-size: 36px;
     line-height: 36px;
@@ -62,6 +73,13 @@
     margin: 0;
     padding: 0;
     margin-bottom: 25px;
+
+    @media (min-width: variables.$tablet-width) {
+        font-size: 60px;
+        line-height: 60px;
+        width: 416px;
+        margin-bottom: 41px;
+    }
 
     @media (min-width: variables.$desktop-width) {
         grid-column: 1;
@@ -76,6 +94,10 @@
     margin-bottom: 29px;
     text-transform: uppercase;
 
+    @media (min-width: variables.$tablet-width) {
+        margin-bottom: 49px;
+    }
+
     @media (min-width: variables.$desktop-width) {
         grid-column: 1;
         grid-row: 2;
@@ -83,15 +105,34 @@
 }
 
 .lead__image {
-    @media (min-width: variables.$tablet-width) {
-        position: absolute;
-        bottom: 0;
-        z-index: -1;
+    &--phone {
+        @media (min-width: variables.$tablet-width) {
+            display: none;
+        }
     }
 
-    @media (min-width: variables.$desktop-width) {
-        grid-column: 2;
-        grid-row: 1 / 4;
+    &--tablet {
+        display: none;
+
+        @media (min-width: variables.$tablet-width) {
+            display: block;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            z-index: -1;
+        }
+
+        @media (min-width: variables.$desktop-width) {
+            display: none;
+        }
+    }
+
+    &--desktop {
+        display: none;
+
+        @media (min-width: variables.$desktop-width) {
+            display: block;
+        }
     }
 }
 
