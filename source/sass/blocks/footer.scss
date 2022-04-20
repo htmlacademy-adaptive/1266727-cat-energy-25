@@ -4,9 +4,45 @@
     position: relative;
 }
 
+.footer__map-container {
+    position: relative;
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 139px;
+        left: 134px;
+        background-image: url("../../img/map-pin-phone.png");
+        width: 57px;
+        height: 53px;
+
+        @media (min-width: variables.$tablet-width) {
+            top: 146px;
+            left: 333px;
+            background-image: url("../../img/map-pin-tablet.png");
+            width: 113px;
+            height: 106px;
+        }
+    }
+}
+
 .footer__map {
     display: block;
     width: 100%;
+
+    &--phone {
+        @media (min-width: variables.$tablet-width) {
+            display: none;
+        }
+    }
+
+    &--tablet {
+        display: none;
+
+        @media (min-width: variables.$tablet-width) {
+            display: block;
+        }
+    }
 }
 
 .footer__container {
