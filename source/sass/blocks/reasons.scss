@@ -1,10 +1,10 @@
 @use "../variables.scss";
 
 .reasons {
-    padding: 0 20px;
+    padding: 20px 20px 0;
 
     @media (min-width: variables.$tablet-width) {
-        padding: 0 30px;
+        padding: 45px 30px 0;
     }
 
     @media (min-width: variables.$desktop-width) {
@@ -20,6 +20,11 @@
     line-height: 40px;
     font-weight: 400;
     margin-bottom: 40px;
+
+    @media (min-width: variables.$tablet-width) {
+        font-size: 60px;
+        line-height: 60px;
+    }
 }
 
 .reasons__list {
@@ -29,8 +34,10 @@
 
     @media (min-width: variables.$tablet-width) {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 230px 230px;
+        grid-template-rows: 280px;
         column-gap: 153px;
+        row-gap: 37px;
     }
 
     @media (min-width: variables.$desktop-width) {
@@ -45,8 +52,9 @@
     }
 
     @media (min-width: variables.$tablet-width) {
-        width: 230px;
-        height: 280px;
+        &:not(:last-child) {
+            margin-bottom: 0;
+        }
     }
 
     @media (min-width: variables.$desktop-width) {
