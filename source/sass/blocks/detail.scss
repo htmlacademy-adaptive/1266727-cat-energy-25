@@ -6,6 +6,14 @@
     align-items: center;
     position: relative;
     padding-top: 14px;
+    width: 124px;
+    height: 70px;
+
+    @media (min-width: variables.$tablet-width) {
+        width: 162px;
+        height: 77px;
+        box-sizing: border-box;
+    }
 
     &::before {
         content: "";
@@ -17,11 +25,17 @@
         box-sizing: border-box;
         border: 1px solid variables.$special-grey;
         border-radius: 3px;
+
+        @media (min-width: variables.$tablet-width) {
+            width: 162px;
+            height: 72px;
+        }
     }
 
     &--line {
         flex-flow: row nowrap;
         justify-content: center;
+        align-items: center;
         padding: 0;
 
         &::before {
@@ -29,7 +43,8 @@
         }
 
         @media (min-width: variables.$tablet-width) {
-            justify-content: flex-end;
+            flex-flow: column nowrap;
+            align-items: flex-end;
         }
     }
 }
@@ -44,6 +59,12 @@
     font-weight: 400;
     color: variables.$basic-black;
     text-transform: uppercase;
+
+    @media (min-width: variables.$tablet-width) {
+        font-size: 30px;
+        line-height: 37px;
+        margin-bottom: 11px;
+    }
 }
 
 .detail__description {
@@ -62,6 +83,11 @@
 
     @media (min-width: variables.$tablet-width) {
         background-color: variables.$basic-white;
+        font-size: 14px;
+        line-height: 14px;
+        width: auto;
+        padding: 0 10px;
+        margin: 0;
     }
 
     @media (min-width: variables.$desktop-width) {
@@ -75,6 +101,11 @@
     font-size: 14px;
     line-height: 20px;
     text-transform: uppercase;
+
+    @media (min-width: variables.$tablet-width) {
+        font-size: 20px;
+        line-height: 20px;
+    }
 }
 
 .detail--line .detail__description {
@@ -87,4 +118,9 @@
     font-size: 14px;
     line-height: 20px;
     text-transform: uppercase;
+
+    @media (min-width: variables.$tablet-width) {
+        font-size: 20px;
+        line-height: 20px;
+    }
 }
