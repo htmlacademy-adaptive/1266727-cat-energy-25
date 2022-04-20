@@ -28,6 +28,12 @@
         margin-bottom: 20px;
     }
 
+    @media (min-width: variables.$tablet-width) {
+        &:not(:last-child) {
+            margin-bottom: 30px;
+        }
+    }
+
     @media (min-width: variables.$desktop-width) {
         height: 374px;
 
