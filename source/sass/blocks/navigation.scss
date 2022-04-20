@@ -12,6 +12,7 @@
     @media (min-width: variables.$tablet-width) {
         flex-flow: row nowrap;
         justify-content: flex-end;
+        border-top: none;
     }
 
     &--index {
@@ -27,14 +28,28 @@
     width: 100%;
     text-align: center;
     border-bottom: 1px solid variables.$basic-light-grey;
+    position: relative;
 
     @media (min-width: variables.$tablet-width) {
         border: none;
         width: auto;
         margin-right: 35px;
+        padding: 0 0 12px;
 
         &:last-child {
             margin-right: 0;
+        }
+    }
+
+    &--active {
+        &::after {
+            content: "";
+            position: absolute;
+            height: 2px;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            background-color: variables.$basic-green;
         }
     }
 }
