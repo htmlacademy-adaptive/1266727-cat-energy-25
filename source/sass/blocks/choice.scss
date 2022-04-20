@@ -7,10 +7,40 @@
     border: 1px solid variables.$light-grey;
 }
 
+.choice__header {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    margin-bottom: 22px;
+}
+
+.choice__icon {
+    &--lose-weight {
+        width: 50px;
+        height: 53px;
+        margin-right: 19px;
+
+        @media (min-width: variables.$tablet-width) {
+            width: 200px;
+            height: 211px;
+        }
+    }
+
+    &--gain-weight {
+        width: 67px;
+        height: 50px;
+        margin-right: 11px;
+
+        @media (min-width: variables.$tablet-width) {
+            width: 268px;
+            height: 200px;
+        }
+    }
+}
+
 .choice__title {
     margin: 0;
     padding: 0;
-    margin-bottom: 30px;
     font-family: variables.$primary-font;
     font-size: 24px;
     line-height: 37px;
@@ -27,7 +57,7 @@
     font-family: variables.$secondary-font;
     font-size: 14px;
     line-height: 18px;
-    color: variables.$basic-black;
+    color: variables.$special-dark-grey;
     border-bottom: 1px solid variables.$light-grey;
 }
 
@@ -38,4 +68,16 @@
     font-family: variables.$primary-font;
     font-size: 16px;
     line-height: 16px;
+    position: relative;
+    padding-right: 39px;
+
+    &::after {
+        content: '';
+        background-image: url("../../img/arrow.svg");
+        width: 24px;
+        height: 12px;
+        position:absolute;
+        top: 6px;
+        right: 0px;
+    }
 }

@@ -17,5 +17,31 @@
         flex-basis: 60px;
         margin-right: 20px;
         background-color: variables.$basic-green;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    &--first {
+        &::before {
+            background-image: url("../../img/leaf.svg");
+        }
+    }
+
+    &--second {
+        &::before {
+            background-image: url("../../img/tub.svg");
+        }
+    }
+
+    &--third {
+        &::before {
+            background-image: url("../../img/eat.svg");
+        }
+    }
+
+    &--fourth {
+        &::before {
+            background-image: url("../../img/alarm.svg");
+        }
     }
 }
