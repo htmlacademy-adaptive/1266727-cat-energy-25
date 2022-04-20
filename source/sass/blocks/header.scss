@@ -23,7 +23,6 @@
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid variables.$basic-light-grey;
 
     @media (min-width: variables.$tablet-width) {
         border: none;
@@ -65,6 +64,8 @@
 .header__navigation {
     width: 100%;
     position: absolute;
+    top: 65px;
+    left: 0;
 
     &--closed {
         display: none;
