@@ -28,8 +28,20 @@
             top: 0;
             right: 0;
             width: 720px;
-            height: 500px;
+            height: 694px;
             z-index: -1;
+            background-image: url("../../img/lead-background-desktop.png");
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 720px;
+            height: 694px;
+            z-index: -1;
+            opacity: 0.85;
             background-color: variables.$basic-green;
         }
     }
