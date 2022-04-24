@@ -8,6 +8,10 @@
         position: relative;
         padding-top: 366px;
     }
+
+    @media (min-width: variables.$desktop-width) {
+        padding-top: 357px;
+    }
 }
 
 .slider__image {
@@ -37,6 +41,10 @@
         left: 84px;
         flex-flow: row nowrap;
         justify-content: center;
+    }
+
+    @media (min-width: variables.$desktop-width) {
+        top: -180px;
     }
 }
 
@@ -89,6 +97,8 @@
 
     @media (min-width: variables.$tablet-width) {
         border-bottom: 1px dotted variables.$basic-black;
+        font-size: 20px;
+        line-height: 30px;
     }
 
     &--before {

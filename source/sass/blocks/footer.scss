@@ -33,6 +33,11 @@
             width: 113px;
             height: 106px;
         }
+
+        @media (min-width: variables.$desktop-width) {
+            top: 131px;
+            left: 908px;
+        }
     }
 }
 
@@ -50,6 +55,18 @@
         display: none;
 
         @media (min-width: variables.$tablet-width) {
+            display: block;
+        }
+
+        @media (min-width: variables.$desktop-width) {
+            display: none;
+        }
+    }
+
+    &--desktop {
+        display: none;
+
+        @media (min-width: variables.$desktop-width) {
             display: block;
         }
     }
