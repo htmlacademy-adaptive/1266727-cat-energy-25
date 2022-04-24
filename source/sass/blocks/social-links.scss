@@ -1,12 +1,8 @@
 @use "../variables.scss";
 
-.social-links {
-    padding: 0 20px;
-}
-
 .social-links__list {
-    padding: 20px;
     margin: 0 auto;
+    padding: 0;
     list-style: none;
     display: flex;
     flex-flow: row nowrap;
