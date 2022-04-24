@@ -1,7 +1,0 @@
-@use "../variables.scss";
-
-.main-container__example {
-    @media (min-width: variables.$desktop-width) {
-        height: 400px;
-    }
-}

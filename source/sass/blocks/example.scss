@@ -12,26 +12,9 @@
         padding-top: 47px;
         background-color: variables.$basic-white;
     }
-}
-
-.example__outer-container {
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
 
     @media (min-width: variables.$desktop-width) {
-        display: flex;
-        flex-flow: row nowrap;
-    }
-}
-
-.example__inner-container {
-    @media (min-width: variables.$desktop-width) {
-        background-color: variables.$special-light-grey;
-        height: 100%;
-        display: flex;
-        flex-flow: column nowrap;
-        justify-content: center;
+        padding-top: 69px;
     }
 }
 
@@ -58,6 +41,33 @@
     }
 }
 
+.example__outer-container {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+
+    @media (min-width: variables.$desktop-width) {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: flex-start;
+        width: 100%;
+        box-sizing: border-box;
+        background-color: variables.$special-light-grey;
+        padding: 0 110px;
+    }
+}
+
+.example__inner-container {
+    @media (min-width: variables.$desktop-width) {
+        background-color: variables.$special-light-grey;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        margin-right: 193px;
+    }
+}
+
+
 .example__text {
     padding: 0;
     margin: 0;
@@ -76,7 +86,10 @@
     }
 
     @media (min-width: variables.$desktop-width) {
-        padding: 0 110px;
+        padding: 0;
+        padding-top: 70px;
+        width: 436px;
+        margin-bottom: 69px;
     }
 }
 
@@ -96,8 +109,10 @@
     }
 
     @media (min-width: variables.$desktop-width) {
-        padding: 0 110px;
+        padding: 0;
         margin-bottom: 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
 }
 
@@ -116,6 +131,11 @@
             margin-left: auto;
             margin-top: 0;
         }
+
+        @media (min-width: variables.$desktop-width) {
+            grid-column: 1 / span 2;
+            width: 100%;
+        }
     }
 }
 
@@ -125,5 +145,10 @@
     @media (min-width: variables.$tablet-width) {
         padding: 30px 0;
         width: 100%;
+    }
+
+    @media (min-width: variables.$desktop-width) {
+        width: 591px;
+        height: 576px;
     }
 }

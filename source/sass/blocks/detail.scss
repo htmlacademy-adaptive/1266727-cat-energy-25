@@ -46,6 +46,11 @@
             flex-flow: column nowrap;
             align-items: flex-end;
         }
+
+        @media (min-width: variables.$desktop-width) {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
     }
 }
 
@@ -92,6 +97,7 @@
 
     @media (min-width: variables.$desktop-width) {
         background-color: variables.$special-light-grey;
+        text-align: left;
     }
 }
 
