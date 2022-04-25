@@ -7,15 +7,17 @@
     background-color: variables.$basic-white;
     display: flex;
     flex-flow: column nowrap;
+    border-top: 1px solid variables.$basic-light-grey;
 
     @media (min-width: variables.$tablet-width) {
         flex-flow: row nowrap;
         justify-content: flex-end;
+        border-top: none;
     }
 
     &--index {
         @media (min-width: variables.$desktop-width) {
-            background-color: variables.$basic-green;
+            background-color: transparent;
         }
     }
 }
@@ -26,14 +28,36 @@
     width: 100%;
     text-align: center;
     border-bottom: 1px solid variables.$basic-light-grey;
+    position: relative;
 
     @media (min-width: variables.$tablet-width) {
         border: none;
         width: auto;
         margin-right: 35px;
+        padding: 0 0 12px;
 
         &:last-child {
             margin-right: 0;
+        }
+    }
+
+    &--active {
+        @media (min-width: variables.$tablet-width) {
+            &::after {
+                content: "";
+                position: absolute;
+                height: 2px;
+                bottom: 0;
+                right: 0;
+                left: 0;
+                background-color: variables.$basic-green;
+            }
+        }
+
+        @media (min-width: variables.$desktop-width) {
+            &::after {
+                background-color: variables.$basic-white;
+            }
         }
     }
 }

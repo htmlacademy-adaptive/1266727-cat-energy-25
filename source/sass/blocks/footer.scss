@@ -4,39 +4,72 @@
     position: relative;
 }
 
-.footer__map {
-    display: block;
-    width: 100%;
-}
-
-.footer__container {
-    display: flex;
-    flex-flow: column nowrap;
-    background-color: variables.$basic-grey;
-
-    @media (min-width: variables.$tablet-width) {
-        flex-flow: row nowrap;
-        justify-content: space-between;
-        align-items: center;
-    }
-}
-
-.footer__social-links {
-    border-top: 1px solid variables.$light-grey;
-    border-bottom: 1px solid variables.$light-grey;
-
-    @media (min-width: variables.$tablet-width) {
-        border: none;
-        width: 200px;
-    }
-}
-
 .footer__address {
     @media (min-width: variables.$desktop-width) {
         position: absolute;
         top: 95px;
         left: 110px;
         width: 565px;
-        height: 100px;
+        height: 198px;
+        box-sizing: border-box;
+        z-index: 1;
+    }
+}
+
+.footer__map-container {
+    position: relative;
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 139px;
+        left: 134px;
+        background-image: url("../../img/map-pin-phone.png");
+        width: 57px;
+        height: 53px;
+
+        @media (min-width: variables.$tablet-width) {
+            top: 146px;
+            left: 333px;
+            background-image: url("../../img/map-pin-tablet.png");
+            width: 113px;
+            height: 106px;
+        }
+
+        @media (min-width: variables.$desktop-width) {
+            top: 131px;
+            left: 908px;
+        }
+    }
+}
+
+.footer__map {
+    display: block;
+    width: 100%;
+
+    &--phone {
+        @media (min-width: variables.$tablet-width) {
+            display: none;
+        }
+    }
+
+    &--tablet {
+        display: none;
+
+        @media (min-width: variables.$tablet-width) {
+            display: block;
+        }
+
+        @media (min-width: variables.$desktop-width) {
+            display: none;
+        }
+    }
+
+    &--desktop {
+        display: none;
+
+        @media (min-width: variables.$desktop-width) {
+            display: block;
+        }
     }
 }

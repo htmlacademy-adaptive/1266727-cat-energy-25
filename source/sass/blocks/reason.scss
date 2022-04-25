@@ -1,6 +1,7 @@
 @use "../variables.scss";
 
 .reason {
+    counter-increment: reason;
     font-family: variables.$secondary-font;
     font-size: 14px;
     line-height: 18px;
@@ -9,13 +10,68 @@
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
+    // outline: 1px solid red;
 
     &::before {
         content: "";
         min-width: 60px;
         height: 60px;
-        flex-basis: 60px;
         margin-right: 20px;
         background-color: variables.$basic-green;
+        background-repeat: no-repeat;
+        background-position: center;
+
+        @media (min-width: variables.$tablet-width) {
+            margin-bottom: 31px;
+            min-width: 80px;
+            height: 80px;
+        }
+    }
+
+    @media (min-width: variables.$tablet-width) {
+        font-size: 16px;
+        line-height: 24px;
+        flex-flow: column nowrap;
+        align-items: flex-start;
+        justify-content: center;
+        width: 230px;
+        height: 280px;
+
+        &::after {
+            content: counter(reason);
+            position: absolute;
+            right: 0;
+            z-index: -1;
+            font-family: variables.$primary-font;
+            font-size: 280px;
+            line-height: 280px;
+            font-weight: 400;
+            color: variables.$basic-grey;
+        }
+    }
+
+
+    &--first {
+        &::before {
+            background-image: url("../../img/leaf.svg");
+        }
+    }
+
+    &--second {
+        &::before {
+            background-image: url("../../img/tub.svg");
+        }
+    }
+
+    &--third {
+        &::before {
+            background-image: url("../../img/eat.svg");
+        }
+    }
+
+    &--fourth {
+        &::before {
+            background-image: url("../../img/alarm.svg");
+        }
     }
 }
