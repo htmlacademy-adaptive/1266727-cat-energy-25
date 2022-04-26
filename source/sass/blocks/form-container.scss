@@ -16,6 +16,11 @@
         line-height: 60px;
         margin-bottom: 54px;
     }
+
+    @media (min-width: variables.$desktop-width) {
+        padding: 74px 110px 0;
+        margin-bottom: 56px;
+    }
 }
 
 .form-container__text {
@@ -37,45 +42,68 @@
         width: 330px;
         margin-bottom: 66px;
     }
+
+    @media (min-width: variables.$desktop-width) {
+        padding-left: 110px;
+    }
 }
 
 .form-container__fields-container {
     padding: 0 20px;
 
     @media (min-width: variables.$tablet-width) {
-        padding: 0 71px;
+        padding: 0 70px;
+    }
+
+    @media (min-width: variables.$desktop-width) {
+        padding: 0 110px;
+    }
+
+    &--column {
+        @media (min-width: variables.$desktop-width) {
+            padding: 0;
+        }
     }
 
     &--weight {
-        padding: 0;
+        @media (min-width: variables.$tablet-width) {
+            padding: 0;
+        }
     }
 }
 
 .form-container__fields-group {
-    display: flex;
-    flex-flow: column nowrap;
-
     @media (min-width: variables.$desktop-width) {
-        flex-flow: row nowrap;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 80px;
+        margin-bottom: 69px;
+        padding: 0 110px;
     }
 }
 
 .form-container__fields {
     margin-bottom: 22px;
+    padding: 0;
+    padding-bottom: 24px;
     border: none;
     border-bottom: 1px solid variables.$light-grey;
-    padding-bottom: 24px;
 
     @media (min-width: variables.$tablet-width) {
+        padding-bottom: 0;
         margin-bottom: 65px;
         border: none;
+    }
+
+    @media (min-width: variables.$desktop-width) {
+        margin-bottom: 69px;
     }
 
     &--with-legend {
         border-top: 2px solid variables.$basic-green;
 
         @media (min-width: variables.$tablet-width) {
-            padding: 0 71px;
+            padding: 0 70px;
             margin-bottom: 65px;
             border: none;
         }
@@ -84,20 +112,22 @@
     &--column {
         @media (min-width: variables.$desktop-width) {
             flex: 1 1 0;
-            margin: 10px;
+            margin: 0;
+            padding: 0;
             border: none;
         }
     }
 
     &--weight {
         @media (min-width: variables.$tablet-width) {
-            margin: 7px 71px 70px;
+            margin: 7px 70px 70px;
             padding: 25px 28px;
             border: 1px solid variables.$light-grey;
         }
 
         @media (min-width: variables.$desktop-width) {
             margin: 0;
+            padding: 25px 28px;
         }
     }
 
@@ -117,11 +147,19 @@
     @media (min-width: variables.$tablet-width) {
         margin-top: 54px;
         margin-bottom: 72px;
-        padding: 0 71px;
+        padding: 0 70px;
         display: grid;
         grid-template-columns: 1fr 1fr;
         column-gap: 61px;
         align-items: center;
+    }
+
+    @media (min-width: variables.$desktop-width) {
+        margin-top: 61px;
+        margin-bottom: 82px;
+        padding: 0 110px;
+        grid-template-columns: 568px 568px;
+        column-gap: 81px;
     }
 }
 

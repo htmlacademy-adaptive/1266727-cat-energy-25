@@ -47,6 +47,10 @@
         line-height: 36px;
         max-width: 514px;
     }
+
+    @media (min-width: variables.$desktop-width) {
+        margin-left: 70px;
+    }
 }
 
 .fields__list {
@@ -62,17 +66,16 @@
         }
 
         @media (min-width: variables.$desktop-width) {
-            display: flex;
-            flex-flow: row nowrap;
-            justify-content: space-between;
+            grid-template-columns: 221px 221px 221px 221px;
+            column-gap: 104px;
         }
     }
 
     &--contacts {
         @media (min-width: variables.$desktop-width) {
-            display: flex;
-            flex-flow: row nowrap;
-            justify-content: space-between;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            column-gap: 80px;
         }
     }
 }
@@ -82,12 +85,33 @@
         margin-bottom: 13px;
     }
 
+    @media (min-width: variables.$desktop-width) {
+        &:not(:last-child) {
+            margin-bottom: 20px;
+        }
+    }
+
+    &--addition {
+        @media (min-width: variables.$desktop-width) {
+            &:not(:last-child) {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    &--weight {
+        @media (min-width: variables.$desktop-width) {
+            &:not(:last-child) {
+                margin-bottom: 13px;
+            }
+        }
+    }
+
     &--contact {
         @media (min-width: variables.$desktop-width) {
-            flex: 1 1 0;
-
             &:not(:last-child) {
-                margin-right: 50px;
+                margin-bottom: 0;
+                margin-right: 0;
             }
         }
     }

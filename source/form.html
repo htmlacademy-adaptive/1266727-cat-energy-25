@@ -29,10 +29,10 @@
             <nav class="header__navigation header__navigation--closed navigation">
                 <ul class="navigation__list navigation__list--index">
                     <li class="navigation__item"><a
-                            class="navigation__link navigation__link--index" href="index.html">Главная</a></li>
-                    <li class="navigation__item"><a class="navigation__link navigation__link--index"
+                            class="navigation__link" href="index.html">Главная</a></li>
+                    <li class="navigation__item"><a class="navigation__link"
                             href="catalog.html">Каталог продукции</a></li>
-                    <li class="navigation__item navigation__item--active"><a class="navigation__link navigation__link--index"
+                    <li class="navigation__item navigation__item--active"><a class="navigation__link"
                             href="form.html">Подбор программы</a></li>
                 </ul>
             </nav>
@@ -45,7 +45,7 @@
                 <form action="https://echo.htmlacademy.ru">
                     <div class="form-container__fields-group">
                         <fieldset class="form-container__fields form-container__fields--column fields">
-                            <div class="form-container__fields-container">
+                            <div class="form-container__fields-container form-container__fields-container--column">
                                 <ul class="fields__list">
                                     <li class="fields__item field">
                                         <label class="field__label" for="name">Имя:*</label>
@@ -63,21 +63,21 @@
                             </div>
                         </fieldset>
                         <fieldset class="form-container__fields form-container__fields--column form-container__fields--weight fields--weight">
-                            <div class="form-container__fields-container form-container__fields-container--weight">
+                            <div class="form-container__fields-container form-container__fields-container--column  form-container__fields-container--weight">
                                 <ul class="fields__list">
-                                    <li class="fields__item field">
+                                    <li class="fields__item fields__item--weight field">
                                         <input class="visually-hidden" type="radio" name="goal" value="lose-weight" id="goal-lose-weight" checked>
                                         <label class="field__label field__label--radio" for="goal-lose-weight">
                                             Похудение
                                         </label>
                                     </li>
-                                    <li class="fields__item field">
+                                    <li class="fields__item fields__item--weight field">
                                         <input class="visually-hidden" type="radio" name="goal" value="gain-weight" id="goal-gain-weight">
                                         <label class="field__label field__label--radio" for="goal-gain-weight">
                                             Набор массы
                                         </label>
                                     </li>
-                                    <li class="fields__item field">
+                                    <li class="fields__item fields__item--weight field">
                                         <input class="visually-hidden" type="radio" name="goal" value="need-advice" id="goal-need-advice">
                                         <label class="field__label field__label--radio" for="goal-need-advice">
                                             Не знаю (Нужен ваш совет)
@@ -126,25 +126,25 @@
                         </legend>
                         <div class="form-container__fields-container">
                             <ul class="fields__list fields__list--additions">
-                                <li class="fields__item field">
+                                <li class="fields__item fields__item--addition field">
                                     <input class="visually-hidden" type="checkbox" name="additions" value="sweetener" id="additions-sweetener" checked>
                                     <label class="field__label field__label--checkbox" for="additions-sweetener">
                                         сахарозаменитель
                                     </label>
                                 </li>
-                                <li class="fields__item field">
+                                <li class="fields__item fields__item--addition field">
                                     <input class="visually-hidden" type="checkbox" name="additions" value="water" id="additions-water">
                                     <label class="field__label field__label--checkbox" for="additions-water">
                                         питьевая вода
                                     </label>
                                 </li>
-                                <li class="fields__item field">
+                                <li class="fields__item fields__item--addition field">
                                     <input class="visually-hidden" type="checkbox" name="additions" value="milk" id="additions-milk">
                                     <label class="field__label field__label--checkbox" for="additions-milk">
                                         молоко
                                     </label>
                                 </li>
-                                <li class="fields__item field">
+                                <li class="fields__item fields__item--addition field">
                                     <input class="visually-hidden" type="checkbox" name="additions" value="vitamin" id="additions-vitamin">
                                     <label class="field__label field__label--checkbox" for="additions-vitamin">
                                         витамины
