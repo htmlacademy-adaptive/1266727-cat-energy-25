@@ -9,21 +9,30 @@
 </head>
 
 <body class="page__body">
-    <header class="header">
+    <header class="header header--with-border">
         <div class="header__container">
             <a class="header__logo" href="#">
-                <img class="header__img" src="img/logo.svg" width="33" height="38" alt="Логотип Кэт Энерджи">
+                <img class="header__img header__img--logo-phone" src="img/logo-phone.svg" width="33" height="38"
+                    alt="Логотип Кэт Энерджи">
+                <img class="header__img header__img--logo-tablet" src="img/logo-tablet.svg" width="174" height="52"
+                    alt="Логотип Кэт Энерджи">
+                <img class="header__img header__img--logo-desktop" src="img/logo-desktop.svg" width="202" height="59"
+                    alt="Логотип Кэт Энерджи">
             </a>
             <a class="header__text-logo" href="#">
-                <img class="header__img" src="img/text-logo-header.svg" width="101" height="18" alt="Текстовый логотип Кэт Энерджи">
+                <img class="header__img" src="img/text-logo-header.svg" width="101" height="18"
+                    alt="Текстовый логотип Кэт Энерджи">
             </a>
             <button class="header__toggle header__toggle--closed" type="button"></button>
         </div>
         <nav class="header__navigation header__navigation--closed navigation">
-            <ul class="navigation__list">
-                <li class="navigation__item navigation__item--active"><a class="navigation__link" href="index.html">Главная</a></li>
-                <li class="navigation__item"><a class="navigation__link" href="catalog.html">Каталог продукции</a></li>
-                <li class="navigation__item"><a class="navigation__link" href="form.html">Подбор программы</a></li>
+            <ul class="navigation__list navigation__list--index">
+                <li class="navigation__item"><a
+                        class="navigation__link navigation__link--index" href="index.html">Главная</a></li>
+                <li class="navigation__item"><a class="navigation__link navigation__link--index"
+                        href="catalog.html">Каталог продукции</a></li>
+                <li class="navigation__item navigation__item--active"><a class="navigation__link navigation__link--index"
+                        href="form.html">Подбор программы</a></li>
             </ul>
         </nav>
     </header>
@@ -243,32 +252,40 @@
         <section class="footer__address address address--with-background">
             <h2 class="visually-hidden">Контактные данные</h2>
             <p class="address__note">Приглашаем к сотрудничеству дилеров!</p>
-            <p class="address__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+            <div class="address__container">
+                <p class="address__text">ул. Большая Конюшенная, д. 19/8</p>
+                <p class="address__text">Санкт-Петербург</p>
+            </div>
         </section>
-        <img class="footer__map" src="img/map.png" width="320" height="362" alt="Где мы находимся на карте"></div>
-        <div class="footer__container">
-            <div class="footer__logo footer-logo">
-                <a class="footer-logo__link" href="#">
+        <div class="footer__map-container">
+            <img class="footer__map footer__map--phone" src="img/map-phone.png" width="320" height="362" alt="Где мы находимся на карте">
+            <img class="footer__map footer__map--tablet" src="img/map-tablet.png" width="768" height="400" alt="Где мы находимся на карте">
+            <img class="footer__map footer__map--desktop" src="img/map-desktop.png" width="1440" height="400" alt="Где мы находимся на карте">
+        </div>
+        <div class="footer__bottom-line bottom-line">
+            <div class="bottom-line__logo">
+                <a href="#">
                     <img src="img/text-logo-footer.svg" width="128" height="24" alt="Текстовый логотип Кэт Энерджи">
                 </a>
             </div>
-            <div class="footer__social-links social-links">
+            <div class="bottom-line__social-links social-links">
                 <ul class="social-links__list">
                     <li class="social-links__item social-links__item--vk">
-                        <a href="#">VK</a>
+                        <a href="#" aria-label="VK"></a>
                     </li>
                     <li class="social-links__item social-links__item--youtube">
-                        <a href="#">Youtube</a>
+                        <a href="#" aria-label="Youtube"></a>
                     </li>
-                    <li class="social-links__item social-links__telegram">
-                        <a href="#">Telegram</a>
+                    <li class="social-links__item social-links__item--telegram">
+                        <a href="#" aria-label="Telegram"></a>
                     </li>
                 </ul>
             </div>
-            <div class="footer__copyright copyright">
+            <div class="bottom-line__copyright copyright">
                 <span class="copyright__text">HTML Academy</span>
                 <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-                    <img class="copyright__logo" src="img/copyright-logo.svg" width="27" height="34" alt="Логотип HTML Academy">
+                    <img class="copyright__logo" src="img/copyright-logo.svg" width="27" height="34"
+                        alt="Логотип HTML Academy">
                 </a>
             </div>
         </div>
