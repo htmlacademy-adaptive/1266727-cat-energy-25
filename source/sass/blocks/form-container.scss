@@ -11,7 +11,7 @@
     color: variables.$basic-black;
 
     @media (min-width: variables.$tablet-width) {
-        padding: 65px 69px 0;
+        padding: 65px 70px 0;
         font-size: 60px;
         line-height: 60px;
         margin-bottom: 54px;
@@ -31,7 +31,7 @@
 
     @media (min-width: variables.$tablet-width) {
         padding: 0;
-        padding-left: 69px;
+        padding-left: 70px;
         font-size: 20px;
         line-height: 30px;
         width: 330px;
@@ -44,6 +44,10 @@
 
     @media (min-width: variables.$tablet-width) {
         padding: 0 71px;
+    }
+
+    &--weight {
+        padding: 0;
     }
 }
 
@@ -87,9 +91,9 @@
 
     &--weight {
         @media (min-width: variables.$tablet-width) {
-            margin-top: 7px;
-            border: 1px solid variables.$light-grey;
+            margin: 7px 71px 70px;
             padding: 25px 28px;
+            border: 1px solid variables.$light-grey;
         }
 
         @media (min-width: variables.$desktop-width) {
@@ -142,6 +146,7 @@
     text-align: center;
 
     @media (min-width: variables.$tablet-width) {
+        margin: 0;
         font-size: 16px;
         text-align: left;
     }

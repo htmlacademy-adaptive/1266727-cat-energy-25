@@ -21,6 +21,10 @@
 
     &--with-border {
         border-bottom: 1px solid variables.$light-grey;
+
+        @media (min-width: variables.$tablet-width) {
+            border: none;
+        }
     }
 }
 
