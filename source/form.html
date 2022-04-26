@@ -10,7 +10,7 @@
 
 <body class="page__body">
     <div class="page__container">
-        <header class="header">
+        <header class="header header--with-border">
             <div class="header__container">
                 <a class="header__logo" href="#">
                     <img class="header__img header__img--logo-phone" src="img/logo-phone.svg" width="33" height="38"
@@ -43,44 +43,48 @@
             <section class="form-container__form">
                 <h2 class="visually-hidden">Поля анкеты</h2>
                 <form action="https://echo.htmlacademy.ru">
-                    <div class="form-container__fields-container">
+                    <div class="form-container__fields-group">
                         <fieldset class="form-container__fields form-container__fields--column fields">
-                            <ul class="fields__list">
-                                <li class="fields__item field">
-                                    <label class="field__label" for="name">Имя:*</label>
-                                    <input class="field__input" id="name" type="text" name="name" placeholder="Барсик" required>
-                                </li>
-                                <li class="fields__item field">
-                                    <label class="field__label" for="weight">Вес (кг):*</label>
-                                    <input class="field__input" id="weight" type="text" name="weight" placeholder="7" required>
-                                </li>
-                                <li class="fields__item field">
-                                    <label class="field__label" for="age">Возраст (лет):</label>
-                                    <input class="field__input" id="age" type="text" name="age" placeholder="7">
-                                </li>
-                            </ul>
+                            <div class="form-container__fields-container">
+                                <ul class="fields__list">
+                                    <li class="fields__item field">
+                                        <label class="field__label" for="name">Имя:*</label>
+                                        <input class="field__input" id="name" type="text" name="name" placeholder="Барсик" required>
+                                    </li>
+                                    <li class="fields__item field">
+                                        <label class="field__label" for="weight">Вес (кг):*</label>
+                                        <input class="field__input" id="weight" type="text" name="weight" placeholder="7" required>
+                                    </li>
+                                    <li class="fields__item field">
+                                        <label class="field__label" for="age">Возраст (лет):</label>
+                                        <input class="field__input" id="age" type="text" name="age" placeholder="7">
+                                    </li>
+                                </ul>
+                            </div>
                         </fieldset>
                         <fieldset class="form-container__fields form-container__fields--column form-container__fields--weight fields--weight">
-                            <ul class="fields__list">
-                                <li class="fields__item field">
-                                    <input class="visually-hidden" type="radio" name="goal" value="lose-weight" id="goal-lose-weight" checked>
-                                    <label class="field__label field__label--radio" for="goal-lose-weight">
-                                        Похудение
-                                    </label>
-                                </li>
-                                <li class="fields__item field">
-                                    <input class="visually-hidden" type="radio" name="goal" value="gain-weight" id="goal-gain-weight">
-                                    <label class="field__label field__label--radio" for="goal-gain-weight">
-                                        Набор массы
-                                    </label>
-                                </li>
-                                <li class="fields__item field">
-                                    <input class="visually-hidden" type="radio" name="goal" value="need-advice" id="goal-need-advice">
-                                    <label class="field__label field__label--radio" for="goal-need-advice">
-                                        Не знаю (Нужен ваш совет)
-                                    </label>
-                                </li>
-                            </ul>
+                            <div class="form-container__fields-container">
+                                <ul class="fields__list">
+                                    <li class="fields__item field">
+                                        <input class="visually-hidden" type="radio" name="goal" value="lose-weight" id="goal-lose-weight" checked>
+                                        <label class="field__label field__label--radio" for="goal-lose-weight">
+                                            Похудение
+                                        </label>
+                                    </li>
+                                    <li class="fields__item field">
+                                        <input class="visually-hidden" type="radio" name="goal" value="gain-weight" id="goal-gain-weight">
+                                        <label class="field__label field__label--radio" for="goal-gain-weight">
+                                            Набор массы
+                                        </label>
+                                    </li>
+                                    <li class="fields__item field">
+                                        <input class="visually-hidden" type="radio" name="goal" value="need-advice" id="goal-need-advice">
+                                        <label class="field__label field__label--radio" for="goal-need-advice">
+                                            Не знаю (Нужен ваш совет)
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div>
                         </fieldset>
                     </div>
                     <fieldset class="form-container__fields fields fields--with-legend">
@@ -116,7 +120,7 @@
                             </div>
                         </div>
                     </fieldset>
-                    <fieldset class="form-container__fields form-container__fields--without-margin-bottom fields fields--with-legend">
+                    <fieldset class="form-container__fields form-container__fields--last fields fields--with-legend">
                         <legend class="fields__legend">
                             Дополнительно
                         </legend>

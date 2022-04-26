@@ -1,15 +1,7 @@
 @use "../variables.scss";
 
-.form-container {
-    padding: 27px 0;
-
-    @media (min-width: variables.$tablet-width) {
-        padding: 0;
-    }
-}
-
 .form-container__title {
-    padding: 0 20px;
+    padding: 27px 20px 0;
     margin: 0;
     margin-bottom: 37px;
     font-family: variables.$primary-font;
@@ -48,12 +40,16 @@
 }
 
 .form-container__fields-container {
-    display: flex;
-    flex-flow: column nowrap;
+    padding: 0 20px;
 
     @media (min-width: variables.$tablet-width) {
         padding: 0 71px;
     }
+}
+
+.form-container__fields-group {
+    display: flex;
+    flex-flow: column nowrap;
 
     @media (min-width: variables.$desktop-width) {
         flex-flow: row nowrap;
@@ -64,10 +60,9 @@
     margin-bottom: 22px;
     border: none;
     border-bottom: 1px solid variables.$light-grey;
-    padding: 0 20px 11px;
+    padding-bottom: 24px;
 
     @media (min-width: variables.$tablet-width) {
-        padding: 0;
         margin-bottom: 65px;
         border: none;
     }
@@ -102,13 +97,15 @@
         }
     }
 
-    &--without-margin-bottom {
+    &--last {
         margin-bottom: 0;
+        border: none;
     }
 }
 
 .form-container__footer {
-    margin-top: 22px;
+    margin-top: 10px;
+    margin-bottom: 32px;
     display: flex;
     flex-flow: column nowrap;
     padding: 0 20px;
@@ -134,8 +131,9 @@
 }
 
 .form-container__note {
-    padding: 0 0 5px;
+    padding: 0;
     margin: 0;
+    margin-top: 21px;
     font-family: variables.$secondary-font;
     font-size: 14px;
     line-height: 16px;
