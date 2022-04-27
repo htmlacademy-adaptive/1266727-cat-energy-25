@@ -7,10 +7,16 @@
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
+
+    @media (min-width: variables.$tablet-width) {
+        display: grid;
+        grid-template-columns: 324px 324px;
+        column-gap: 60px;
+        row-gap: 60px;
+    }
 }
 
 .products__item {
-    margin: 0;
     width: 320px;
 
     @media (min-width: variables.$tablet-width) {
