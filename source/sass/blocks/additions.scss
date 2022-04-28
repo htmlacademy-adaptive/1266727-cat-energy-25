@@ -25,14 +25,18 @@
     display: flex;
     flex-flow: column nowrap;
     padding: 0 20px;
+    margin-bottom: 35px;
 
     @media (min-width: variables.$tablet-width) {
         padding: 0 30px;
+        margin-bottom: 69px;
     }
 
     @media (min-width: variables.$desktop-width) {
+        padding: 0 110px;
         flex-flow: row nowrap;
         justify-content: space-between;
+        margin-bottom: 86px;
     }
 }
 
@@ -55,24 +59,29 @@
         line-height: 36px;
         margin-bottom: 80px;
     }
+
+    @media (min-width: variables.$tablet-width) {
+        margin-left: 70px;
+        padding: 0 40px;
+    }
 }
 
 .additions__list {
     margin: 0;
-    margin-bottom: 35px;
     padding: 0;
     list-style: none;
     border-top: 1px solid variables.$special-grey;
 
     @media (min-width: variables.$tablet-width) {
-        margin-bottom: 69px;
         border: 1px solid variables.$special-grey;
         border-bottom: none;
     }
 
     @media (min-width: variables.$desktop-width) {
         flex-grow: 1;
-        margin-right: 80px;
+        margin-right: 79px;
+        border: none;
+        border-top: 1px solid variables.$special-grey;
     }
 }
 
@@ -94,7 +103,7 @@
     }
 
     @media (min-width: variables.$desktop-width) {
-        width: 280px;
-        height: 290px;
+        width: 245px;
+        height: 289px;
     }
 }

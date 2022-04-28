@@ -23,11 +23,15 @@
 
     @media (min-width: variables.$desktop-width) {
         flex-flow: column nowrap;
+
+        &::before {
+            background-image: url("../../img/promo-desktop.png");
+        }
     }
 }
 
 .promo__container {
-    padding: 59px 60px 43px 60px;
+    padding: 59px 60px 43px;
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
@@ -37,6 +41,11 @@
         flex-flow: row nowrap;
         padding: 57px 124px 60px 77px;
     }
+
+    @media (min-width: variables.$desktop-width) {
+        flex-flow: column nowrap;
+        padding: 56px 40px 42px;
+    }
 }
 
 .promo__icon {
@@ -44,6 +53,7 @@
     height: 80px;
     background-image: url("../../img/gift-phone.svg");
     margin-bottom: 48px;
+    z-index: 1;
 
     @media (min-width: variables.$tablet-width) {
         width: 80px;
