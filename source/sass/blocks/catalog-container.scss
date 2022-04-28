@@ -30,6 +30,8 @@
 }
 
 .catalog-container__products {
+    margin-bottom: 25px;
+
     @media (min-width: variables.$tablet-width) {
         padding: 0 30px;
         margin-bottom: 68px;
@@ -41,10 +43,9 @@
 }
 
 .catalog-container__additions {
-    padding: 25px 20px;
-
     @media (min-width: variables.$tablet-width) {
         padding: 0;
+        margin-bottom: 76px;
     }
 
     @media (min-width: variables.$desktop-width) {

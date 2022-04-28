@@ -3,10 +3,6 @@
 .promo {
     background-color: variables.$basic-green;
     position: relative;
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
-    justify-content: center;
 
     &::before {
         content: "";
@@ -20,11 +16,26 @@
     }
 
     @media (min-width: variables.$tablet-width) {
-        flex-flow: row nowrap;
+        &::before {
+            background-image: url("../../img/promo-tablet.png");
+        }
     }
 
     @media (min-width: variables.$desktop-width) {
         flex-flow: column nowrap;
+    }
+}
+
+.promo__container {
+    padding: 59px 60px 43px 60px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: space-between;
+
+    @media (min-width: variables.$tablet-width) {
+        flex-flow: row nowrap;
+        padding: 57px 124px 60px 77px;
     }
 }
 
@@ -35,8 +46,10 @@
     margin-bottom: 48px;
 
     @media (min-width: variables.$tablet-width) {
-        margin-bottom: 0;
-        margin-right: 50px;
+        width: 80px;
+        height: 83px;
+        margin: 0;
+        background-image: url("../../img/gift-tablet.svg");
     }
 
     @media (min-width: variables.$desktop-width) {
