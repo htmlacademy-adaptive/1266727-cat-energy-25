@@ -29,7 +29,7 @@
 
     @media (min-width: variables.$tablet-width) {
         padding: 0 30px;
-        margin-bottom: 69px;
+        margin-bottom: 76px;
     }
 
     @media (min-width: variables.$desktop-width) {
@@ -60,7 +60,7 @@
         margin-bottom: 80px;
     }
 
-    @media (min-width: variables.$tablet-width) {
+    @media (min-width: variables.$desktop-width) {
         margin-left: 70px;
         padding: 0 40px;
     }
@@ -71,15 +71,18 @@
     padding: 0;
     list-style: none;
     border-top: 1px solid variables.$special-grey;
+    margin-bottom: 35px;
 
     @media (min-width: variables.$tablet-width) {
         border: 1px solid variables.$special-grey;
         border-bottom: none;
+        margin-bottom: 69px;
     }
 
     @media (min-width: variables.$desktop-width) {
         flex-grow: 1;
         margin-right: 79px;
+        margin-bottom: 0;
         border: none;
         border-top: 1px solid variables.$special-grey;
     }

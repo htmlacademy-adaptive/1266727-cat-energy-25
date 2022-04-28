@@ -35,21 +35,15 @@
     }
 
     &--next {
-        padding: 78px 20px 25px;
+        padding: 25px 0;
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-content: center;
         text-align: center;
-        background-image: url("../../img/next-products-phone.svg");
-        background-position: 50% 25px;
-        background-size: 30px 30px;
-        background-repeat: no-repeat;
 
         @media (min-width: variables.$tablet-width) {
-            background-image: url("../../img/next-products-desktop.svg");
-            background-size: 60px 60px;
-            background-position: 132px 133px;
-            padding: 242px 38px 38px 38px;
-            display: flex;
-            flex-flow: column nowrap;
-            align-items: center;
+            padding: 132px 38px 38px;
         }
 
         &::after {
@@ -158,6 +152,20 @@
         @media (min-width: variables.$tablet-width) {
             display: block;
         }
+    }
+}
+
+.product__icon {
+    background-image: url("../../img/next-products-phone.svg");
+    width: 30px;
+    height: 30px;
+    margin-bottom: 23px;
+
+    @media (min-width: variables.$tablet-width) {
+        background-image: url("../../img/next-products-desktop.svg");
+        width: 60px;
+        height: 60px;
+        margin-bottom: 49px;
     }
 }
 
