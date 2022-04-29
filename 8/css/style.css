@@ -1222,6 +1222,7 @@ input:checked + .field__label--checkbox::after {
   color: #000000;
   background-color: #ffffff;
   max-width: 187px;
+  display: inline-block;
 }
 @media (min-width: 768px) {
   .fields__legend {
