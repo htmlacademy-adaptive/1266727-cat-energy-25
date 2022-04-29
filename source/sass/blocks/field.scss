@@ -4,6 +4,52 @@
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
+    position: relative;
+    margin: 0;
+    padding: 0;
+
+    &--email {
+        &::after {
+            content: "";
+            position: absolute;
+            top: 17px;
+            right: 15px;
+            width: 20px;
+            height: 14px;
+            background-image: url("../../img/email.svg");
+            background-size: 20px 14px;
+        }
+
+        @media (min-width: variables.$tablet-width) {
+            &::after {
+                width: 18px;
+                height: 13px;
+                top: 19px;
+                right: 20px;
+                background-size: 18px 13px;
+            }
+        }
+    }
+
+    &--phone {
+        &::after {
+            content: "";
+            position: absolute;
+            top: 14px;
+            right: 12px;
+            width: 20px;
+            height: 20px;
+            background-image: url("../../img/phone.svg");
+            background-size: 20px 20px;
+        }
+
+        @media (min-width: variables.$tablet-width) {
+            &::after {
+                top: 16px;
+                right: 17px;
+            }
+        }
+    }
 }
 
 .field__label {
@@ -14,6 +60,12 @@
     color: variables.$special-dark-grey;
     text-transform: uppercase;
     margin-right: 13px;
+
+    @media (min-width: variables.$tablet-width) {
+        font-size: 20px;
+        line-height: 30px;
+        margin-right: 15px;
+    }
 }
 
 .field__label--radio {
@@ -22,6 +74,7 @@
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
+    margin-right: 0;
 
     &::before {
         content: "";
@@ -30,7 +83,16 @@
         height: 30px;
         border: 1px solid variables.$special-grey;
         border-radius: 50%;
-        margin-right: 13px;
+        margin-right: 16px;
+        box-sizing: border-box;
+    }
+
+    @media (min-width: variables.$tablet-width) {
+        &::before {
+            width: 40px;
+            height: 40px;
+            margin-right: 19px;
+        }
     }
 }
 
@@ -39,11 +101,20 @@ input:checked + .field__label--radio {
         content: "";
         position: absolute;
         top: 9px;
-        left: 10px;
+        left: 9px;
         width: 13px;
         height: 13px;
         border-radius: 50%;
         background-color: variables.$basic-green;
+    }
+
+    @media (min-width: variables.$tablet-width) {
+        &::after {
+            top: 11px;
+            left: 11px;
+            width: 18px;
+            height: 18px;
+        }
     }
 }
 
@@ -53,6 +124,7 @@ input:checked + .field__label--radio {
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
+    margin-right: 0;
 
     &::before {
         content: "";
@@ -61,6 +133,15 @@ input:checked + .field__label--radio {
         height: 26px;
         border: 1px solid variables.$special-grey;
         margin-right: 13px;
+        box-sizing: border-box;
+    }
+
+    @media (min-width: variables.$tablet-width) {
+        &::before {
+            width: 40px;
+            height: 40px;
+            margin-right: 19px;
+        }
     }
 }
 
@@ -69,10 +150,20 @@ input:checked + .field__label--checkbox {
         content: "";
         position: absolute;
         top: 7px;
-        left: 6px;
+        left: 4px;
         width: 18px;
         height: 14px;
         background-image: url("../../img/checkbox-mark.svg");
+    }
+
+    @media (min-width: variables.$tablet-width) {
+        &::after {
+            top: 12px;
+            left: 9px;
+            width: 24px;
+            height: 19px;
+            background-size: 24px 19px;
+        }
     }
 }
 
@@ -86,9 +177,24 @@ input:checked + .field__label--checkbox {
     text-transform: uppercase;
     padding: 14px;
     flex-grow: 1;
+    position: relative;
+
+    @media (min-width: variables.$tablet-width) {
+        font-size: 20px;
+        line-height: 30px;
+        padding: 10px 21px;
+    }
 
     &--textarea {
         resize: none;
         height: 150px;
+    }
+
+    &--email {
+        padding-right: 40px;
+    }
+
+    &--phone {
+        padding-right: 40px;
     }
 }

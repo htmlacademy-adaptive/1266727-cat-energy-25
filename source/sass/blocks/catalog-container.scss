@@ -2,6 +2,10 @@
 
 .catalog-container {
     padding: 0 0 15px;
+
+    @media (min-width: variables.$tablet-width) {
+        padding: 0;
+    }
 }
 
 .catalog-container__title {
@@ -15,17 +19,22 @@
     border-bottom: 1px solid variables.$special-grey-2;
 
     @media (min-width: variables.$tablet-width) {
-        padding: 30px;
+        padding: 79px 30px 0 30px;
+        border: none;
+        margin-bottom: 82px;
     }
 
     @media (min-width: variables.$desktop-width) {
-        padding: 30px 110px;
+        padding: 74px 110px 0 110px;
     }
 }
 
 .catalog-container__products {
+    margin-bottom: 25px;
+
     @media (min-width: variables.$tablet-width) {
         padding: 0 30px;
+        margin-bottom: 68px;
     }
 
     @media (min-width: variables.$desktop-width) {
@@ -34,13 +43,8 @@
 }
 
 .catalog-container__additions {
-    padding: 25px 20px;
-
     @media (min-width: variables.$tablet-width) {
-        padding: 25px 30px;
-    }
-
-    @media (min-width: variables.$desktop-width) {
-        padding: 25px 110px;
+        padding: 0;
+        margin-bottom: 76px;
     }
 }

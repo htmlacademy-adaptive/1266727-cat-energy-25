@@ -17,6 +17,10 @@
 
     &--with-background {
         background-color: variables.$basic-grey;
+
+        @media (min-width: variables.$desktop-width) {
+            background-color: variables.$basic-white;
+        }
     }
 }
 

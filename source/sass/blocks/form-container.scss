@@ -1,11 +1,7 @@
 @use "../variables.scss";
 
-.form-container {
-    padding: 27px 0;
-}
-
 .form-container__title {
-    padding: 0 20px;
+    padding: 27px 20px 0;
     margin: 0;
     margin-bottom: 37px;
     font-family: variables.$primary-font;
@@ -13,6 +9,18 @@
     line-height: 36px;
     font-weight: 400;
     color: variables.$basic-black;
+
+    @media (min-width: variables.$tablet-width) {
+        padding: 65px 70px 0;
+        font-size: 60px;
+        line-height: 60px;
+        margin-bottom: 54px;
+    }
+
+    @media (min-width: variables.$desktop-width) {
+        padding: 74px 110px 0;
+        margin-bottom: 56px;
+    }
 }
 
 .form-container__text {
@@ -25,64 +33,139 @@
     font-weight: 400;
     color: variables.$basic-black;
     text-transform: uppercase;
+
+    @media (min-width: variables.$tablet-width) {
+        padding: 0;
+        padding-left: 70px;
+        font-size: 20px;
+        line-height: 30px;
+        width: 330px;
+        margin-bottom: 66px;
+    }
+
+    @media (min-width: variables.$desktop-width) {
+        padding-left: 110px;
+    }
 }
 
 .form-container__fields-container {
-    display: flex;
-    flex-flow: column nowrap;
+    padding: 0 20px;
+
+    @media (min-width: variables.$tablet-width) {
+        padding: 0 70px;
+    }
 
     @media (min-width: variables.$desktop-width) {
-        flex-flow: row nowrap;
+        padding: 0 110px;
+    }
+
+    &--column {
+        @media (min-width: variables.$desktop-width) {
+            padding: 0;
+        }
+    }
+
+    &--weight {
+        @media (min-width: variables.$tablet-width) {
+            padding: 0;
+        }
+    }
+}
+
+.form-container__fields-group {
+    @media (min-width: variables.$desktop-width) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 80px;
+        margin-bottom: 69px;
+        padding: 0 110px;
     }
 }
 
 .form-container__fields {
     margin-bottom: 22px;
+    padding: 0;
+    padding-bottom: 24px;
     border: none;
     border-bottom: 1px solid variables.$light-grey;
 
+    @media (min-width: variables.$tablet-width) {
+        padding-bottom: 0;
+        margin-bottom: 65px;
+        border: none;
+    }
+
+    @media (min-width: variables.$desktop-width) {
+        margin-bottom: 69px;
+    }
+
     &--with-legend {
         border-top: 2px solid variables.$basic-green;
+
+        @media (min-width: variables.$tablet-width) {
+            padding: 0 70px;
+            margin-bottom: 65px;
+            border: none;
+        }
     }
 
     &--column {
         @media (min-width: variables.$desktop-width) {
             flex: 1 1 0;
-            margin: 10px;
+            margin: 0;
+            padding: 0;
             border: none;
         }
     }
 
     &--weight {
         @media (min-width: variables.$tablet-width) {
-            margin: 41px;
+            margin: 7px 70px 70px;
+            padding: 25px 28px;
             border: 1px solid variables.$light-grey;
-            padding: 25px;
-            padding-bottom: 0;
         }
 
         @media (min-width: variables.$desktop-width) {
             margin: 0;
+            padding: 25px 28px;
         }
+    }
+
+    &--last {
+        margin-bottom: 0;
+        border: none;
     }
 }
 
-.form-container__container {
+.form-container__footer {
+    margin-top: 10px;
+    margin-bottom: 32px;
     display: flex;
     flex-flow: column nowrap;
+    padding: 0 20px;
 
     @media (min-width: variables.$tablet-width) {
-        flex-flow: row nowrap;
+        margin-top: 54px;
+        margin-bottom: 72px;
+        padding: 0 70px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 61px;
         align-items: center;
+    }
+
+    @media (min-width: variables.$desktop-width) {
+        margin-top: 61px;
+        margin-bottom: 82px;
+        padding: 0 110px;
+        grid-template-columns: 568px 568px;
+        column-gap: 81px;
     }
 }
 
 .form-container__buttons {
-    padding: 0 20px;
-
-    @media (min-width: variables.$tablet-width) {
-        flex: 1 1 0;
-    }
+    padding: 0;
+    margin: 0;
 }
 
 .form-container__button {
@@ -90,8 +173,9 @@
 }
 
 .form-container__note {
-    padding: 0 0 5px;
+    padding: 0;
     margin: 0;
+    margin-top: 21px;
     font-family: variables.$secondary-font;
     font-size: 14px;
     line-height: 16px;
@@ -100,7 +184,8 @@
     text-align: center;
 
     @media (min-width: variables.$tablet-width) {
-        flex: 1 1 0;
+        margin: 0;
+        font-size: 16px;
         text-align: left;
     }
 }
