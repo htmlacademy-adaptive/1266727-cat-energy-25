@@ -111,6 +111,29 @@
     }
 }
 
+.lead__image {
+    display: block;
+
+    @media (min-width: variables.$tablet-width) {
+        display: block;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+        width: 709px;
+        height: 609px;
+    }
+
+    @media (min-width: variables.$desktop-width) {
+        display: block;
+        position: absolute;
+        top: 32px;
+        left: 558px;
+        width: 552px;
+        height: 499px;
+        z-index: 0;
+    }
+}
 
 .lead__button {
     width: 100%;
