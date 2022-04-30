@@ -31,6 +31,11 @@
             height: 694px;
             z-index: -1;
             background-image: url("../../img/lead-background-desktop.png");
+
+            @media (min-resolution: 2dppx) {
+                background-image: url("../../img/lead-background-desktop@2x.png");
+                background-size: 720px 694px;
+            }
         }
 
         &::after {

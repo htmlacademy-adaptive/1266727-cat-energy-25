@@ -36,6 +36,11 @@
         background-repeat: no-repeat;
         z-index: -1;
 
+        @media (min-resolution: 2dppx) {
+            background-image: url("../../img/lead-background-phone@2x.png");
+            background-size: 320px 302px;
+        }
+
         @media (min-width: variables.$tablet-width) {
             display: none;
         }
