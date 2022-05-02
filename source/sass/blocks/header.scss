@@ -67,16 +67,16 @@
     background-position: center;
 }
 
-.header__toggle--opened::before {
-    background-image: url("../../img/toggle-close.svg");
-    width: 20px;
-    height: 20px;
+.header__toggle-icon {
+    display: none;
 }
 
-.header__toggle--closed::before {
-    background-image: url("../../img/toggle-open.svg");
-    width: 24px;
-    height: 18px;
+.header__toggle--closed .header__toggle-icon--open {
+    display: block;
+}
+
+.header__toggle--opened .header__toggle-icon--close {
+    display: block;
 }
 
 .header__text-logo {

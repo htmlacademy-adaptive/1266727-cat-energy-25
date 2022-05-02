@@ -12,18 +12,29 @@
     <header class="header header--with-border">
         <div class="header__container">
             <a class="header__logo" href="#">
-                <img class="header__img header__img--logo-phone" src="img/logo-phone.svg" width="33" height="38"
-                    alt="Логотип Кэт Энерджи">
-                <img class="header__img header__img--logo-tablet" src="img/logo-tablet.svg" width="174" height="52"
-                    alt="Логотип Кэт Энерджи">
-                <img class="header__img header__img--logo-desktop" src="img/logo-desktop.svg" width="202" height="59"
-                    alt="Логотип Кэт Энерджи">
+                <svg class="header__img header__img--logo-phone" width="33" height="38">
+                    <use xlink:href="img/sprite.svg#logo-phone"></use>
+                </svg>
+                <svg class="header__img header__img--logo-tablet" width="174" height="52">
+                    <use xlink:href="img/sprite.svg#logo-tablet"></use>
+                </svg>
+                <svg class="header__img header__img--logo-desktop" width="202" height="59">
+                    <use xlink:href="img/sprite.svg#logo-desktop"></use>
+                </svg>
             </a>
             <a class="header__text-logo" href="#">
-                <img class="header__img" src="img/text-logo-header.svg" width="101" height="18"
-                    alt="Текстовый логотип Кэт Энерджи">
+                <svg class="header__img" width="101" height="18">
+                    <use xlink:href="img/sprite.svg#text-logo"></use>
+                </svg>
             </a>
-            <button class="header__toggle header__toggle--closed" type="button"></button>
+            <button class="header__toggle header__toggle--closed" type="button">
+                <svg class="header__toggle-icon header__toggle-icon--open" width="24" height="18">
+                    <use xlink:href="img/sprite.svg#toggle-open"></use>
+                </svg>
+                <svg class="header__toggle-icon header__toggle-icon--close" width="20" height="20">
+                    <use xlink:href="img/sprite.svg#toggle-close"></use>
+                </svg>
+            </button>
         </div>
         <nav class="header__navigation header__navigation--closed navigation">
             <ul class="navigation__list navigation__list--index">
@@ -270,7 +281,7 @@
         </section>
     </main>
     <footer class="footer">
-        <section class="footer__address address address--with-background">
+        <section class="footer__address address">
             <h2 class="visually-hidden">Контактные данные</h2>
             <p class="address__note">Приглашаем к сотрудничеству дилеров!</p>
             <div class="address__container">
@@ -287,33 +298,48 @@
         </div>
         <div class="footer__bottom-line bottom-line">
             <div class="bottom-line__logo">
-                <a href="#">
-                    <img src="img/text-logo-footer.svg" width="128" height="24" alt="Текстовый логотип Кэт Энерджи">
+                <a href="#" aria-label="Сайт Cat Energy">
+                    <svg role="img" width="128" height="24">
+                        <use xlink:href="img/sprite.svg#text-logo"></use>
+                    </svg>
                 </a>
             </div>
             <div class="bottom-line__social-links social-links">
                 <ul class="social-links__list">
                     <li class="social-links__item social-links__item--vk">
-                        <a href="#" aria-label="VK"></a>
+                        <a href="#" aria-label="VK">
+                            <svg aria-hidden="true" class="social-links__icon social-links__icon--vk" width="28" height="22">
+                                <use xlink:href="img/sprite.svg#vk"></use>
+                            </svg>
+                        </a>
                     </li>
                     <li class="social-links__item social-links__item--youtube">
-                        <a href="#" aria-label="Youtube"></a>
+                        <a href="#" aria-label="Youtube">
+                            <svg aria-hidden="true" class="social-links__icon social-links__icon--youtube" width="28" height="22">
+                                <use xlink:href="img/sprite.svg#youtube"></use>
+                            </svg>
+                        </a>
                     </li>
                     <li class="social-links__item social-links__item--telegram">
-                        <a href="#" aria-label="Telegram"></a>
+                        <a href="#" aria-label="Telegram">
+                            <svg aria-hidden="true" class="social-links__icon social-links__icon--telegram" width="28" height="22">
+                                <use xlink:href="img/sprite.svg#telegram"></use>
+                            </svg>
+                        </a>
                     </li>
                 </ul>
             </div>
             <div class="bottom-line__copyright copyright">
                 <span class="copyright__text">HTML Academy</span>
                 <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-                    <img class="copyright__logo" src="img/copyright-logo.svg" width="27" height="34"
-                        alt="Логотип HTML Academy">
+                    <svg class="copyright__logo" width="27" height="34">
+                        <use xlink:href="img/sprite.svg#copyright-logo"></use>
+                    </svg>
                 </a>
             </div>
         </div>
     </footer>
-    <script type="text/javascript" src="js/menu.js"></script>
+<script type="text/javascript" src="js/menu.js"></script>
 </body>
 
 </html>
