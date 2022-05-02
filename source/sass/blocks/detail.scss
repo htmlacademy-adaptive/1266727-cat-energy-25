@@ -6,7 +6,7 @@
     align-items: center;
     position: relative;
     padding-top: 14px;
-    width: 124px;
+    width: 100%;
     height: 70px;
 
     @media (min-width: variables.$tablet-width) {
@@ -20,7 +20,7 @@
         position: absolute;
         top: 0;
         left: 0;
-        width: 124px;
+        width: 100%;
         height: 56px;
         box-sizing: border-box;
         border: 1px solid variables.$special-grey;
@@ -81,7 +81,7 @@
     font-weight: 400;
     color: variables.$special-dark-grey;
     background-color: variables.$special-light-grey;
-    width: 87px;
+    width: 70.2%;
     text-align: center;
     box-sizing: border-box;
     z-index: 1;
