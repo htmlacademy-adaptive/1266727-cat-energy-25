@@ -92,6 +92,7 @@
         grid-column: 1;
         grid-row: 1;
         align-self: flex-end;
+        width: 418px;
     }
 }
 
@@ -120,6 +121,15 @@
         height: 609px;
         text-align: center;
     }
+
+    @media (min-width: variables.$desktop-width) {
+        position: absolute;
+        top: 32px;
+        left: 558px;
+        width: 552px;
+        height: 499px;
+        z-index: 0;
+    }
 }
 
 .lead__image {
@@ -129,13 +139,8 @@
     }
 
     @media (min-width: variables.$desktop-width) {
-        display: block;
-        position: absolute;
-        top: 32px;
-        left: 558px;
         width: 552px;
         height: 499px;
-        z-index: 0;
     }
 }
 

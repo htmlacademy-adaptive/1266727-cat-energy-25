@@ -45,6 +45,9 @@
     @media (min-width: variables.$desktop-width) {
         display: flex;
         flex-flow: row nowrap;
+        justify-content: space-between;
+        column-gap: 0;
+        row-gap: 0;
     }
 }
 
