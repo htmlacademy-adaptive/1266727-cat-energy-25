@@ -36,9 +36,9 @@
 
     @media (min-width: variables.$tablet-width) {
         display: grid;
-        grid-template-columns: 230px 230px;
+        grid-template-columns: 1fr 1fr;
         grid-template-rows: 280px;
-        column-gap: 153px;
+        column-gap: 21.6%;
         row-gap: 37px;
     }
 

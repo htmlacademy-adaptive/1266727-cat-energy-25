@@ -10,7 +10,6 @@
     height: 70px;
 
     @media (min-width: variables.$tablet-width) {
-        width: 162px;
         height: 77px;
         box-sizing: border-box;
     }
@@ -27,7 +26,6 @@
         border-radius: 3px;
 
         @media (min-width: variables.$tablet-width) {
-            width: 162px;
             height: 72px;
         }
     }
@@ -81,7 +79,6 @@
     font-weight: 400;
     color: variables.$special-dark-grey;
     background-color: variables.$special-light-grey;
-    width: 70.2%;
     text-align: center;
     box-sizing: border-box;
     z-index: 1;

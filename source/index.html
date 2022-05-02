@@ -58,16 +58,18 @@
                 <div class="lead__container">
                     <h2 class="lead__title">Функциональное питание для котов</h2>
                     <p class="lead__text">Занялся собой? Займись котом!</p>
-                    <picture>
-                        <source type="image/webp" media="(min-width: 1440px)" srcset="img/can-desktop.webp 1x, img/can-desktop@2x.webp 2x">
-                        <source type="image/webp" media="(min-width: 768px)" srcset="img/can-tablet.webp 1x, img/can-tablet@2x.webp 2x">
-                        <source type="image/webp" srcset="img/can-phone.webp 1x, img/can-phone@2x.webp 2x">
+                    <div class="lead__image-container">
+                        <picture>
+                            <source type="image/webp" media="(min-width: 1440px)" srcset="img/can-desktop.webp 1x, img/can-desktop@2x.webp 2x">
+                            <source type="image/webp" media="(min-width: 768px)" srcset="img/can-tablet.webp 1x, img/can-tablet@2x.webp 2x">
+                            <source type="image/webp" srcset="img/can-phone.webp 1x, img/can-phone@2x.webp 2x">
 
-                        <source media="(min-width: 1440px)" srcset="img/can-desktop.png 1x, img/can-desktop@2x.png 2x">
-                        <source media="(min-width: 768px)" srcset="img/can-tablet.png 1x, img/can-tablet@2x.png 2x">
-                        <img class="lead__image" src="img/can-phone.png" srcset="img/can-phone@2x.png 2x" width="280" height="270"
-                            alt="Банка Кэт Энерджи">
-                    </picture>
+                            <source media="(min-width: 1440px)" srcset="img/can-desktop.png 1x, img/can-desktop@2x.png 2x">
+                            <source media="(min-width: 768px)" srcset="img/can-tablet.png 1x, img/can-tablet@2x.png 2x">
+                            <img class="lead__image" src="img/can-phone.png" srcset="img/can-phone@2x.png 2x" width="280" height="270"
+                                alt="Банка Кэт Энерджи">
+                        </picture>
+                    </div>
                     <button class="lead__button button button--primary">Подобрать программу</button>
                 </div>
             </section>
@@ -166,25 +168,27 @@
                         </dl>
                     </div>
                     <div class="example__slider slider">
-                        <input class="visually-hidden slider__input slider__input--left" type="radio" name="slider"
-                            value="before" id="slider-before" checked>
-                        <img class="slider__image slider__image--before" src="img/cat-fat.png" srcset="img/cat-fat@2x.png 2x" width="280"
-                            height="232" alt="Изображение до">
-                        <input class="visually-hidden slider__input slider__input--right" type="radio" name="slider"
-                            value="after" id="slider-after">
-                        <img class="slider__image slider__image--after" src="img/cat-skinny.png" srcset="img/cat-skinny@2x.png 2x" width="243"
-                            height="232" alt="Изображение после">
-                        <div class="slider__half-images">
-                            <img class="slider__half-image" src="img/cat-fat-half.png" srcset="img/cat-fat-half@2x.png 2x" width="296"
-                            height="511" alt="Изображение до">
-                            <img class="slider__half-image" src="img/cat-skinny-half.png" srcset="img/cat-skinny-half@2x.png 2x" width="296"
-                                height="511" alt="Изображение после">
+                        <div class="slider__container">
+                            <input class="visually-hidden slider__input slider__input--left" type="radio" name="slider"
+                                value="before" id="slider-before" checked>
+                            <img class="slider__image slider__image--before" src="img/cat-fat.png" srcset="img/cat-fat@2x.png 2x" width="280"
+                                height="232" alt="Изображение до">
+                            <input class="visually-hidden slider__input slider__input--right" type="radio" name="slider"
+                                value="after" id="slider-after">
+                            <img class="slider__image slider__image--after" src="img/cat-skinny.png" srcset="img/cat-skinny@2x.png 2x" width="243"
+                                height="232" alt="Изображение после">
+                            <div class="slider__half-images">
+                                <img class="slider__half-image" src="img/cat-fat-half.png" srcset="img/cat-fat-half@2x.png 2x" width="296"
+                                height="511" alt="Изображение до">
+                                <img class="slider__half-image" src="img/cat-skinny-half.png" srcset="img/cat-skinny-half@2x.png 2x" width="296"
+                                    height="511" alt="Изображение после">
+                            </div>
+                            <label class="slider__label slider__label--before"
+                            for="slider-before">было</label><div
+                            class="slider__control"></div><label
+                            class="slider__label slider__label--after"
+                                for="slider-after">стало</label>
                         </div>
-                        <label class="slider__label slider__label--before"
-                        for="slider-before">было</label><div
-                        class="slider__control"></div><label
-                        class="slider__label slider__label--after"
-                            for="slider-after">стало</label>
                     </div>
                 </div>
             </section>

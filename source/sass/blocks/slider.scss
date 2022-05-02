@@ -1,11 +1,16 @@
 @use "../variables.scss";
 
 .slider {
-    text-align: center;
     background-color: variables.$special-light-grey;
+}
+
+.slider__container {
+    text-align: center;
 
     @media (min-width: variables.$tablet-width) {
         position: relative;
+        width: 591px;
+        margin: 0 auto;
         padding-top: 366px;
     }
 
@@ -42,7 +47,7 @@
         display: flex;
         position: absolute;
         top: -161px;
-        left: 84px;
+        left: 0;
         flex-flow: row nowrap;
         justify-content: center;
     }
