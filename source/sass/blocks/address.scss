@@ -35,6 +35,7 @@
     color: variables.$special-black;
     text-transform: uppercase;
     flex: 1 1 0;
+    margin-right: 15px;
 
     @media (min-width: variables.$tablet-width) {
         font-size: 20px;
