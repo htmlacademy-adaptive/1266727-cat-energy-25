@@ -36,6 +36,11 @@
         background-repeat: no-repeat;
         z-index: -1;
 
+        @media (min-resolution: 2dppx) {
+            background-image: url("../../img/lead-background-phone@2x.png");
+            background-size: 320px 302px;
+        }
+
         @media (min-width: variables.$tablet-width) {
             display: none;
         }
@@ -107,37 +112,26 @@
 }
 
 .lead__image {
-    &--phone {
-        @media (min-width: variables.$tablet-width) {
-            display: none;
-        }
+    display: block;
+
+    @media (min-width: variables.$tablet-width) {
+        display: block;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+        width: 709px;
+        height: 609px;
     }
 
-    &--tablet {
-        display: none;
-
-        @media (min-width: variables.$tablet-width) {
-            display: block;
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            z-index: -1;
-        }
-
-        @media (min-width: variables.$desktop-width) {
-            display: none;
-        }
-    }
-
-    &--desktop {
-        display: none;
-
-        @media (min-width: variables.$desktop-width) {
-            display: block;
-            position: absolute;
-            top: 32px;
-            left: 558px;
-        }
+    @media (min-width: variables.$desktop-width) {
+        display: block;
+        position: absolute;
+        top: 32px;
+        left: 558px;
+        width: 552px;
+        height: 499px;
+        z-index: 0;
     }
 }
 

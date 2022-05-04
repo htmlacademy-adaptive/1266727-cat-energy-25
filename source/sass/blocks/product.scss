@@ -142,15 +142,73 @@
 .product__img {
     display: block;
 
-    @media (min-width: variables.$tablet-width) {
-        display: none;
-    }
-
-    &--desktop {
-        display: none;
+    &--can-chicken-500 {
+        width: 68px;
+        height: 86px;
 
         @media (min-width: variables.$tablet-width) {
-            display: block;
+            width: 161px;
+            height: 172px;
+        }
+    }
+
+    &--can-chicken-1000 {
+        width: 84px;
+        height: 101px;
+
+        @media (min-width: variables.$tablet-width) {
+            width: 168px;
+            height: 206px;
+        }
+    }
+
+    &--can-fish-500 {
+        width: 68px;
+        height: 78px;
+
+        @media (min-width: variables.$tablet-width) {
+            width: 163px;
+            height: 174px;
+        }
+    }
+
+    &--can-fish-1000 {
+        width: 84px;
+        height: 101px;
+
+        @media (min-width: variables.$tablet-width) {
+            width: 168px;
+            height: 200px;
+        }
+    }
+
+    &--can-buckwheat-500 {
+        width: 68px;
+        height: 78px;
+
+        @media (min-width: variables.$tablet-width) {
+            width: 161px;
+            height: 171px;
+        }
+    }
+
+    &--can-buckwheat-1000 {
+        width: 84px;
+        height: 100px;
+
+        @media (min-width: variables.$tablet-width) {
+            width: 168px;
+            height: 200px;
+        }
+    }
+
+    &--can-rice-500 {
+        width: 72px;
+        height: 84px;
+
+        @media (min-width: variables.$tablet-width) {
+            width: 163px;
+            height: 174px;
         }
     }
 }
