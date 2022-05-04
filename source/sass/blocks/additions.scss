@@ -96,11 +96,10 @@
 .additions__promo {
     margin: 0;
     border-bottom: 1px solid variables.$special-grey;
-    width: 280px;
+    width: 100%;
     height: 290px;
 
     @media (min-width: variables.$tablet-width) {
-        width: 100%;
         height: 200px;
         box-sizing: border-box;
     }

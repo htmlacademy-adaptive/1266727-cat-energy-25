@@ -11,12 +11,12 @@
         height: 100%;
         background-image: url("../../img/promo-phone.png");
         background-repeat: no-repeat;
-        background-size: 100% 100%;
+        background-size: cover;
         opacity: 0.15;
 
         @media (min-resolution: 2dppx) {
             background-image: url("../../img/promo-phone@2x.png");
-            background-size: 279px 289px;
+            background-size: cover;
         }
     }
 
@@ -26,7 +26,7 @@
 
             @media (min-resolution: 2dppx) {
                 background-image: url("../../img/promo-tablet@2x.png");
-                background-size: 707px 200px;
+                background-size: cover;
             }
         }
     }
