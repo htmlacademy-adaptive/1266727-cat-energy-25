@@ -2,7 +2,7 @@
 
 .example {
     background-color: variables.$special-light-grey;
-    padding: 25px 20px 40px;
+    padding: 25px 20px 44px;
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
@@ -132,7 +132,8 @@
 
     &--wide {
         grid-column: 1 / 3;
-        margin-top: 20px;
+        margin-top: 5px;
+        height: 21px;
 
         @media (min-width: variables.$tablet-width) {
             grid-column: auto;
