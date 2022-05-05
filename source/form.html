@@ -63,12 +63,12 @@
                                         <input class="field__input" id="name" type="text" name="name" placeholder="Барсик" required>
                                     </li>
                                     <li class="fields__item field">
-                                        <label class="field__label" for="weight">Вес (кг):*</label>
-                                        <input class="field__input" id="weight" type="text" name="weight" placeholder="7" required>
+                                        <label class="field__label field__label--number" for="weight">Вес (кг):*</label>
+                                        <input class="field__input field__input--number" id="weight" type="number" name="weight" placeholder="7" required>
                                     </li>
                                     <li class="fields__item field">
-                                        <label class="field__label" for="age">Возраст (лет):</label>
-                                        <input class="field__input" id="age" type="text" name="age" placeholder="7">
+                                        <label class="field__label field__label--number" for="age">Возраст (лет):</label>
+                                        <input class="field__input field__input--number" id="age" type="number" name="age" placeholder="7">
                                     </li>
                                 </ul>
                             </div>
@@ -98,7 +98,7 @@
                             </div>
                         </fieldset>
                     </div>
-                    <fieldset class="form-container__fields fields fields--with-legend">
+                    <fieldset class="form-container__fields form-container__fields--with-legend fields fields--with-legend">
                         <h3 class="fields__legend">
                             Контактные данные (владельца кота)
                         </h3>
@@ -110,15 +110,15 @@
                                         placeholder="kuklachev@gmail.com" required>
                                 </li>
                                 <li class="fields__item fields__item--contact field field--phone">
-                                    <label class="field__label" for="phone">Телефон:*</label>
+                                    <label class="field__label field__label--phone" for="phone">Телефон:*</label>
                                     <input class="field__input field__input--phone" id="phone" type="text" name="phone"
                                         placeholder="8 (960) 900-60-90" required>
                                 </li>
                             </ul>
                         </div>
                     </fieldset>
-                    <fieldset class="form-container__fields fields fields--with-legend">
-                        <h3 class="fields__legend">
+                    <fieldset class="form-container__fields form-container__fields--with-legend fields fields--with-legend">
+                        <h3 class="fields__legend fields__legend--comment">
                             Комментарий
                         </h3>
                         <div class="form-container__fields-container">
@@ -131,7 +131,7 @@
                             </div>
                         </div>
                     </fieldset>
-                    <fieldset class="form-container__fields form-container__fields--last fields fields--with-legend">
+                    <fieldset class="form-container__fields form-container__fields--with-legend form-container__fields--last fields fields--with-legend">
                         <h3 class="fields__legend">
                             Дополнительно
                         </h3>
@@ -166,10 +166,10 @@
                     </fieldset>
                     <div class="form-container__footer">
                         <p class="form-container__buttons">
-                            <input class="form-container__button button button--primary" type="submit" value="отправить заявку">
+                            <input class="form-container__button button button--primary button--submit" type="submit" value="отправить заявку">
                         </p>
                         <p class="form-container__note">
-                            <small>
+                            <small class="form-container__note-text">
                                 * — Обязательные поля
                             </small>
                         </p>
@@ -180,16 +180,17 @@
         <footer class="footer">
             <section class="footer__address address address--with-background">
                 <h2 class="visually-hidden">Контактные данные</h2>
-                <p class="address__note">Приглашаем к сотрудничеству дилеров!</p>
+                <p class="address__note">Приглашаем<br class="address__br"> к сотрудничеству дилеров!</p>
                 <div class="address__container">
-                    <p class="address__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+                    <p class="address__text">ул. Большая Конюшенная, д. 19/8</p>
+                    <p class="address__text">Санкт-Петербург</p>
                 </div>
             </section>
             <div class="footer__map-outer-container">
                 <div class="footer__map-inner-container">
                     <picture>
-                        <source media="(min-width: 1440px)" srcset="img/map-desktop.png 1x, img/map-desktop@2x.png 2x">
-                        <source media="(min-width: 768px)" srcset="img/map-tablet.png 1x, img/map-tablet@2x.png 2x">
+                        <!-- <source media="(min-width: 1440px)" srcset="img/map-desktop.png 1x, img/map-desktop@2x.png 2x">
+                        <source media="(min-width: 768px)" srcset="img/map-tablet.png 1x, img/map-tablet@2x.png 2x"> -->
                         <img class="footer__map" src="img/map-phone.png" srcset="img/map-phone@2x.png 2x" width="320" height="362" alt="Где мы находимся на карте">
                     </picture>
                 </div>

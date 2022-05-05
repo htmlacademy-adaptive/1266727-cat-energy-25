@@ -66,6 +66,14 @@
         line-height: 30px;
         margin-right: 15px;
     }
+
+    &--number {
+        margin-right: 17px;
+    }
+
+    &--phone {
+        margin-right: 10px;
+    }
 }
 
 .field__label--radio {
@@ -129,10 +137,10 @@ input:checked + .field__label--radio {
     &::before {
         content: "";
         display: inline-block;
-        width: 26px;
-        height: 26px;
+        width: 30px;
+        height: 30px;
         border: 1px solid variables.$special-grey;
-        margin-right: 13px;
+        margin-right: 17px;
         box-sizing: border-box;
     }
 
@@ -150,7 +158,7 @@ input:checked + .field__label--checkbox {
         content: "";
         position: absolute;
         top: 7px;
-        left: 4px;
+        left: 6px;
         width: 18px;
         height: 14px;
         background-image: url("../../img/checkbox-mark.svg");
@@ -175,7 +183,7 @@ input:checked + .field__label--checkbox {
     font-weight: 400;
     color: variables.$special-dark-grey;
     text-transform: uppercase;
-    padding: 14px;
+    padding: 14px 15px 12px;
     flex-grow: 1;
     position: relative;
 
@@ -185,16 +193,21 @@ input:checked + .field__label--checkbox {
         padding: 10px 21px;
     }
 
+    &--number {
+        padding-left: 15px;
+    }
+
     &--textarea {
         resize: none;
-        height: 150px;
+        height: 128px;
+        padding: 8px 14px 12px;
     }
 
     &--email {
-        padding-right: 40px;
+        padding: 13px 40px 12px 13px;
     }
 
     &--phone {
-        padding-right: 40px;
+        padding: 13px 40px 13px 15px;
     }
 }

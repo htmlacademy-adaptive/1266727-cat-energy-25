@@ -52,6 +52,11 @@
     @media (min-width: variables.$desktop-width) {
         margin-left: 70px;
     }
+
+    &--comment {
+        padding-right: 25px;
+        margin-bottom: 38px;
+    }
 }
 
 .fields__list {
@@ -93,6 +98,10 @@
     }
 
     &--addition {
+        &:not(:last-child) {
+            margin-bottom: 12px;
+        }
+
         @media (min-width: variables.$desktop-width) {
             &:not(:last-child) {
                 margin-bottom: 0;

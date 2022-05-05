@@ -26,7 +26,7 @@
 .form-container__text {
     padding: 0 74px 0 20px;
     margin: 0;
-    margin-bottom: 39px;
+    margin-bottom: 38px;
     font-family: variables.$primary-font;
     font-size: 14px;
     line-height: 18px;
@@ -84,6 +84,7 @@
 
 .form-container__fields {
     margin-bottom: 22px;
+    margin-left: 0;
     padding: 0;
     padding-bottom: 24px;
     border: none;
@@ -101,6 +102,8 @@
 
     &--with-legend {
         border-top: 2px solid variables.$basic-green;
+        border: none;
+        margin-bottom: -1px;
 
         @media (min-width: variables.$tablet-width) {
             padding: 0 70px;
@@ -119,6 +122,9 @@
     }
 
     &--weight {
+        padding-bottom: 17px;
+        margin-bottom: 26px;
+
         @media (min-width: variables.$tablet-width) {
             margin: 7px 70px 70px;
             padding: 25px 28px;
@@ -133,13 +139,12 @@
 
     &--last {
         margin-bottom: 0;
-        border: none;
     }
 }
 
 .form-container__footer {
     margin-top: 10px;
-    margin-bottom: 32px;
+    margin-bottom: 31px;
     display: flex;
     flex-flow: column nowrap;
     padding: 0 20px;
@@ -175,7 +180,7 @@
 .form-container__note {
     padding: 0;
     margin: 0;
-    margin-top: 21px;
+    margin-top: 22px;
     font-family: variables.$secondary-font;
     font-size: 14px;
     line-height: 16px;
@@ -188,4 +193,9 @@
         font-size: 16px;
         text-align: left;
     }
+}
+
+.form-container__note-text {
+    font-size: 14px;
+    line-height: 16px;
 }
