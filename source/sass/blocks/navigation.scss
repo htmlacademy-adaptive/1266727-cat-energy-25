@@ -42,6 +42,10 @@
         }
     }
 
+    @media (min-width: variables.$desktop-width) {
+        margin-right: 35px;
+    }
+
     &--active {
         @media (min-width: variables.$tablet-width) {
             &::after {
@@ -52,6 +56,12 @@
                 right: 0;
                 left: 0;
                 background-color: variables.$basic-green;
+            }
+        }
+
+        @media (min-width: variables.$desktop-width) {
+            &::after {
+                bottom: 5px;
             }
         }
     }

@@ -48,6 +48,7 @@
         @media (min-width: variables.$desktop-width) {
             display: grid;
             grid-template-columns: 1fr 162px;
+            padding-top: 0;
         }
     }
 }
@@ -112,6 +113,7 @@
 
     @media (min-width: variables.$desktop-width) {
         text-align: center;
+        margin-left: -4px;
     }
 }
 
@@ -134,5 +136,6 @@
 
     @media (min-width: variables.$desktop-width) {
         text-align: left;
+        margin-bottom: 0;
     }
 }

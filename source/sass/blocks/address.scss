@@ -46,6 +46,7 @@
 
     @media (min-width: variables.$desktop-width) {
         align-self: center;
+        padding-top: 0;
     }
 }
 
@@ -58,6 +59,12 @@
         justify-content: space-between;
         align-items: flex-end;
         align-self: stretch;
+    }
+
+    @media (min-width: variables.$desktop-width) {
+        align-items: flex-start;
+        padding-left: 92px;
+        padding-top: 7px;
     }
 }
 
@@ -76,5 +83,9 @@
         max-width: 160px;
         text-align: right;
         flex-grow: 0;
+    }
+
+    @media (min-width: variables.$desktop-width) {
+        text-align: left;
     }
 }

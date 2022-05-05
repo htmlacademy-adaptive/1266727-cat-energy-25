@@ -94,6 +94,10 @@
             background-color: variables.$basic-green;
         }
     }
+
+    @media (min-width: variables.$desktop-width) {
+        top: -3px;
+    }
 }
 
 .slider__label {
@@ -133,6 +137,10 @@
                 display: none;
             }
         }
+
+        @media (min-width: variables.$desktop-width) {
+            top: 3px;
+        }
     }
 
     &--after {
@@ -156,6 +164,10 @@
             &::before {
                 display: none;
             }
+        }
+
+        @media (min-width: variables.$desktop-width) {
+            top: 3px;
         }
     }
 }

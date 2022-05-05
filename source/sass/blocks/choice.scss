@@ -22,7 +22,7 @@
         grid-template-columns: 134px 1fr;
         align-items: center;
         row-gap: 23px;
-        column-gap: 47px;
+        column-gap: 28px;
     }
 
     &--gain-weight {
@@ -60,6 +60,8 @@
             padding-left: 0;
             width: 100px;
             height: 106px;
+            top: auto;
+            left: auto;
         }
     }
 
@@ -80,6 +82,8 @@
         @media (min-width: variables.$desktop-width) {
             width: 134px;
             height: 100px;
+            top: 4px;
+            left: -19px;
         }
     }
 }
@@ -101,6 +105,12 @@
     }
 }
 
+.choice--gain-weight .choice__title {
+    @media (min-width: variables.$desktop-width) {
+        padding-top: 7px;
+    }
+}
+
 .choice__text {
     margin: 0;
     padding: 0;
@@ -118,8 +128,14 @@
     }
 
     @media (min-width: variables.$desktop-width) {
-        padding-top: 16px;
+        padding-top: 17px;
         grid-column: 1 / 3;
+    }
+}
+
+.choice--gain-weight .choice__text {
+    @media (min-width: variables.$desktop-width) {
+        padding-top: 23px;
     }
 }
 

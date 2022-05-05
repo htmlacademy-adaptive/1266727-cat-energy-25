@@ -115,6 +115,7 @@
     @media (min-width: variables.$desktop-width) {
         grid-column: 1;
         grid-row: 2;
+        margin-bottom: 51px;
     }
 }
 
@@ -130,8 +131,8 @@
 
     @media (min-width: variables.$desktop-width) {
         position: absolute;
-        top: 32px;
-        left: 558px;
+        top: 29px;
+        left: 559px;
         width: 552px;
         height: 499px;
         z-index: 0;
