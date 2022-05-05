@@ -34,7 +34,7 @@
         flex-flow: column nowrap;
         align-items: flex-start;
         justify-content: center;
-        width: 230px;
+        width: 249px;
         height: 280px;
 
         &::after {
@@ -55,11 +55,21 @@
         &::before {
             background-image: url("../../img/leaf.svg");
         }
+
+        &::after {
+            right: 23px;
+            top: 8px;
+        }
     }
 
     &--second {
         &::before {
             background-image: url("../../img/tub.svg");
+        }
+
+        &::after {
+            right: 5px;
+            top: 10px;
         }
     }
 
@@ -67,11 +77,21 @@
         &::before {
             background-image: url("../../img/eat.svg");
         }
+
+        &::after {
+            right: 0;
+            top: 10px;
+        }
     }
 
     &--fourth {
         &::before {
             background-image: url("../../img/alarm.svg");
+        }
+
+        &::after {
+            right: 0;
+            top: 10px;
         }
     }
 }

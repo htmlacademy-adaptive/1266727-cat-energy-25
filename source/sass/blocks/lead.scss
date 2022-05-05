@@ -63,8 +63,10 @@
 }
 
 .lead__container {
+    position: relative;
+
     @media (min-width: variables.$tablet-width) {
-        padding: 0 87px;
+        padding: 0 88px;
         width: 79%;
         margin: 0 auto;
     }
@@ -105,6 +107,8 @@
     text-transform: uppercase;
 
     @media (min-width: variables.$tablet-width) {
+        font-size: 20px;
+        line-height: 20px;
         margin-bottom: 49px;
     }
 
@@ -117,8 +121,8 @@
 .lead__image-container {
     @media (min-width: variables.$tablet-width) {
         position: absolute;
-        right: 0;
         left: 0;
+        top: 202px;
         z-index: -1;
         height: 609px;
         text-align: center;

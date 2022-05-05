@@ -8,7 +8,7 @@
     align-items: center;
 
     @media (min-width: variables.$tablet-width) {
-        padding: 56px 70px;
+        padding: 58px 70px 62px;
     }
 
     @media (min-width: variables.$desktop-width) {
@@ -40,6 +40,8 @@
     @media (min-width: variables.$tablet-width) {
         font-size: 20px;
         line-height: 26px;
+        max-width: 236px;
+        padding-top: 2px;
     }
 
     @media (min-width: variables.$desktop-width) {
@@ -55,6 +57,7 @@
         flex-flow: column nowrap;
         justify-content: space-between;
         align-items: flex-end;
+        align-self: stretch;
     }
 }
 

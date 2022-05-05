@@ -11,7 +11,7 @@
         flex-flow: row nowrap;
         justify-content: space-between;
         align-items: center;
-        padding: 58px 30px 55px;
+        padding: 57px 30px 55px;
     }
 
     @media (min-width: variables.$desktop-width) {
@@ -28,6 +28,7 @@
 
     @media (min-width: variables.$tablet-width) {
         padding: 0;
+        padding-top: 4px;
     }
 }
 
@@ -40,7 +41,9 @@
     @media (min-width: variables.$tablet-width) {
         padding: 0;
         border: none;
-        width: 200px;
+        position: relative;
+        top: -2px;
+        left: 13px;
     }
 }
 
@@ -49,5 +52,7 @@
 
     @media (min-width: variables.$tablet-width) {
         padding: 0;
+        position: relative;
+        top: -1px;
     }
 }

@@ -7,11 +7,9 @@
     position: relative;
     padding-top: 14px;
     width: 100%;
-    height: 70px;
+    box-sizing: border-box;
 
     @media (min-width: variables.$tablet-width) {
-        height: 77px;
-        box-sizing: border-box;
     }
 
     &::before {
@@ -32,7 +30,7 @@
 
     &--line {
         flex-flow: row nowrap;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: flex-start;
         padding: 0;
 
@@ -43,6 +41,8 @@
         @media (min-width: variables.$tablet-width) {
             flex-flow: column nowrap;
             align-items: flex-end;
+            justify-content: flex-start;
+            padding-top: 10px;
         }
 
         @media (min-width: variables.$desktop-width) {
@@ -129,6 +129,7 @@
     @media (min-width: variables.$tablet-width) {
         font-size: 20px;
         line-height: 20px;
+        margin-bottom: 10px;
     }
 
     @media (min-width: variables.$desktop-width) {
