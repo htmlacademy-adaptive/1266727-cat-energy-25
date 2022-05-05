@@ -81,6 +81,24 @@
     }
 }
 
+.navigation__list--form .navigation__item {
+    @media (min-width: variables.$tablet-width) {
+        margin-right: 35px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
+
+.navigation__list--form .navigation__item--active {
+    @media (min-width: variables.$tablet-width) {
+        &::after {
+            bottom: 5px;
+        }
+    }
+}
+
 .navigation__link {
     font-family: variables.$primary-font;
     font-size: 20px;
