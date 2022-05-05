@@ -140,13 +140,13 @@
 
     &--wide {
         grid-column: 1 / 3;
-        margin-top: 5px;
-        width: 179px;
+        padding-top: 19px;
+        width: 186px;
 
         @media (min-width: variables.$tablet-width) {
             justify-self: end;
             grid-column: auto;
-            margin-top: 0;
+            padding-top: 9px;
         }
 
         @media (min-width: variables.$desktop-width) {

@@ -10,6 +10,7 @@
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
+    justify-content: flex-start;
     // outline: 1px solid red;
 
     &::before {
@@ -93,5 +94,13 @@
             right: 0;
             top: 10px;
         }
+    }
+}
+
+.reason__br {
+    display: none;
+
+    @media (min-width: variables.$tablet-width) {
+        display: inline;
     }
 }
