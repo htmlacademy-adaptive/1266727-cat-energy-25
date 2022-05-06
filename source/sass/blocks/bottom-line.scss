@@ -55,4 +55,8 @@
         position: relative;
         top: -2px;
     }
+
+    @media (min-width: variables.$desktop-width) {
+        top: 0;
+    }
 }

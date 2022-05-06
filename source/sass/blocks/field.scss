@@ -73,6 +73,16 @@
         @media (min-width: variables.$tablet-width) {
             margin-right: 19px;
         }
+
+        @media (min-width: variables.$desktop-width) {
+            margin-right: 18px;
+        }
+    }
+
+    &--email {
+        @media (min-width: variables.$desktop-width) {
+            margin-right: 23px;
+        }
     }
 
     &--phone {
@@ -81,6 +91,10 @@
         @media (min-width: variables.$tablet-width) {
             margin-right: 14px;
             margin-left: -3px;
+        }
+
+        @media (min-width: variables.$desktop-width) {
+            margin-right: 18px;
         }
     }
 }
@@ -227,6 +241,10 @@ input:checked + .field__label--checkbox {
         @media (min-width: variables.$tablet-width) {
             padding: 9px 18px 11px 21px;
         }
+
+        @media (min-width: variables.$desktop-width) {
+            padding-left: 17px;
+        }
     }
 
     &--phone {
@@ -234,6 +252,10 @@ input:checked + .field__label--checkbox {
 
         @media (min-width: variables.$tablet-width) {
             padding: 9px 18px 11px 21px;
+        }
+
+        @media (min-width: variables.$desktop-width) {
+            padding-left: 17px;
         }
     }
 }
