@@ -64,14 +64,14 @@
     @media (min-width: variables.$tablet-width) {
         font-size: 20px;
         line-height: 30px;
-        margin-right: 18px;
+        margin-right: 16px;
     }
 
     &--number {
         margin-right: 17px;
 
         @media (min-width: variables.$tablet-width) {
-            margin-right: 19px;
+            margin-right: 18px;
         }
 
         @media (min-width: variables.$desktop-width) {
@@ -80,6 +80,12 @@
     }
 
     &--email {
+        margin-right: 12px;
+
+        @media (min-width: variables.$tablet-width) {
+            margin-right: 18px;
+        }
+
         @media (min-width: variables.$desktop-width) {
             margin-right: 23px;
         }
@@ -227,7 +233,7 @@ input:checked + .field__label--checkbox {
     &--textarea {
         resize: none;
         height: 128px;
-        padding: 8px 14px 12px;
+        padding: 8px 14px 12px 15px;
 
         @media (min-width: variables.$tablet-width) {
             padding: 9px 18px 11px 19px;
