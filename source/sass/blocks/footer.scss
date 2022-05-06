@@ -68,6 +68,14 @@
     }
 }
 
+.footer--form .footer__map-inner-container {
+    &::after {
+        @media (min-width: variables.$tablet-width) {
+            top: 143px;
+        }
+    }
+}
+
 .footer__map {
     display: block;
     object-fit: contain;

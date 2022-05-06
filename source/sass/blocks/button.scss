@@ -42,5 +42,10 @@
     &--submit {
         font-size: 16px;
         line-height: 20px;
+
+        @media (min-width: variables.$tablet-width) {
+            font-size: 20px;
+            line-height: 20px;
+        }
     }
 }

@@ -52,7 +52,7 @@
     padding: 0 20px;
 
     @media (min-width: variables.$tablet-width) {
-        padding: 0 70px;
+        padding: 0 65px 0 72px;
     }
 
     @media (min-width: variables.$desktop-width) {
@@ -74,6 +74,18 @@
     &--weight {
         @media (min-width: variables.$tablet-width) {
             padding: 0;
+        }
+    }
+
+    &--comment {
+        @media (min-width: variables.$tablet-width) {
+            padding: 0px 67px 0 70px;
+        }
+    }
+
+    &--additions {
+        @media (min-width: variables.$tablet-width) {
+            padding: 0px 70px;
         }
     }
 }
@@ -107,9 +119,12 @@
     }
 
     &--with-legend {
-        border-top: 2px solid variables.$basic-green;
         border: none;
         margin-bottom: -1px;
+
+        @media (min-width: variables.$tablet-width) {
+            margin-bottom: 65px;
+        }
     }
 
     &--column {
@@ -150,8 +165,8 @@
     padding: 0 20px;
 
     @media (min-width: variables.$tablet-width) {
-        margin-top: 54px;
-        margin-bottom: 72px;
+        margin-top: 53px;
+        margin-bottom: 71px;
         padding: 0 70px;
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -190,7 +205,7 @@
 
     @media (min-width: variables.$tablet-width) {
         margin: 0;
-        font-size: 16px;
+        margin-top: -5px;
         text-align: left;
     }
 }
@@ -198,4 +213,8 @@
 .form-container__note-text {
     font-size: 14px;
     line-height: 16px;
+
+    @media (min-width: variables.$tablet-width) {
+        font-size: 16px;
+    }
 }

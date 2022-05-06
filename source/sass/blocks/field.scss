@@ -71,12 +71,17 @@
         margin-right: 17px;
 
         @media (min-width: variables.$tablet-width) {
-            margin-right: 20px;
+            margin-right: 19px;
         }
     }
 
     &--phone {
         margin-right: 10px;
+
+        @media (min-width: variables.$tablet-width) {
+            margin-right: 14px;
+            margin-left: -3px;
+        }
     }
 }
 
@@ -209,13 +214,26 @@ input:checked + .field__label--checkbox {
         resize: none;
         height: 128px;
         padding: 8px 14px 12px;
+
+        @media (min-width: variables.$tablet-width) {
+            padding: 9px 18px 11px 19px;
+            height: 152px;
+        }
     }
 
     &--email {
         padding: 13px 40px 12px 13px;
+
+        @media (min-width: variables.$tablet-width) {
+            padding: 9px 18px 11px 21px;
+        }
     }
 
     &--phone {
         padding: 13px 40px 13px 15px;
+
+        @media (min-width: variables.$tablet-width) {
+            padding: 9px 18px 11px 21px;
+        }
     }
 }

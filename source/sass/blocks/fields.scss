@@ -18,7 +18,7 @@
 
         @media (min-width: variables.$tablet-width) {
             &::before {
-                top: 21px;
+                top: 22px;
             }
         }
     }
@@ -56,6 +56,18 @@
     &--comment {
         padding-right: 25px;
         margin-bottom: 38px;
+
+        @media (min-width: variables.$tablet-width) {
+            padding-right: 41px;
+            margin-bottom: 76px;
+        }
+    }
+
+    &--additions {
+        @media (min-width: variables.$tablet-width) {
+            padding-right: 42px;
+            margin-bottom: 57px;
+        }
     }
 }
 
@@ -69,6 +81,7 @@
             display: grid;
             grid-template-columns: 1fr 1fr;
             column-gap: 61px;
+            row-gap: 32px;
         }
 
         @media (min-width: variables.$desktop-width) {
@@ -106,6 +119,12 @@
     &--addition {
         &:not(:last-child) {
             margin-bottom: 12px;
+        }
+
+        @media (min-width: variables.$tablet-width) {
+            &:not(:last-child) {
+                margin-bottom: 0;
+            }
         }
 
         @media (min-width: variables.$desktop-width) {
