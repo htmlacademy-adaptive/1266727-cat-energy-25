@@ -20,6 +20,12 @@
         align-items: center;
         padding: 57px 110px 58px;
     }
+
+    &--catalog {
+        @media (min-width: variables.$tablet-width) {
+            padding: 58px 30px 59px;
+        }
+    }
 }
 
 .bottom-line__logo {
@@ -49,6 +55,10 @@
 
 .bottom-line--catalog .bottom-line__social-links {
     padding-right: 24px;
+
+    @media (min-width: variables.$tablet-width) {
+        padding: 0;
+    }
 }
 
 .bottom-line__copyright {

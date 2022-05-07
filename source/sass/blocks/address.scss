@@ -23,6 +23,12 @@
             background-color: variables.$basic-white;
         }
     }
+
+    &--catalog {
+        @media (min-width: variables.$tablet-width) {
+            padding: 58px 70px 60px;
+        }
+    }
 }
 
 .address__note {

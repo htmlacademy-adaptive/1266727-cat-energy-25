@@ -81,7 +81,8 @@
     }
 }
 
-.navigation__list--form .navigation__item {
+.navigation__list--form .navigation__item,
+.navigation__list--catalog .navigation__item {
     @media (min-width: variables.$tablet-width) {
         margin-right: 36px;
 
@@ -91,7 +92,8 @@
     }
 }
 
-.navigation__list--form .navigation__item--active {
+.navigation__list--form .navigation__item--active,
+.navigation__list--catalog .navigation__item--active {
     @media (min-width: variables.$tablet-width) {
         &::after {
             bottom: 5px;

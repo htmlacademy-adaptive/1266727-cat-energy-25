@@ -20,8 +20,8 @@
 .product-details__attribute,
 .product-details__value {
     @media (min-width: variables.$tablet-width) {
-        padding-top: 7px;
-        padding-bottom: 8px;
+        padding-top: 9px;
+        padding-bottom: 9px;
         border-bottom: 1px solid variables.$special-grey;
     }
 }
