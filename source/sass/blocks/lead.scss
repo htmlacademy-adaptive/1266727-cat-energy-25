@@ -156,6 +156,8 @@
 
     @media (min-width: variables.$tablet-width) {
         width: 244px;
+        position: relative;
+        left: 2px;
     }
 
     @media (min-width: variables.$desktop-width) {

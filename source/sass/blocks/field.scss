@@ -231,7 +231,7 @@ input:checked + .field__label--checkbox {
     position: absolute;
 
     &--email {
-        top: 17px;
+        top: 16px;
         right: 15px;
 
         @media (min-width: variables.$tablet-width) {
@@ -242,9 +242,14 @@ input:checked + .field__label--checkbox {
 
     &--phone {
         top: 14px;
-        right: 12px;
+        right: 13px;
 
         @media (min-width: variables.$tablet-width) {
+            top: 16px;
+            right: 18px;
+        }
+
+        @media (min-width: variables.$desktop-width) {
             top: 15px;
             right: 17px;
         }
