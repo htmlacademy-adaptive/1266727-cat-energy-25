@@ -69,6 +69,7 @@
     flex-flow: row nowrap;
     align-items: center;
     margin-right: 0;
+    cursor: pointer;
 
     &::before {
         content: "";
@@ -87,6 +88,16 @@
             height: 40px;
             margin-right: 19px;
         }
+    }
+
+    &:hover {
+        &::before {
+            border-color: variables.$special-grey-3;
+        }
+    }
+
+    &:active {
+        opacity: 0.3;
     }
 }
 
@@ -119,6 +130,7 @@ input:checked + .field__label--radio {
     flex-flow: row nowrap;
     align-items: center;
     margin-right: 0;
+    cursor: pointer;
 
     &::before {
         content: "";
@@ -136,6 +148,16 @@ input:checked + .field__label--radio {
             height: 40px;
             margin-right: 19px;
         }
+    }
+
+    &:hover {
+        &::before {
+            border-color: variables.$special-grey-3;
+        }
+    }
+
+    &:active {
+        opacity: 0.3;
     }
 }
 
@@ -225,6 +247,20 @@ input:checked + .field__label--checkbox {
             padding-left: 17px;
         }
     }
+
+    &:hover {
+        border-color: variables.$special-grey;
+    }
+
+    &:focus {
+        border-color: variables.$special-dark-grey;
+        outline: 1px solid variables.$special-dark-grey;
+    }
+
+    &:invalid {
+        border-color: variables.$status-error;
+        outline: 1px solid variables.$status-error;
+    }
 }
 
 .field__icon {
@@ -254,4 +290,12 @@ input:checked + .field__label--checkbox {
             right: 17px;
         }
     }
+}
+
+.field__input:focus ~  .field__icon {
+    color: variables.$basic-green;
+}
+
+.field__input:invalid ~  .field__icon {
+    color: variables.$status-error;
 }

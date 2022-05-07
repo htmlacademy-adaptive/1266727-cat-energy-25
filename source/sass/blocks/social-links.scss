@@ -14,3 +14,15 @@
     width: 28px;
     height: 22px;
 }
+
+.social-links__link {
+    color: variables.$special-dark-grey-3;
+
+    &:hover {
+        color: variables.$basic-green;
+    }
+
+    &:active {
+        opacity: 0.3;
+    }
+}

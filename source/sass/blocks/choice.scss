@@ -77,7 +77,7 @@
         @media (min-width: variables.$desktop-width) {
             width: 134px;
             height: 100px;
-            top: 4px;
+            top: 0;
             left: -19px;
         }
     }
@@ -102,7 +102,7 @@
 
 .choice--gain-weight .choice__title {
     @media (min-width: variables.$desktop-width) {
-        padding-top: 7px;
+        padding-top: 4px;
     }
 }
 
@@ -171,6 +171,7 @@
     @media (min-width: variables.$tablet-width) {
         font-size: 20px;
         line-height: 30px;
+        padding-right: 51px;
     }
 
     &::after {
@@ -186,10 +187,25 @@
             top: 10px;
         }
 
-        @media (min-width: variables.$tablet-width) {
-            right: -13px;
+        @media (min-width: variables.$desktop-width) {
             top: 8px;
         }
+    }
 
+    &:hover {
+        padding-right: 49px;
+
+        &::after {
+            background-image: url("../../img/arrow-long.svg");
+            width: 32px;
+        }
+
+        @media (min-width: variables.$tablet-width) {
+            padding-right: 59px;
+        }
+    }
+
+    &:active {
+        opacity: 0.3;
     }
 }

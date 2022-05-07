@@ -130,6 +130,14 @@
             display: block;
         }
     }
+
+    &:hover {
+        opacity: 0.8;
+    }
+
+    &:active {
+        opacity: 0.6;
+    }
 }
 
 .header--with-border .header__img {

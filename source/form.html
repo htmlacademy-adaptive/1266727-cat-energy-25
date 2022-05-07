@@ -60,11 +60,11 @@
                                 <ul class="fields__list">
                                     <li class="fields__item field">
                                         <label class="field__label" for="name">Имя:*</label>
-                                        <input class="field__input" id="name" type="text" name="name" placeholder="Барсик" required>
+                                        <input class="field__input" id="name" type="text" name="name" placeholder="Барсик">
                                     </li>
                                     <li class="fields__item field">
                                         <label class="field__label field__label--number" for="weight">Вес (кг):*</label>
-                                        <input class="field__input field__input--number" id="weight" type="number" name="weight" placeholder="7" required>
+                                        <input class="field__input field__input--number" id="weight" type="number" name="weight" placeholder="7">
                                     </li>
                                     <li class="fields__item field">
                                         <label class="field__label field__label--number" for="age">Возраст (лет):</label>
@@ -106,8 +106,8 @@
                             <ul class=" fields__list fields__list--contacts">
                                 <li class="fields__item fields__item--contact field field--email">
                                     <label class="field__label field__label--email" for="email">E-mail:*</label>
-                                    <input class="field__input field__input--email" id="email" type="text" name="email"
-                                        placeholder="kuklachev@gmail.com" required>
+                                    <input class="field__input field__input--email" id="email" type="email" name="email"
+                                        placeholder="kuklachev@gmail.com">
                                     <svg class="field__icon field__icon--email" width="20" height="14">
                                         <use xlink:href="img/sprite.svg#email"></use>
                                     </svg>
@@ -115,7 +115,7 @@
                                 <li class="fields__item fields__item--contact field field--phone">
                                     <label class="field__label field__label--phone" for="phone">Телефон:*</label>
                                     <input class="field__input field__input--phone" id="phone" type="text" name="phone"
-                                        placeholder="8 (960) 900-60-90" required>
+                                        placeholder="8 (960) 900-60-90">
                                     <svg class="field__icon field__icon--phone" width="20" height="20">
                                         <use xlink:href="img/sprite.svg#phone"></use>
                                     </svg>
@@ -212,21 +212,21 @@
                 <div class="bottom-line__social-links social-links">
                     <ul class="social-links__list">
                         <li class="social-links__item social-links__item--vk">
-                            <a href="#" aria-label="VK">
+                            <a class="social-links__link" href="#" aria-label="VK">
                                 <svg aria-hidden="true" class="social-links__icon social-links__icon--vk" width="28" height="22">
                                     <use xlink:href="img/sprite.svg#vk"></use>
                                 </svg>
                             </a>
                         </li>
                         <li class="social-links__item social-links__item--youtube">
-                            <a href="#" aria-label="Youtube">
+                            <a class="social-links__link" href="#" aria-label="Youtube">
                                 <svg aria-hidden="true" class="social-links__icon social-links__icon--youtube" width="28" height="22">
                                     <use xlink:href="img/sprite.svg#youtube"></use>
                                 </svg>
                             </a>
                         </li>
                         <li class="social-links__item social-links__item--telegram">
-                            <a href="#" aria-label="Telegram">
+                            <a class="social-links__link" href="#" aria-label="Telegram">
                                 <svg aria-hidden="true" class="social-links__icon social-links__icon--telegram" width="28" height="22">
                                     <use xlink:href="img/sprite.svg#telegram"></use>
                                 </svg>
@@ -235,8 +235,8 @@
                     </ul>
                 </div>
                 <div class="bottom-line__copyright copyright">
-                    <span class="copyright__text">HTML Academy</span>
                     <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+                        <span class="copyright__text">HTML Academy</span>
                         <svg class="copyright__logo" width="27" height="34">
                             <use xlink:href="img/sprite.svg#copyright-logo"></use>
                         </svg>
