@@ -32,6 +32,10 @@
             padding: 54px 110px 0;
         }
     }
+
+    &--no-js {
+        margin-bottom: 211px;
+    }
 }
 
 .header__container {
@@ -60,10 +64,10 @@
     @media (min-width: variables.$tablet-width) {
         display: none;
     }
+}
 
-    &--no-js {
-        visibility: hidden;
-    }
+.header--no-js .header__toggle {
+    visibility: hidden;
 }
 
 .header__toggle::before {
@@ -150,7 +154,7 @@
 .header__navigation {
     width: 100%;
     position: absolute;
-    top: 70px;
+    top: 65px;
     left: 0;
 
     &--closed {
@@ -168,4 +172,8 @@
     @media (min-width: variables.$desktop-width) {
         width: 600px;
     }
+}
+
+.header--no-js .header__navigation {
+    display: block;
 }

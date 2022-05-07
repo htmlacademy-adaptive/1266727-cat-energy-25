@@ -1,3 +1,5 @@
+document.querySelector('.header--no-js').classList.remove('header--no-js');
+
 const menuToggler = document.querySelector('.header__toggle');
 const navigation = document.querySelector('.header__navigation');
 
