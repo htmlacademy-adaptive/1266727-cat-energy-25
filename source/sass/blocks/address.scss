@@ -28,6 +28,10 @@
         @media (min-width: variables.$tablet-width) {
             padding: 58px 70px 60px;
         }
+
+        @media (min-width: variables.$desktop-width) {
+            padding: 58px 80px 59px;
+        }
     }
 }
 
@@ -70,7 +74,7 @@
     @media (min-width: variables.$desktop-width) {
         align-items: flex-start;
         padding-left: 92px;
-        padding-bottom: 7px;
+        padding-bottom: 3px;
     }
 }
 

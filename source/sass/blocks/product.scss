@@ -46,6 +46,10 @@
             padding: 134px 38px 38px;
         }
 
+        @media (min-width: variables.$desktop-width) {
+            padding: 131px 38px 40px;
+        }
+
         &::after {
             background-color: variables.$basic-white;
             border: 2px solid variables.$basic-grey;
@@ -112,6 +116,11 @@
         padding-left: 5px;
     }
 
+    @media (min-width: variables.$desktop-width) {
+        line-height: 22px;
+        padding-left: 8px;
+    }
+
     &--next {
         margin: 0;
         margin-bottom: 8px;
@@ -156,6 +165,10 @@
             width: 161px;
             height: 172px;
         }
+
+        @media (min-width: variables.$desktop-width) {
+            top: -10px;
+        }
     }
 
     &--can-chicken-1000 {
@@ -166,6 +179,12 @@
         @media (min-width: variables.$tablet-width) {
             width: 168px;
             height: 206px;
+        }
+
+        @media (min-width: variables.$desktop-width) {
+            width: 172px;
+            height: 202px;
+            top: -7px;
         }
     }
 
@@ -179,6 +198,10 @@
             height: 174px;
             top: -2px;
         }
+
+        @media (min-width: variables.$desktop-width) {
+            top: -10px;
+        }
     }
 
     &--can-fish-1000 {
@@ -190,6 +213,12 @@
             width: 168px;
             height: 200px;
             top: -2px;
+        }
+
+        @media (min-width: variables.$desktop-width) {
+            width: 172px;
+            height: 196px;
+            top: -14px;
         }
     }
 
@@ -203,6 +232,10 @@
             height: 171px;
             top: -2px;
         }
+
+        @media (min-width: variables.$desktop-width) {
+            top: -10px;
+        }
     }
 
     &--can-buckwheat-1000 {
@@ -215,6 +248,12 @@
             height: 200px;
             top: -2px;
         }
+
+        @media (min-width: variables.$desktop-width) {
+            width: 172px;
+            height: 196px;
+            top: -14px;
+        }
     }
 
     &--can-rice-500 {
@@ -226,6 +265,10 @@
             width: 163px;
             height: 174px;
             top: -2px;
+        }
+
+        @media (min-width: variables.$desktop-width) {
+            top: -10px;
         }
     }
 }

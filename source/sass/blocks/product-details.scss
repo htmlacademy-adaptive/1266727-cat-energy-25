@@ -24,6 +24,11 @@
         padding-bottom: 9px;
         border-bottom: 1px solid variables.$special-grey;
     }
+
+    @media (min-width: variables.$desktop-width) {
+        padding-top: 10px;
+        padding-left: 3px;
+    }
 }
 
 .product-details__value {
