@@ -23,7 +23,7 @@
 }
 
 .bottom-line__logo {
-    padding: 38px 0 27px;
+    padding: 39px 0 27px;
     text-align: center;
 
     @media (min-width: variables.$tablet-width) {
@@ -45,6 +45,10 @@
         top: -2px;
         left: 13px;
     }
+}
+
+.bottom-line--catalog .bottom-line__social-links {
+    padding-right: 24px;
 }
 
 .bottom-line__copyright {
