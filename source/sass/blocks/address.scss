@@ -20,6 +20,7 @@
         background-color: variables.$basic-grey;
 
         @media (min-width: variables.$desktop-width) {
+            padding: 57px 80px;
             background-color: variables.$basic-white;
         }
     }
@@ -74,6 +75,12 @@
     @media (min-width: variables.$desktop-width) {
         align-items: flex-start;
         padding-left: 92px;
+        padding-bottom: 7px;
+    }
+}
+
+.address--catalog .address__container {
+    @media (min-width: variables.$desktop-width) {
         padding-bottom: 3px;
     }
 }

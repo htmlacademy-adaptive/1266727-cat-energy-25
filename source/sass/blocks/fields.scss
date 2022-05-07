@@ -51,7 +51,7 @@
 
     @media (min-width: variables.$desktop-width) {
         margin-left: 70px;
-        margin-bottom: 74px;
+        margin-bottom: 76px;
     }
 
     &--comment {
@@ -61,6 +61,10 @@
         @media (min-width: variables.$tablet-width) {
             padding-right: 41px;
             margin-bottom: 76px;
+        }
+
+        @media (min-width: variables.$desktop-width) {
+            padding-right: 43px;
         }
     }
 
