@@ -292,10 +292,10 @@ input:checked + .field__label--checkbox {
     }
 }
 
-.field__input:focus ~  .field__icon {
+.field__input:focus ~ .field__icon {
     color: variables.$basic-green;
 }
 
-.field__input:invalid ~  .field__icon {
+.field__input:invalid ~ .field__icon {
     color: variables.$status-error;
 }

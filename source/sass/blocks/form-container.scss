@@ -83,21 +83,21 @@
 
     &--comment {
         @media (min-width: variables.$tablet-width) {
-            padding: 0px 67px 0 70px;
+            padding: 0 67px 0 70px;
         }
 
         @media (min-width: variables.$desktop-width) {
-            padding: 0px 110px;
+            padding: 0 110px;
         }
     }
 
     &--additions {
         @media (min-width: variables.$tablet-width) {
-            padding: 0px 70px;
+            padding: 0 70px;
         }
 
         @media (min-width: variables.$desktop-width) {
-            padding: 0px 110px;
+            padding: 0 110px;
         }
     }
 }
