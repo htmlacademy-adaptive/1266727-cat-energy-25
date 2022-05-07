@@ -4,7 +4,7 @@
     padding: 20px 20px 50px;
 
     @media (min-width: variables.$tablet-width) {
-        padding: 45px 30px 47px;
+        padding: 45px 30px 55px;
         border-bottom: 1px solid variables.$basic-light-grey;
     }
 
@@ -26,6 +26,11 @@
     @media (min-width: variables.$tablet-width) {
         font-size: 60px;
         line-height: 60px;
+        margin-bottom: 21px;
+    }
+
+    @media (min-width: variables.$desktop-width) {
+        margin-bottom: 23px;
     }
 }
 
@@ -36,15 +41,19 @@
 
     @media (min-width: variables.$tablet-width) {
         display: grid;
-        grid-template-columns: 230px 230px;
+        grid-template-columns: 1fr 1fr;
         grid-template-rows: 280px;
-        column-gap: 153px;
+        // column-gap: 21.6%;
+        column-gap: 8.6%; // temp
         row-gap: 37px;
     }
 
     @media (min-width: variables.$desktop-width) {
         display: flex;
         flex-flow: row nowrap;
+        justify-content: space-between;
+        column-gap: 0;
+        row-gap: 0;
     }
 }
 

@@ -13,16 +13,16 @@
 .social-links__item {
     width: 28px;
     height: 22px;
+}
 
-    &--vk {
-        background-image: url("../../img/vk.svg");
+.social-links__link {
+    color: variables.$special-dark-grey-3;
+
+    &:hover {
+        color: variables.$basic-green;
     }
 
-    &--youtube {
-        background-image: url("../../img/youtube.svg");
-    }
-
-    &--telegram {
-        background-image: url("../../img/telegram.svg");
+    &:active {
+        opacity: 0.3;
     }
 }

@@ -1,12 +1,17 @@
 @use "../variables.scss";
 
 .slider {
-    text-align: center;
     background-color: variables.$special-light-grey;
+}
+
+.slider__container {
+    text-align: center;
 
     @media (min-width: variables.$tablet-width) {
         position: relative;
-        padding-top: 366px;
+        width: 591px;
+        margin: 0 auto;
+        padding-top: 337px;
     }
 
     @media (min-width: variables.$desktop-width) {
@@ -16,7 +21,7 @@
 
 .slider__image {
     display: none;
-    margin-bottom: 15px;
+    margin-bottom: 19px;
 
     @media (min-width: variables.$tablet-width) {
         display: none;
@@ -41,8 +46,8 @@
     @media (min-width: variables.$tablet-width) {
         display: flex;
         position: absolute;
-        top: -161px;
-        left: 84px;
+        top: -202px;
+        left: 0;
         flex-flow: row nowrap;
         justify-content: center;
     }
@@ -58,12 +63,14 @@
     @media (min-width: variables.$tablet-width) {
         display: inline-block;
         position: relative;
-        top: -3px;
+        top: -5px;
+        left: 3px;
         width: 426px;
         height: 6px;
         background-color: variables.$slider-control-grey;
         border-radius: 6px;
         margin: 0 13px;
+        cursor: pointer;
 
         &::before {
             content: "";
@@ -74,18 +81,40 @@
             height: 34px;
             border-radius: 50%;
             background-color: variables.$basic-white;
+            border: 1px solid variables.$special-grey;
             filter: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.16));
         }
 
         &::after {
             content: "";
             position: absolute;
-            left: 209px;
-            top: 0;
+            left: 210px;
+            top: 1px;
             width: 8px;
             height: 8px;
             border-radius: 50%;
             background-color: variables.$basic-green;
+        }
+    }
+
+    @media (min-width: variables.$desktop-width) {
+        top: -3px;
+    }
+
+    &:hover {
+        @media (min-width: variables.$tablet-width) {
+            &::before {
+                filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.19));
+            }
+        }
+    }
+
+    &:active {
+        @media (min-width: variables.$tablet-width) {
+            &::before {
+                filter: drop-shadow(0 3px 5px rgba(0, 0, 0, 0.2));
+                border-color: variables.$basic-green;
+            }
         }
     }
 }
@@ -100,7 +129,7 @@
     cursor: pointer;
 
     @media (min-width: variables.$tablet-width) {
-        border-bottom: 1px dotted variables.$basic-black;
+        border-bottom: 1px dotted fade-out($color: variables.$basic-black, $amount: 0.76);
         font-size: 20px;
         line-height: 30px;
     }
@@ -109,21 +138,27 @@
         &::after {
             content: "";
             display: inline-block;
-            margin-left: 13px;
+            margin-left: 19px;
             border: 1px solid #cdcdcd;
             border-right: none;
             box-sizing: border-box;
             border-top-left-radius: 6px;
             border-bottom-left-radius: 6px;
             height: 14px;
-            width: 40px;
+            width: 42px;
             background-color: variables.$basic-white;
         }
 
         @media (min-width: variables.$tablet-width) {
+            left: -8px;
+
             &::after {
                 display: none;
             }
+        }
+
+        @media (min-width: variables.$desktop-width) {
+            top: 3px;
         }
     }
 
@@ -131,21 +166,39 @@
         &::before {
             content: "";
             display: inline-block;
-            margin-right: 13px;
+            margin-right: 19px;
             border: 1px solid #cdcdcd;
             border-left: none;
             box-sizing: border-box;
             border-top-right-radius: 6px;
             border-bottom-right-radius: 6px;
             height: 14px;
-            width: 40px;
+            width: 42px;
             background-color: variables.$basic-white;
         }
 
         @media (min-width: variables.$tablet-width) {
+            right: -14px;
+
             &::before {
                 display: none;
             }
+        }
+
+        @media (min-width: variables.$desktop-width) {
+            top: 3px;
+        }
+    }
+
+    &:hover {
+        @media (min-width: variables.$tablet-width) {
+            border-bottom: 1px solid fade-out($color: variables.$basic-black, $amount: 0.6);
+        }
+    }
+
+    &:active {
+        @media (min-width: variables.$tablet-width) {
+            border-bottom: none;
         }
     }
 }
@@ -156,7 +209,7 @@
         position: absolute;
         width: 35.66px;
         height: 6px;
-        left: 55px;
+        left: 63px;
         top: 9px;
         background: variables.$basic-green;
         border-radius: 6px;
@@ -175,8 +228,8 @@
         position: absolute;
         width: 35.66px;
         height: 6px;
-        left: 0;
-        top: 9px;
+        left: -1px;
+        top: 10px;
         background: variables.$basic-green;
         border-radius: 6px;
     }

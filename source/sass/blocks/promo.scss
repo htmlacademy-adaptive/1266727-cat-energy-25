@@ -11,12 +11,12 @@
         height: 100%;
         background-image: url("../../img/promo-phone.png");
         background-repeat: no-repeat;
-        background-size: 100% 100%;
+        background-size: cover;
         opacity: 0.15;
 
         @media (min-resolution: 2dppx) {
             background-image: url("../../img/promo-phone@2x.png");
-            background-size: 279px 289px;
+            background-size: cover;
         }
     }
 
@@ -26,7 +26,7 @@
 
             @media (min-resolution: 2dppx) {
                 background-image: url("../../img/promo-tablet@2x.png");
-                background-size: 707px 200px;
+                background-size: cover;
             }
         }
     }
@@ -54,12 +54,12 @@
 
     @media (min-width: variables.$tablet-width) {
         flex-flow: row nowrap;
-        padding: 57px 124px 60px 77px;
+        padding: 59px 124px 60px 77px;
     }
 
     @media (min-width: variables.$desktop-width) {
         flex-flow: column nowrap;
-        padding: 56px 40px 42px;
+        padding: 58px 40px 42px;
     }
 }
 
@@ -74,11 +74,14 @@
         width: 80px;
         height: 83px;
         margin: 0;
+        position: relative;
+        top: -1px;
+        left: 2px;
         background-image: url("../../img/gift-tablet.svg");
     }
 
     @media (min-width: variables.$desktop-width) {
-        margin-bottom: 50px;
+        margin-bottom: 46px;
         margin-right: 0;
     }
 }
@@ -93,6 +96,14 @@
     position: relative;
     width: 161px;
     text-align: center;
+
+    @media (min-width: variables.$tablet-width) {
+        text-align: left;
+    }
+
+    @media (min-width: variables.$desktop-width) {
+        text-align: center;
+    }
 
     &::before {
         content: "";

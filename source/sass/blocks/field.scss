@@ -7,49 +7,6 @@
     position: relative;
     margin: 0;
     padding: 0;
-
-    &--email {
-        &::after {
-            content: "";
-            position: absolute;
-            top: 17px;
-            right: 15px;
-            width: 20px;
-            height: 14px;
-            background-image: url("../../img/email.svg");
-            background-size: 20px 14px;
-        }
-
-        @media (min-width: variables.$tablet-width) {
-            &::after {
-                width: 18px;
-                height: 13px;
-                top: 19px;
-                right: 20px;
-                background-size: 18px 13px;
-            }
-        }
-    }
-
-    &--phone {
-        &::after {
-            content: "";
-            position: absolute;
-            top: 14px;
-            right: 12px;
-            width: 20px;
-            height: 20px;
-            background-image: url("../../img/phone.svg");
-            background-size: 20px 20px;
-        }
-
-        @media (min-width: variables.$tablet-width) {
-            &::after {
-                top: 16px;
-                right: 17px;
-            }
-        }
-    }
 }
 
 .field__label {
@@ -64,7 +21,44 @@
     @media (min-width: variables.$tablet-width) {
         font-size: 20px;
         line-height: 30px;
-        margin-right: 15px;
+        margin-right: 16px;
+    }
+
+    &--number {
+        margin-right: 17px;
+
+        @media (min-width: variables.$tablet-width) {
+            margin-right: 18px;
+        }
+
+        @media (min-width: variables.$desktop-width) {
+            margin-right: 18px;
+        }
+    }
+
+    &--email {
+        margin-right: 12px;
+
+        @media (min-width: variables.$tablet-width) {
+            margin-right: 18px;
+        }
+
+        @media (min-width: variables.$desktop-width) {
+            margin-right: 23px;
+        }
+    }
+
+    &--phone {
+        margin-right: 10px;
+
+        @media (min-width: variables.$tablet-width) {
+            margin-right: 14px;
+            margin-left: -3px;
+        }
+
+        @media (min-width: variables.$desktop-width) {
+            margin-right: 18px;
+        }
     }
 }
 
@@ -75,6 +69,7 @@
     flex-flow: row nowrap;
     align-items: center;
     margin-right: 0;
+    cursor: pointer;
 
     &::before {
         content: "";
@@ -93,6 +88,16 @@
             height: 40px;
             margin-right: 19px;
         }
+    }
+
+    &:hover {
+        &::before {
+            border-color: variables.$special-grey-3;
+        }
+    }
+
+    &:active {
+        opacity: 0.3;
     }
 }
 
@@ -125,14 +130,15 @@ input:checked + .field__label--radio {
     flex-flow: row nowrap;
     align-items: center;
     margin-right: 0;
+    cursor: pointer;
 
     &::before {
         content: "";
         display: inline-block;
-        width: 26px;
-        height: 26px;
+        width: 30px;
+        height: 30px;
         border: 1px solid variables.$special-grey;
-        margin-right: 13px;
+        margin-right: 17px;
         box-sizing: border-box;
     }
 
@@ -143,6 +149,16 @@ input:checked + .field__label--radio {
             margin-right: 19px;
         }
     }
+
+    &:hover {
+        &::before {
+            border-color: variables.$special-grey-3;
+        }
+    }
+
+    &:active {
+        opacity: 0.3;
+    }
 }
 
 input:checked + .field__label--checkbox {
@@ -150,7 +166,7 @@ input:checked + .field__label--checkbox {
         content: "";
         position: absolute;
         top: 7px;
-        left: 4px;
+        left: 6px;
         width: 18px;
         height: 14px;
         background-image: url("../../img/checkbox-mark.svg");
@@ -175,26 +191,111 @@ input:checked + .field__label--checkbox {
     font-weight: 400;
     color: variables.$special-dark-grey;
     text-transform: uppercase;
-    padding: 14px;
+    padding: 14px 15px 12px;
     flex-grow: 1;
     position: relative;
 
     @media (min-width: variables.$tablet-width) {
         font-size: 20px;
         line-height: 30px;
-        padding: 10px 21px;
+        padding: 10px 21px 10px 17px;
+    }
+
+    @media (min-width: variables.$desktop-width) {
+        padding: 10px 21px 10px 20px;
+    }
+
+    &--number {
+        padding-left: 15px;
+
+        @media (min-width: variables.$tablet-width) {
+            padding-left: 19px;
+        }
     }
 
     &--textarea {
         resize: none;
-        height: 150px;
+        height: 128px;
+        padding: 8px 14px 12px 15px;
+
+        @media (min-width: variables.$tablet-width) {
+            padding: 9px 18px 11px 19px;
+            height: 152px;
+        }
     }
 
     &--email {
-        padding-right: 40px;
+        padding: 13px 40px 12px 13px;
+
+        @media (min-width: variables.$tablet-width) {
+            padding: 9px 18px 11px 21px;
+        }
+
+        @media (min-width: variables.$desktop-width) {
+            padding-left: 17px;
+        }
     }
 
     &--phone {
-        padding-right: 40px;
+        padding: 13px 40px 13px 15px;
+
+        @media (min-width: variables.$tablet-width) {
+            padding: 9px 18px 11px 21px;
+        }
+
+        @media (min-width: variables.$desktop-width) {
+            padding-left: 17px;
+        }
     }
+
+    &:hover {
+        border-color: variables.$special-grey;
+    }
+
+    &:focus {
+        border-color: variables.$special-dark-grey;
+        outline: 1px solid variables.$special-dark-grey;
+    }
+
+    &:invalid {
+        border-color: variables.$status-error;
+        outline: 1px solid variables.$status-error;
+    }
+}
+
+.field__icon {
+    position: absolute;
+
+    &--email {
+        top: 16px;
+        right: 15px;
+
+        @media (min-width: variables.$tablet-width) {
+            top: 18px;
+            right: 18px;
+        }
+    }
+
+    &--phone {
+        top: 14px;
+        right: 13px;
+
+        @media (min-width: variables.$tablet-width) {
+            top: 16px;
+            right: 18px;
+        }
+
+        @media (min-width: variables.$desktop-width) {
+            top: 15px;
+            right: 17px;
+        }
+    }
+}
+
+.field__input:focus ~ .field__icon {
+    color: variables.$basic-green;
+}
+
+.field__input:invalid ~ .field__icon {
+    color: variables.$status-error;
 }

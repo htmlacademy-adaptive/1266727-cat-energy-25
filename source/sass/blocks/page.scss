@@ -6,17 +6,16 @@
 }
 
 .page__body {
-    width: 320px;
-    margin: 0 auto;
+    min-width: variables.$phone-width;
     position: relative;
+    margin: 0 auto;
     // outline: 5px solid blue;
 
-    @media (min-width: variables.$tablet-width) {
-        width: 768px;
-    }
+    // width: 320px;
 
     @media (min-width: variables.$desktop-width) {
-        width: 1440px;
+        max-width: variables.$desktop-width;
+        margin: 0 auto;
     }
 }
 

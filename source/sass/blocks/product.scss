@@ -7,7 +7,7 @@
     // outline: 1px solid plum;
 
     @media (min-width: variables.$tablet-width) {
-        padding: 2px 36px 39px 36px;
+        padding: 10px 38px 39px;
         box-sizing: border-box;
         height: 511px;
 
@@ -35,15 +35,19 @@
     }
 
     &--next {
-        padding: 25px 0;
         display: flex;
         flex-flow: column nowrap;
         align-items: center;
         justify-content: center;
         text-align: center;
+        padding-top: 25px;
 
         @media (min-width: variables.$tablet-width) {
-            padding: 132px 38px 38px;
+            padding: 134px 38px 38px;
+        }
+
+        @media (min-width: variables.$desktop-width) {
+            padding: 131px 38px 40px;
         }
 
         &::after {
@@ -58,12 +62,13 @@
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
-    align-items: center;
-    margin-bottom: 13px;
+    align-items: stretch;
+    margin-bottom: 11px;
 
     @media (min-width: variables.$tablet-width) {
-        margin-bottom: 33px;
+        margin-bottom: 34px;
         flex-flow: column nowrap;
+        align-items: center;
     }
 }
 
@@ -78,12 +83,13 @@
     @media (min-width: variables.$tablet-width) {
         width: 168px;
         height: 200px;
-        margin-bottom: 34px;
+        margin-bottom: 32px;
         align-items: flex-end;
     }
 }
 
 .product__column-right {
+    flex: 1 1 0;
     display: flex;
     flex-flow: column nowrap;
     align-items: stretch;
@@ -94,7 +100,7 @@
 }
 
 .product__name {
-    margin-bottom: 18px;
+    margin-bottom: 15px;
     font-family: variables.$primary-font;
     font-size: 16px;
     line-height: 20px;
@@ -107,6 +113,12 @@
         font-size: 20px;
         line-height: 24px;
         text-align: center;
+        padding-left: 5px;
+    }
+
+    @media (min-width: variables.$desktop-width) {
+        line-height: 22px;
+        padding-left: 8px;
     }
 
     &--next {
@@ -117,8 +129,9 @@
 
         @media (min-width: variables.$tablet-width) {
             width: 134px;
-            margin-bottom: 23px;
+            margin-bottom: 24px;
             text-align: center;
+            line-height: 22px;
         }
     }
 }
@@ -141,74 +154,121 @@
 
 .product__img {
     display: block;
+    position: relative;
 
     &--can-chicken-500 {
         width: 68px;
         height: 86px;
+        top: -1px;
 
         @media (min-width: variables.$tablet-width) {
             width: 161px;
             height: 172px;
+        }
+
+        @media (min-width: variables.$desktop-width) {
+            top: -10px;
         }
     }
 
     &--can-chicken-1000 {
         width: 84px;
         height: 101px;
+        top: 3px;
 
         @media (min-width: variables.$tablet-width) {
             width: 168px;
             height: 206px;
+        }
+
+        @media (min-width: variables.$desktop-width) {
+            width: 172px;
+            height: 202px;
+            top: -7px;
         }
     }
 
     &--can-fish-500 {
         width: 68px;
         height: 78px;
+        top: 8px;
 
         @media (min-width: variables.$tablet-width) {
             width: 163px;
             height: 174px;
+            top: -2px;
+        }
+
+        @media (min-width: variables.$desktop-width) {
+            top: -10px;
         }
     }
 
     &--can-fish-1000 {
         width: 84px;
         height: 101px;
+        top: 3px;
 
         @media (min-width: variables.$tablet-width) {
             width: 168px;
             height: 200px;
+            top: -2px;
+        }
+
+        @media (min-width: variables.$desktop-width) {
+            width: 172px;
+            height: 196px;
+            top: -14px;
         }
     }
 
     &--can-buckwheat-500 {
         width: 68px;
         height: 78px;
+        top: 11px;
 
         @media (min-width: variables.$tablet-width) {
             width: 161px;
             height: 171px;
+            top: -2px;
+        }
+
+        @media (min-width: variables.$desktop-width) {
+            top: -10px;
         }
     }
 
     &--can-buckwheat-1000 {
         width: 84px;
         height: 100px;
+        top: 4px;
 
         @media (min-width: variables.$tablet-width) {
             width: 168px;
             height: 200px;
+            top: -2px;
+        }
+
+        @media (min-width: variables.$desktop-width) {
+            width: 172px;
+            height: 196px;
+            top: -14px;
         }
     }
 
     &--can-rice-500 {
         width: 72px;
         height: 84px;
+        top: 8px;
 
         @media (min-width: variables.$tablet-width) {
             width: 163px;
             height: 174px;
+            top: -2px;
+        }
+
+        @media (min-width: variables.$desktop-width) {
+            top: -10px;
         }
     }
 }

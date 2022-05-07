@@ -34,12 +34,16 @@
     @media (min-width: variables.$tablet-width) {
         border: none;
         width: auto;
-        margin-right: 35px;
+        margin-right: 37px;
         padding: 0 0 12px;
 
         &:last-child {
             margin-right: 0;
         }
+    }
+
+    @media (min-width: variables.$desktop-width) {
+        margin-right: 35px;
     }
 
     &--active {
@@ -48,10 +52,16 @@
                 content: "";
                 position: absolute;
                 height: 2px;
-                bottom: 0;
+                bottom: 2px;
                 right: 0;
                 left: 0;
                 background-color: variables.$basic-green;
+            }
+        }
+
+        @media (min-width: variables.$desktop-width) {
+            &::after {
+                bottom: 5px;
             }
         }
     }
@@ -67,6 +77,26 @@
     @media (min-width: variables.$desktop-width) {
         &::after {
             background-color: variables.$basic-white;
+        }
+    }
+}
+
+.navigation__list--form .navigation__item,
+.navigation__list--catalog .navigation__item {
+    @media (min-width: variables.$tablet-width) {
+        margin-right: 36px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
+
+.navigation__list--form .navigation__item--active,
+.navigation__list--catalog .navigation__item--active {
+    @media (min-width: variables.$tablet-width) {
+        &::after {
+            bottom: 5px;
         }
     }
 }
@@ -88,5 +118,13 @@
     @media (min-width: variables.$desktop-width) {
         font-size: 20px;
         line-height: 30px;
+    }
+
+    &:hover {
+        opacity: 0.6;
+    }
+
+    &:active {
+        opacity: 0.3;
     }
 }

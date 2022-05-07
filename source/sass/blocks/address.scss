@@ -1,13 +1,14 @@
 @use "../variables.scss";
 
 .address {
-    padding: 26px 20px;
+    padding: 27px 20px 26px;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
+    align-items: center;
 
     @media (min-width: variables.$tablet-width) {
-        padding: 56px 70px;
+        padding: 58px 70px 62px;
     }
 
     @media (min-width: variables.$desktop-width) {
@@ -19,7 +20,18 @@
         background-color: variables.$basic-grey;
 
         @media (min-width: variables.$desktop-width) {
+            padding: 57px 80px;
             background-color: variables.$basic-white;
+        }
+    }
+
+    &--catalog {
+        @media (min-width: variables.$tablet-width) {
+            padding: 58px 70px 60px;
+        }
+
+        @media (min-width: variables.$desktop-width) {
+            padding: 58px 80px 59px;
         }
     }
 }
@@ -34,15 +46,18 @@
     color: variables.$special-black;
     text-transform: uppercase;
     flex: 1 1 0;
+    margin-right: 3px;
 
     @media (min-width: variables.$tablet-width) {
         font-size: 20px;
         line-height: 26px;
-        max-width: 180px;
+        max-width: 236px;
+        padding-top: 2px;
     }
 
     @media (min-width: variables.$desktop-width) {
         align-self: center;
+        padding-top: 0;
     }
 }
 
@@ -54,6 +69,19 @@
         flex-flow: column nowrap;
         justify-content: space-between;
         align-items: flex-end;
+        align-self: stretch;
+    }
+
+    @media (min-width: variables.$desktop-width) {
+        align-items: flex-start;
+        padding-left: 92px;
+        padding-bottom: 7px;
+    }
+}
+
+.address--catalog .address__container {
+    @media (min-width: variables.$desktop-width) {
+        padding-bottom: 3px;
     }
 }
 
@@ -72,5 +100,9 @@
         max-width: 160px;
         text-align: right;
         flex-grow: 0;
+    }
+
+    @media (min-width: variables.$desktop-width) {
+        text-align: left;
     }
 }

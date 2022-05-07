@@ -13,6 +13,7 @@
     font-size: 14px;
     line-height: 18px;
     font-weight: 400;
+    cursor: pointer;
 
     @media (min-width: variables.$tablet-width) {
         font-size: 20px;
@@ -24,17 +25,46 @@
     &--primary {
         background-color: variables.$basic-green;
         color: variables.$basic-white;
+
+        &:hover {
+            background-color: variables.$basic-green-2;
+        }
+
+        &:active {
+            color: fade-out($color: variables.$basic-white, $amount: 0.7);
+        }
     }
 
     &--secondary {
         background-color: variables.$basic-grey;
         color: variables.$special-dark-grey;
+
+        &:hover {
+            background-color: variables.$special-grey-2;
+        }
+
+        &:active {
+            color: fade-out($color: variables.$basic-black, $amount: 0.7);
+        }
     }
 
     &--slim {
+        font-size: 16px;
+        line-height: 20px;
+
         @media (min-width: variables.$tablet-width) {
             height: 40px;
             font-size: 16px;
+            line-height: 20px;
+        }
+    }
+
+    &--submit {
+        font-size: 16px;
+        line-height: 20px;
+
+        @media (min-width: variables.$tablet-width) {
+            font-size: 20px;
             line-height: 20px;
         }
     }

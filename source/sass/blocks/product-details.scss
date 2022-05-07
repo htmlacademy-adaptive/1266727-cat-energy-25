@@ -4,10 +4,10 @@
     margin: 0;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    row-gap: 6px;
+    row-gap: 4px;
     font-family: variables.$secondary-font;
     font-size: 12px;
-    line-height: 16px;
+    line-height: 12px;
     font-weight: 400;
     color: variables.$special-dark-grey;
 
@@ -20,9 +20,14 @@
 .product-details__attribute,
 .product-details__value {
     @media (min-width: variables.$tablet-width) {
-        padding-top: 7px;
-        padding-bottom: 8px;
+        padding-top: 9px;
+        padding-bottom: 9px;
         border-bottom: 1px solid variables.$special-grey;
+    }
+
+    @media (min-width: variables.$desktop-width) {
+        padding-top: 10px;
+        padding-left: 3px;
     }
 }
 
