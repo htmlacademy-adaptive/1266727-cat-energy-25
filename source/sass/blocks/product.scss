@@ -310,6 +310,13 @@
     width: 100%;
 
     &--next {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-content: center;
+        box-sizing: border-box;
+        text-decoration: none;
+
         @media (min-width: variables.$tablet-width) {
             margin-top: auto;
         }
