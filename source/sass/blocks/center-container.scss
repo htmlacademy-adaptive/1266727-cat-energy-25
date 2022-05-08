@@ -1,0 +1,17 @@
+@use "./variables.scss";
+
+.center-container {
+    min-width: variables.$phone-width;
+    position: relative;
+    margin: 0 auto;
+    box-sizing: border-box;
+
+    // width: 320px;
+
+    // outline: 1px solid blue;
+
+    @media (min-width: variables.$desktop-width) {
+        max-width: variables.$desktop-width;
+        margin: 0 auto;
+    }
+}

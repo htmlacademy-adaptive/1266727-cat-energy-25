@@ -12,7 +12,7 @@
     }
 
     @media (min-width: variables.$desktop-width) {
-        padding: 56px 80px;
+        padding: 58px 80px;
         background-color: variables.$basic-white;
     }
 
@@ -57,7 +57,7 @@
 
     @media (min-width: variables.$desktop-width) {
         align-self: center;
-        padding-top: 0;
+        padding-top: 2px;
     }
 }
 
@@ -75,7 +75,7 @@
     @media (min-width: variables.$desktop-width) {
         align-items: flex-start;
         padding-left: 92px;
-        padding-bottom: 7px;
+        padding-bottom: 2px;
     }
 }
 

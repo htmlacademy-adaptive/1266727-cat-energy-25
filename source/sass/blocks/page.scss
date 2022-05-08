@@ -6,34 +6,25 @@
 }
 
 .page__body {
-    min-width: variables.$phone-width;
-    position: relative;
-    margin: 0 auto;
-    // outline: 5px solid blue;
-
-    // width: 320px;
-
-    @media (min-width: variables.$desktop-width) {
-        max-width: variables.$desktop-width;
-        margin: 0 auto;
-    }
+    margin: 0;
 }
 
-.page__container--index {
+.page__body--index {
     @media (min-width: variables.$desktop-width) {
         &::before {
             content: "";
             position: absolute;
             top: 0;
+            left: 50%;
             right: 0;
-            width: 720px;
             height: 694px;
             z-index: -1;
             background-image: url("../../img/lead-background-desktop.png");
+            background-size: cover;
+            background-color: variables.$basic-green;
 
             @media (min-resolution: 2dppx) {
                 background-image: url("../../img/lead-background-desktop@2x.png");
-                background-size: 720px 694px;
             }
         }
 
@@ -41,8 +32,8 @@
             content: "";
             position: absolute;
             top: 0;
+            left: 50%;
             right: 0;
-            width: 720px;
             height: 694px;
             z-index: -1;
             opacity: 0.85;

@@ -1,11 +1,11 @@
 @use "../variables.scss";
 
-.bottom-line {
+.bottom-line__container {
     padding: 0 20px;
     display: flex;
     flex-flow: column nowrap;
     align-items: stretch;
-    background-color: variables.$basic-grey;
+    box-sizing: border-box;
 
     @media (min-width: variables.$tablet-width) {
         flex-flow: row nowrap;
