@@ -1,5 +1,7 @@
 document.querySelector('.header--no-js').classList.remove('header--no-js');
 
+document.querySelector('.footer').classList.add('footer--iframe-map');
+
 const menuToggler = document.querySelector('.header__toggle');
 const navigation = document.querySelector('.header__navigation');
 
