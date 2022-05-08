@@ -108,16 +108,20 @@
     color: variables.$special-dark-grey-2;
     text-transform: uppercase;
     text-decoration: none;
+    max-height: 40px;
+    overflow: hidden;
 
     @media (min-width: variables.$tablet-width) {
         font-size: 20px;
         line-height: 24px;
+        max-height: 48px;
         text-align: center;
         padding-left: 5px;
     }
 
     @media (min-width: variables.$desktop-width) {
         line-height: 22px;
+        max-height: 44px;
         padding-left: 8px;
     }
 
