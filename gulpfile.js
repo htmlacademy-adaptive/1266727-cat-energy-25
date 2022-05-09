@@ -57,7 +57,7 @@ exports.scripts = scripts;
 
 const optimizeImages = () => {
     return gulp
-        .src("source/img/**/*.{png,jpg,svg}")
+        .src(["source/img/**/*.{png,jpg,svg}", "!source/img/sprite.svg"])
         .pipe(
             imagemin([
                 imagemin.mozjpeg({ progressive: true }),
@@ -77,6 +77,14 @@ const copyImages = () => {
 };
 
 exports.images = copyImages;
+
+const copySprite = () => {
+    return gulp
+        .src("source/img/sprite.svg")
+        .pipe(gulp.dest("build/img"));
+};
+
+exports.images = copySprite;
 
 // WebP
 
@@ -98,8 +106,7 @@ const copy = (done) => {
             "source/favicon.ico",
             "source/manifest.webmanifest",
             "source/img/**/.svg",
-            "source/fonts/**/*",
-            "!source/img/icons/.svg",
+            "source/fonts/**/*"
         ],
         {
             base: "source",
@@ -153,6 +160,7 @@ const build = gulp.series(
     clean,
     copy,
     optimizeImages,
+    copySprite,
     gulp.parallel(styles, html, scripts, createWebp)
 );
 
