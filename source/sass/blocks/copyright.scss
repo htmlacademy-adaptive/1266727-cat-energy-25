@@ -19,6 +19,12 @@
     line-height: 18.4px;
     font-weight: 400;
     margin-right: 22px;
+    position: relative;
+    top: -2px;
+
+    @media (min-width: variables.$tablet-width) {
+        top: 0;
+    }
 }
 
 .copyright__logo {

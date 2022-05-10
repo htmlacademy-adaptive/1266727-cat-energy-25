@@ -32,7 +32,7 @@
     }
 }
 
-.slider__input:checked + .slider__image {
+.slider__input:checked + picture .slider__image {
     display: block;
 
     @media (min-width: variables.$tablet-width) {
