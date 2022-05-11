@@ -10,23 +10,23 @@
         width: 100%;
         height: 100%;
         background-color: variables.$basic-green;
-        background-image: url("../../img/promo-phone.jpg");
+        background-image: url("../img/promo-phone.jpg");
         background-repeat: no-repeat;
         background-size: cover;
         opacity: 0.15;
 
         @media (min-resolution: 2dppx) {
-            background-image: url("../../img/promo-phone@2x.jpg");
+            background-image: url("../img/promo-phone@2x.jpg");
             background-size: cover;
         }
     }
 
     @media (min-width: variables.$tablet-width) {
         &::before {
-            background-image: url("../../img/promo-tablet.jpg");
+            background-image: url("../img/promo-tablet.jpg");
 
             @media (min-resolution: 2dppx) {
-                background-image: url("../../img/promo-tablet@2x.jpg");
+                background-image: url("../img/promo-tablet@2x.jpg");
                 background-size: cover;
             }
         }
@@ -36,10 +36,10 @@
         flex-flow: column nowrap;
 
         &::before {
-            background-image: url("../../img/promo-desktop.jpg");
+            background-image: url("../img/promo-desktop.jpg");
 
             @media (min-resolution: 2dppx) {
-                background-image: url("../../img/promo-desktop@2x.jpg");
+                background-image: url("../img/promo-desktop@2x.jpg");
                 background-size: 245px 289px;
             }
         }
@@ -67,7 +67,7 @@
 .promo__icon {
     width: 78px;
     height: 80px;
-    background-image: url("../../img/gift-phone.svg");
+    background-image: url("../img/gift-phone.svg");
     margin-bottom: 48px;
     z-index: 1;
 
@@ -78,7 +78,7 @@
         position: relative;
         top: -1px;
         left: 2px;
-        background-image: url("../../img/gift-tablet.svg");
+        background-image: url("../img/gift-tablet.svg");
     }
 
     @media (min-width: variables.$desktop-width) {

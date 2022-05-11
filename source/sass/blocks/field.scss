@@ -170,7 +170,7 @@ input:checked + .field__label--checkbox {
         left: 6px;
         width: 18px;
         height: 14px;
-        background-image: url("../../img/checkbox-mark.svg");
+        background-image: url("../img/checkbox-mark.svg");
     }
 
     @media (min-width: variables.$tablet-width) {
