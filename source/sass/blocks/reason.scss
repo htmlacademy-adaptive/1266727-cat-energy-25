@@ -54,7 +54,7 @@
 
     &--first {
         &::before {
-            background-image: url("../../img/leaf.svg");
+            background-image: url("../img/leaf.svg");
         }
 
         &::after {
@@ -65,7 +65,7 @@
 
     &--second {
         &::before {
-            background-image: url("../../img/tub.svg");
+            background-image: url("../img/tub.svg");
         }
 
         &::after {
@@ -76,7 +76,7 @@
 
     &--third {
         &::before {
-            background-image: url("../../img/eat.svg");
+            background-image: url("../img/eat.svg");
         }
 
         &::after {
@@ -87,7 +87,7 @@
 
     &--fourth {
         &::before {
-            background-image: url("../../img/alarm.svg");
+            background-image: url("../img/alarm.svg");
         }
 
         &::after {

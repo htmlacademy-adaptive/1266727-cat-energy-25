@@ -19,12 +19,12 @@
             right: 0;
             height: 694px;
             z-index: -1;
-            background-image: url("../../img/lead-background-desktop.jpg");
+            background-image: url("../img/lead-background-desktop.jpg");
             background-size: cover;
             background-color: variables.$basic-green;
 
             @media (min-resolution: 2dppx) {
-                background-image: url("../../img/lead-background-desktop@2x.jpg");
+                background-image: url("../img/lead-background-desktop@2x.jpg");
             }
         }
 
