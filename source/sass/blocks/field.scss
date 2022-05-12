@@ -102,6 +102,12 @@
     }
 }
 
+.field__hidden-input:focus + .field__label--radio {
+    &::before {
+        border-color: variables.$special-grey-3;
+    }
+}
+
 .field__hidden-input:checked + .field__label--radio {
     &::after {
         content: "";
@@ -159,6 +165,12 @@
 
     &:active {
         opacity: 0.3;
+    }
+}
+
+.field__hidden-input:focus + .field__label--checkbox {
+    &::before {
+        border-color: variables.$special-grey-3;
     }
 }
 
