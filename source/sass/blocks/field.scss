@@ -102,7 +102,7 @@
     }
 }
 
-input:checked + .field__label--radio {
+.field__hidden-input:checked + .field__label--radio {
     &::after {
         content: "";
         position: absolute;
@@ -162,7 +162,7 @@ input:checked + .field__label--radio {
     }
 }
 
-input:checked + .field__label--checkbox {
+.field__hidden-input:checked + .field__label--checkbox {
     &::after {
         content: "";
         position: absolute;
