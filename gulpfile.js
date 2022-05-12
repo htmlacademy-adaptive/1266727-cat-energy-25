@@ -79,9 +79,7 @@ const copyImages = () => {
 exports.images = copyImages;
 
 const copySprite = () => {
-    return gulp
-        .src("source/img/sprite.svg")
-        .pipe(gulp.dest("build/img"));
+    return gulp.src("source/img/sprite.svg").pipe(gulp.dest("build/img"));
 };
 
 exports.images = copySprite;
@@ -106,7 +104,7 @@ const copy = (done) => {
             "source/favicon.ico",
             "source/manifest.webmanifest",
             "source/img/**/.svg",
-            "source/fonts/**/*"
+            "source/fonts/**/*",
         ],
         {
             base: "source",
