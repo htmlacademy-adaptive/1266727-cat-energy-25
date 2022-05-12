@@ -111,6 +111,7 @@
     color: inherit;
 
     @media (min-width: variables.$tablet-width) {
+        font-weight: 400;
         font-size: 18px;
         line-height: 24px;
     }
