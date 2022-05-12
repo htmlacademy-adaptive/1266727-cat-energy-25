@@ -69,6 +69,8 @@
     }
 
     &--additions {
+        padding: 0 23px 0 20px;
+
         @media (min-width: variables.$tablet-width) {
             padding-right: 42px;
             margin-bottom: 57px;
