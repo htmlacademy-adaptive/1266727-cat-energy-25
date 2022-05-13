@@ -37,8 +37,8 @@
         margin-left: 37px;
         padding: 0 0 12px;
 
-        &:last-child {
-            margin-right: 0;
+        &:first-child {
+            margin-left: 0;
         }
     }
 
@@ -84,10 +84,10 @@
 .navigation__list--form .navigation__item,
 .navigation__list--catalog .navigation__item {
     @media (min-width: variables.$tablet-width) {
-        margin-right: 36px;
+        margin-left: 36px;
 
-        &:last-child {
-            margin-right: 0;
+        &:first-child {
+            margin-left: 0;
         }
     }
 }

@@ -32,7 +32,7 @@
     flex: 1 1 auto;
 
     @media (min-width: variables.$tablet-width) {
-        min-width: 324px;
+        width: 324px;
         box-sizing: border-box;
         margin-right: 60px;
         margin-bottom: 60px;
@@ -40,7 +40,6 @@
 
     @media (min-width: variables.$desktop-width) {
         width: 245px;
-        min-width: 245px;
         box-sizing: border-box;
         flex: 0 0 auto;
         margin-right: 0;
