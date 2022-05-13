@@ -13,6 +13,7 @@
     @media (min-width: variables.$tablet-width) {
         padding: 10px 38px 39px;
         box-sizing: border-box;
+        min-height: 511px;
 
         &::before {
             content: "";

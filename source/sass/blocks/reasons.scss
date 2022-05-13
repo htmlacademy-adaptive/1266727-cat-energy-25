@@ -70,6 +70,6 @@
 
     @media (min-width: variables.$desktop-width) {
         width: 246px;
-        height: 280px;
+        min-height: 280px;
     }
 }
