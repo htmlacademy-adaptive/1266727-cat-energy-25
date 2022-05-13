@@ -10,7 +10,7 @@
     border-top: 1px solid variables.$basic-light-grey;
 
     @media (min-width: variables.$tablet-width) {
-        flex-flow: row nowrap;
+        flex-flow: row wrap;
         justify-content: flex-end;
         border-top: none;
     }
@@ -34,7 +34,7 @@
     @media (min-width: variables.$tablet-width) {
         border: none;
         width: auto;
-        margin-right: 37px;
+        margin-left: 37px;
         padding: 0 0 12px;
 
         &:last-child {
@@ -43,7 +43,7 @@
     }
 
     @media (min-width: variables.$desktop-width) {
-        margin-right: 35px;
+        margin-left: 35px;
     }
 
     &--active {
