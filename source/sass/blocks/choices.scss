@@ -25,12 +25,12 @@
 
 .choices__item {
     &:not(:last-child) {
-        margin-bottom: 21px;
+        margin-bottom: 22px;
     }
 
     @media (min-width: variables.$tablet-width) {
         &:not(:last-child) {
-            margin-bottom: 30px;
+            margin-bottom: 29px;
         }
     }
 
