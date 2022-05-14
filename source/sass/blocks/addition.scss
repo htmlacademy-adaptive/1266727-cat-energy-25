@@ -6,10 +6,10 @@
     flex-flow: column nowrap;
 
     @media (min-width: variables.$tablet-width) {
-        padding: 26px 38px 28px;
+        padding: 27px 38px 30px;
         flex-flow: row wrap;
         justify-content: space-between;
-        align-items: baseline;
+        align-items: center;
     }
 
     @media (min-width: variables.$desktop-width) {

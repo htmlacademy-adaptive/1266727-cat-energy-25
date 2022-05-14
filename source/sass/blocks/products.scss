@@ -10,13 +10,12 @@
 
     @media (min-width: variables.$tablet-width) {
         display: grid;
-        grid-template-columns: repeat(2, 45%);
+        grid-template-columns: repeat(2, 46%);
         column-gap: 8%;
         row-gap: 60px;
     }
 
     @media (min-width: variables.$desktop-width) {
-        // display: grid;
         grid-template-columns: repeat(4, 245px);
         column-gap: 80px;
         row-gap: 63px;

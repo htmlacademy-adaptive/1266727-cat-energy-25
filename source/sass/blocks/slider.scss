@@ -21,7 +21,7 @@
 }
 
 .slider__images {
-    margin-bottom: 16px;
+    margin-bottom: 20px;
 
     @media (min-width: variables.$tablet-width) {
         display: none;
@@ -34,10 +34,14 @@
     @media (min-width: variables.$tablet-width) {
         display: flex;
         position: absolute;
-        top: -181px;
+        top: -203px;
         left: 0;
         flex-flow: row nowrap;
         justify-content: center;
+    }
+
+    @media (min-width: variables.$desktop-width) {
+        top: -181px;
     }
 }
 
@@ -64,7 +68,7 @@
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;
-    padding: 0 35px;
+    padding: 0 40px;
 
     @media (min-width: variables.$tablet-width) {
         padding: 0 8px 0 13px;
@@ -91,7 +95,7 @@
     }
 
     &--before {
-        margin-right: 13px;
+        margin-right: 20px;
 
         @media (min-width: variables.$tablet-width) {
             margin-right: 23px;
@@ -99,7 +103,7 @@
     }
 
     &--after {
-        margin-left: 13px;
+        margin-left: 18px;
 
         @media (min-width: variables.$tablet-width) {
             margin-left: 23px;
@@ -120,9 +124,9 @@
     &::before {
         content: "";
         position: absolute;
-        width: calc(50% - 6px);
+        width: calc(50% - 5px);
         height: 6px;
-        left: 3px;
+        left: 4px;
         top: 3px;
         background: variables.$basic-green;
         border-radius: 6px;
