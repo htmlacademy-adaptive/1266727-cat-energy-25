@@ -3,22 +3,21 @@
 .choice {
     background-color: variables.$basic-grey;
     color: variables.$special-dark-grey;
-    padding: 20px 20px 0 20px;
-    border: 1px solid variables.$light-grey;
+    padding: 21px 21px 0;
     display: grid;
     grid-template-columns: 70px 1fr;
     align-items: center;
     row-gap: 22px;
 
     @media (min-width: variables.$tablet-width) {
-        padding: 77px 28px 30px 52px;
+        padding: 78px 29px 31px 53px;
         grid-template-columns: 1fr 268px;
         row-gap: 24px;
         column-gap: 18px;
     }
 
     @media (min-width: variables.$desktop-width) {
-        padding: 40px 52px 54px 51px;
+        padding: 41px 53px 55px 52px;
         grid-template-columns: 134px 1fr;
         align-items: center;
         row-gap: 23px;
@@ -130,7 +129,7 @@
 
 .choice--gain-weight .choice__text {
     @media (min-width: variables.$desktop-width) {
-        padding-top: 19px;
+        padding-top: 18px;
     }
 }
 

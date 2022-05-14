@@ -17,6 +17,7 @@
     color: variables.$special-dark-grey;
     text-transform: uppercase;
     margin-right: 13px;
+    flex-shrink: 0;
 
     @media (min-width: variables.$tablet-width) {
         font-size: 20px;
@@ -102,7 +103,13 @@
     }
 }
 
-input:checked + .field__label--radio {
+.field__hidden-input:focus + .field__label--radio {
+    &::before {
+        border-color: variables.$special-grey-3;
+    }
+}
+
+.field__hidden-input:checked + .field__label--radio {
     &::after {
         content: "";
         position: absolute;
@@ -162,7 +169,13 @@ input:checked + .field__label--radio {
     }
 }
 
-input:checked + .field__label--checkbox {
+.field__hidden-input:focus + .field__label--checkbox {
+    &::before {
+        border-color: variables.$special-grey-3;
+    }
+}
+
+.field__hidden-input:checked + .field__label--checkbox {
     &::after {
         content: "";
         position: absolute;
@@ -188,13 +201,15 @@ input:checked + .field__label--checkbox {
     border: 1px solid variables.$basic-light-grey-2;
     font-family: variables.$primary-font;
     font-size: 16px;
-    line-height: 18px;
+    line-height: 1.56;
     font-weight: 400;
     color: variables.$special-dark-grey;
     text-transform: uppercase;
-    padding: 14px 15px 12px;
+    padding: 9px 15px 10px;
     flex-grow: 1;
     position: relative;
+    min-width: 0;
+    width: 0;
 
     @media (min-width: variables.$tablet-width) {
         font-size: 20px;
@@ -217,7 +232,7 @@ input:checked + .field__label--checkbox {
     &--textarea {
         resize: none;
         height: 128px;
-        padding: 8px 14px 12px 15px;
+        padding: 5px 14px 15px 15px;
 
         @media (min-width: variables.$tablet-width) {
             padding: 9px 18px 11px 19px;
@@ -226,7 +241,7 @@ input:checked + .field__label--checkbox {
     }
 
     &--email {
-        padding: 13px 40px 12px 13px;
+        padding: 9px 40px 9px 13px;
 
         @media (min-width: variables.$tablet-width) {
             padding: 9px 18px 11px 21px;
@@ -238,7 +253,7 @@ input:checked + .field__label--checkbox {
     }
 
     &--phone {
-        padding: 13px 40px 13px 15px;
+        padding: 10px 40px 10px 15px;
 
         @media (min-width: variables.$tablet-width) {
             padding: 9px 18px 11px 21px;

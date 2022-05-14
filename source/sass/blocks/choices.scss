@@ -25,18 +25,18 @@
 
 .choices__item {
     &:not(:last-child) {
-        margin-bottom: 21px;
+        margin-bottom: 22px;
     }
 
     @media (min-width: variables.$tablet-width) {
         &:not(:last-child) {
-            margin-bottom: 30px;
+            margin-bottom: 29px;
         }
     }
 
     @media (min-width: variables.$desktop-width) {
         width: 570px;
-        height: 374px;
+        min-height: 374px;
         box-sizing: border-box;
 
         &:not(:last-child) {

@@ -10,7 +10,7 @@
     border-top: 1px solid variables.$basic-light-grey;
 
     @media (min-width: variables.$tablet-width) {
-        flex-flow: row nowrap;
+        flex-flow: row wrap;
         justify-content: flex-end;
         border-top: none;
     }
@@ -23,7 +23,7 @@
 }
 
 .navigation__item {
-    padding: 22px 0 24px;
+    padding: 22px 0 20px;
     margin: 0;
     width: 100%;
     text-align: center;
@@ -34,16 +34,16 @@
     @media (min-width: variables.$tablet-width) {
         border: none;
         width: auto;
-        margin-right: 37px;
+        margin-left: 37px;
         padding: 0 0 12px;
 
-        &:last-child {
-            margin-right: 0;
+        &:first-child {
+            margin-left: 0;
         }
     }
 
     @media (min-width: variables.$desktop-width) {
-        margin-right: 35px;
+        margin-left: 35px;
     }
 
     &--active {
@@ -84,10 +84,10 @@
 .navigation__list--form .navigation__item,
 .navigation__list--catalog .navigation__item {
     @media (min-width: variables.$tablet-width) {
-        margin-right: 36px;
+        margin-left: 36px;
 
-        &:last-child {
-            margin-right: 0;
+        &:first-child {
+            margin-left: 0;
         }
     }
 }
@@ -111,6 +111,7 @@
     color: inherit;
 
     @media (min-width: variables.$tablet-width) {
+        font-weight: 400;
         font-size: 18px;
         line-height: 24px;
     }

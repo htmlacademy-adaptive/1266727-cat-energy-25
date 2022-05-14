@@ -36,7 +36,7 @@
         align-items: flex-start;
         justify-content: center;
         width: 249px;
-        height: 280px;
+        min-height: 280px;
 
         &::after {
             content: counter(reason);

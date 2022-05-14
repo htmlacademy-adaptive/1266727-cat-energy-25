@@ -14,9 +14,7 @@
     <link rel="apple-touch-icon" href="img/favicons/apple.png"> <!-- 180×180 -->
     <link rel="manifest" href="manifest.webmanifest">
 
-    <link rel="preload" href="fonts/oswaldmedium.woff" as="font" type="font/woff" crossorigin>
     <link rel="preload" href="fonts/oswaldmedium.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="fonts/oswaldregular.woff" as="font" type="font/woff" crossorigin>
     <link rel="preload" href="fonts/oswaldregular.woff2" as="font" type="font/woff2" crossorigin>
 </head>
 
@@ -24,7 +22,7 @@
     <div class="center-container">
         <header class="header header--with-border header--no-js">
             <div class="header__container">
-                <a class="header__logo" href="index.html">
+                <a class="header__logo" href="index.html" aria-label="Сайт Cat Energy">
                     <svg class="header__img header__img--logo-phone" width="33" height="38">
                         <use xlink:href="img/sprite.svg#logo-phone"></use>
                     </svg>
@@ -35,12 +33,12 @@
                         <use xlink:href="img/sprite.svg#logo-desktop"></use>
                     </svg>
                 </a>
-                <a class="header__text-logo" href="index.html">
+                <a class="header__text-logo" href="index.html" aria-label="Сайт Cat Energy">
                     <svg class="header__img" width="101" height="18">
                         <use xlink:href="img/sprite.svg#text-logo"></use>
                     </svg>
                 </a>
-                <button class="header__toggle header__toggle--closed" type="button">
+                <button class="header__toggle header__toggle--closed" type="button" aria-label="Показать/скрыть меню">
                     <svg class="header__toggle-icon header__toggle-icon--open" width="24" height="18">
                         <use xlink:href="img/sprite.svg#toggle-open"></use>
                     </svg>
@@ -90,23 +88,23 @@
                                 </ul>
                             </div>
                         </fieldset>
-                        <fieldset class="form-container__fields form-container__fields--column form-container__fields--weight fields--weight">
+                        <fieldset class="form-container__fields form-container__fields--column form-container__fields--weight fields fields--weight">
                             <div class="form-container__fields-container form-container__fields-container--column  form-container__fields-container--weight">
                                 <ul class="fields__list">
                                     <li class="fields__item fields__item--weight field">
-                                        <input class="visually-hidden" type="radio" name="goal" value="lose-weight" id="goal-lose-weight" checked>
+                                        <input class="field__hidden-input visually-hidden" type="radio" name="goal" value="lose-weight" id="goal-lose-weight" checked>
                                         <label class="field__label field__label--radio" for="goal-lose-weight">
                                             Похудение
                                         </label>
                                     </li>
                                     <li class="fields__item fields__item--weight field">
-                                        <input class="visually-hidden" type="radio" name="goal" value="gain-weight" id="goal-gain-weight">
+                                        <input class="field__hidden-input visually-hidden" type="radio" name="goal" value="gain-weight" id="goal-gain-weight">
                                         <label class="field__label field__label--radio" for="goal-gain-weight">
                                             Набор массы
                                         </label>
                                     </li>
                                     <li class="fields__item fields__item--weight field">
-                                        <input class="visually-hidden" type="radio" name="goal" value="need-advice" id="goal-need-advice">
+                                        <input class="field__hidden-input visually-hidden" type="radio" name="goal" value="need-advice" id="goal-need-advice">
                                         <label class="field__label field__label--radio" for="goal-need-advice">
                                             Не знаю (Нужен ваш совет)
                                         </label>
@@ -133,7 +131,7 @@
                                 </li>
                                 <li class="fields__item fields__item--contact field field--phone">
                                     <label class="field__label field__label--phone" for="phone">Телефон:*</label>
-                                    <input class="field__input field__input--phone" id="phone" type="text" name="phone"
+                                    <input class="field__input field__input--phone" id="phone" type="tel" name="phone"
                                         placeholder="8 (960) 900-60-90" required>
                                     <svg class="field__icon field__icon--phone" width="20" height="20">
                                         <use xlink:href="img/sprite.svg#phone"></use>
@@ -167,25 +165,25 @@
                         <div class="form-container__fields-container form-container__fields-container--additions">
                             <ul class="fields__list fields__list--additions">
                                 <li class="fields__item fields__item--addition field">
-                                    <input class="visually-hidden" type="checkbox" name="additions" value="sweetener" id="additions-sweetener" checked>
+                                    <input class="field__hidden-input visually-hidden" type="checkbox" name="additions" value="sweetener" id="additions-sweetener" checked>
                                     <label class="field__label field__label--checkbox" for="additions-sweetener">
                                         сахарозаменитель
                                     </label>
                                 </li>
                                 <li class="fields__item fields__item--addition field">
-                                    <input class="visually-hidden" type="checkbox" name="additions" value="water" id="additions-water">
+                                    <input class="field__hidden-input visually-hidden" type="checkbox" name="additions" value="water" id="additions-water">
                                     <label class="field__label field__label--checkbox" for="additions-water">
                                         питьевая вода
                                     </label>
                                 </li>
                                 <li class="fields__item fields__item--addition field">
-                                    <input class="visually-hidden" type="checkbox" name="additions" value="milk" id="additions-milk">
+                                    <input class="field__hidden-input visually-hidden" type="checkbox" name="additions" value="milk" id="additions-milk">
                                     <label class="field__label field__label--checkbox" for="additions-milk">
                                         молоко
                                     </label>
                                 </li>
                                 <li class="fields__item fields__item--addition field">
-                                    <input class="visually-hidden" type="checkbox" name="additions" value="vitamin" id="additions-vitamin">
+                                    <input class="field__hidden-input visually-hidden" type="checkbox" name="additions" value="vitamin" id="additions-vitamin">
                                     <label class="field__label field__label--checkbox" for="additions-vitamin">
                                         витамины
                                     </label>

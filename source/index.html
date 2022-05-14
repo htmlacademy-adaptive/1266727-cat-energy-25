@@ -14,9 +14,7 @@
     <link rel="apple-touch-icon" href="img/favicons/apple.png"> <!-- 180×180 -->
     <link rel="manifest" href="manifest.webmanifest">
 
-    <link rel="preload" href="fonts/oswaldmedium.woff" as="font" type="font/woff" crossorigin>
     <link rel="preload" href="fonts/oswaldmedium.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="fonts/oswaldregular.woff" as="font" type="font/woff" crossorigin>
     <link rel="preload" href="fonts/oswaldregular.woff2" as="font" type="font/woff2" crossorigin>
 </head>
 
@@ -24,7 +22,7 @@
     <div class="center-container">
         <header class="header header--no-js">
             <div class="header__container">
-                <a class="header__logo" href="index.html">
+                <a class="header__logo" href="index.html" aria-label="Сайт Cat Energy">
                     <svg class="header__img header__img--logo-phone" width="33" height="38">
                         <use xlink:href="img/sprite.svg#logo-phone"></use>
                     </svg>
@@ -35,12 +33,12 @@
                         <use xlink:href="img/sprite.svg#logo-desktop"></use>
                     </svg>
                 </a>
-                <a class="header__text-logo" href="index.html">
+                <a class="header__text-logo" href="index.html" aria-label="Сайт Cat Energy">
                     <svg class="header__img" width="101" height="18">
                         <use xlink:href="img/sprite.svg#text-logo"></use>
                     </svg>
                 </a>
-                <button class="header__toggle header__toggle--closed" type="button">
+                <button class="header__toggle header__toggle--closed" type="button" aria-label="Показать/скрыть меню">
                     <svg class="header__toggle-icon header__toggle-icon--open" width="24" height="18">
                         <use xlink:href="img/sprite.svg#toggle-open"></use>
                     </svg>
@@ -70,17 +68,20 @@
                     <p class="lead__text">Занялся собой? Займись котом!</p>
                     <div class="lead__image-container">
                         <picture>
-                            <source type="image/webp" media="(min-width: 1440px)" srcset="img/can-desktop.webp 1x, img/can-desktop@2x.webp 2x">
-                            <source type="image/webp" media="(min-width: 768px)" srcset="img/can-tablet.webp 1x, img/can-tablet@2x.webp 2x">
+                            <source type="image/webp" media="(min-width: 1440px)"
+                                srcset="img/can-desktop.webp 1x, img/can-desktop@2x.webp 2x">
+                            <source type="image/webp" media="(min-width: 768px)"
+                                srcset="img/can-tablet.webp 1x, img/can-tablet@2x.webp 2x">
                             <source type="image/webp" srcset="img/can-phone.webp 1x, img/can-phone@2x.webp 2x">
 
-                            <source media="(min-width: 1440px)" srcset="img/can-desktop.png 1x, img/can-desktop@2x.png 2x">
+                            <source media="(min-width: 1440px)"
+                                srcset="img/can-desktop.png 1x, img/can-desktop@2x.png 2x">
                             <source media="(min-width: 768px)" srcset="img/can-tablet.png 1x, img/can-tablet@2x.png 2x">
-                            <img class="lead__image" src="img/can-phone.png" srcset="img/can-phone@2x.png 2x" width="280" height="270"
-                                alt="Банка Кэт Энерджи">
+                            <img class="lead__image" src="img/can-phone.png" srcset="img/can-phone@2x.png 2x"
+                                width="280" height="270" alt="Банка Кэт Энерджи">
                         </picture>
                     </div>
-                    <button class="lead__button button button--primary">Подобрать программу</button>
+                    <a class="lead__button button button--primary" href="form.html">Подобрать программу</a>
                 </div>
             </section>
             <section class="choices">
@@ -139,9 +140,11 @@
                 <div class="example__center-container">
                     <div class="example__content">
                         <div class="example__info-container">
-                            <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat
+                            <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на
+                                Cat
                                 Energy
-                                Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и
+                                Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек
+                                и
                                 по-прежнему
                                 спит по 16 часов в день.
                             </p>
@@ -154,7 +157,7 @@
                                     <dt class="detail__number">60 дней</dt>
                                     <dd class="detail__description">затрачено времени</dd>
                                 </div>
-                                <div class="example__detail--wide detail detail--line">
+                                <div class="example__detail example__detail--wide detail detail--line">
                                     <dt class="detail__number">15 000 руб.</dt>
                                     <dd class="detail__description">Затраты на питание:&nbsp;</dd>
                                 </div>
@@ -162,37 +165,46 @@
                         </div>
                         <div class="example__slider slider">
                             <div class="slider__container">
-                                <input class="visually-hidden slider__input slider__input--left" type="radio" name="slider"
-                                    value="before" id="slider-before" checked>
-                                <picture>
-                                    <source type="image/webp" srcset="img/cat-fat.webp 1x, img/cat-fat@2x.webp 2x">
-                                    <img class="slider__image slider__image--before" src="img/cat-fat.png" srcset="img/cat-fat@2x.png 2x" width="280"
-                                        height="232" alt="Изображение до">
-                                </picture>
-                                <input class="visually-hidden slider__input slider__input--right" type="radio" name="slider"
-                                    value="after" id="slider-after">
-                                <picture>
-                                    <source type="image/webp" srcset="img/cat-skinny.webp 1x, img/cat-skinny@2x.webp 2x">
-                                    <img class="slider__image slider__image--after" src="img/cat-skinny.png" srcset="img/cat-skinny@2x.png 2x" width="243"
-                                        height="232" alt="Изображение после">
-                                </picture>
-                                <div class="slider__half-images">
+                                <div class="slider__images">
                                     <picture>
-                                        <source type="image/webp" srcset="img/cat-fat-half.webp 1x, img/cat-fat-half@2x.webp 2x">
-                                        <img class="slider__half-image" src="img/cat-fat-half.png" srcset="img/cat-fat-half@2x.png 2x" width="296"
-                                        height="511" alt="Изображение до">
+                                        <source type="image/webp" srcset="img/cat-fat.webp 1x, img/cat-fat@2x.webp 2x">
+                                        <img class="slider__image slider__image--before slider__image--visible"
+                                            src="img/cat-fat.png" srcset="img/cat-fat@2x.png 2x" width="280"
+                                            height="232" alt="Изображение до">
                                     </picture>
                                     <picture>
-                                        <source type="image/webp" srcset="img/cat-skinny-half.webp 1x, img/cat-skinny-half@2x.webp 2x">
-                                        <img class="slider__half-image" src="img/cat-skinny-half.png" srcset="img/cat-skinny-half@2x.png 2x" width="296"
-                                            height="511" alt="Изображение после">
+                                        <source type="image/webp"
+                                            srcset="img/cat-skinny.webp 1x, img/cat-skinny@2x.webp 2x">
+                                        <img class="slider__image slider__image--after" src="img/cat-skinny.png"
+                                            srcset="img/cat-skinny@2x.png 2x" width="243" height="232"
+                                            alt="Изображение после">
                                     </picture>
                                 </div>
-                                <label class="slider__label slider__label--before"
-                                for="slider-before">было</label><div
-                                class="slider__control"></div><label
-                                class="slider__label slider__label--after"
-                                    for="slider-after">стало</label>
+                                <div class="slider__half-images">
+                                    <picture>
+                                        <source type="image/webp"
+                                            srcset="img/cat-fat-half.webp 1x, img/cat-fat-half@2x.webp 2x">
+                                        <img class="slider__half-image" src="img/cat-fat-half.png"
+                                            srcset="img/cat-fat-half@2x.png 2x" width="296" height="511"
+                                            alt="Изображение до">
+                                    </picture>
+                                    <picture>
+                                        <source type="image/webp"
+                                            srcset="img/cat-skinny-half.webp 1x, img/cat-skinny-half@2x.webp 2x">
+                                        <img class="slider__half-image" src="img/cat-skinny-half.png"
+                                            srcset="img/cat-skinny-half@2x.png 2x" width="296" height="511"
+                                            alt="Изображение после">
+                                    </picture>
+                                </div>
+                                <div class="slider__controls">
+                                    <button class="slider__control slider__control--before" type="button">было</button>
+                                    <div class="slider__line">
+                                        <button class="slider__drag-control" type="button"
+                                            aria-label="переключение изображений до и после"><span
+                                                class="slider__drag-control-image"></span></button>
+                                    </div>
+                                    <button class="slider__control slider__control--after" type="button">стало</button>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -215,16 +227,19 @@
         </div>
         <div class="footer__maps">
             <iframe class="footer__iframe-map" src="https://yandex.ru/map-widget/v1/-/CCUFZNf8pA" width="320"
-                    height="362" allow="fullscreen"></iframe>
+                height="362" allow="fullscreen"></iframe>
             <div class="footer__map-container">
                 <picture>
-                    <source type="image/webp" media="(min-width: 1440px)" srcset="img/map-desktop.webp 1x, img/map-desktop@2x.webp 2x">
-                    <source type="image/webp" media="(min-width: 768px)" srcset="img/map-tablet.webp 1x, img/map-tablet@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 1440px)"
+                        srcset="img/map-desktop.webp 1x, img/map-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)"
+                        srcset="img/map-tablet.webp 1x, img/map-tablet@2x.webp 2x">
                     <source type="image/webp" srcset="img/map-phone.webp 1x, img/map-phone@2x.webp 2x">
 
                     <source media="(min-width: 1440px)" srcset="img/map-desktop.jpg 1x, img/map-desktop@2x.jpg 2x">
                     <source media="(min-width: 768px)" srcset="img/map-tablet.jpg 1x, img/map-tablet@2x.jpg 2x">
-                    <img class="footer__map" src="img/map-phone.jpg" srcset="img/map-phone@2x.jpg 2x" width="320" height="362" alt="Где мы находимся на карте">
+                    <img class="footer__map" src="img/map-phone.jpg" srcset="img/map-phone@2x.jpg 2x" width="320"
+                        height="362" alt="Где мы находимся на карте">
                 </picture>
             </div>
         </div>
@@ -243,21 +258,24 @@
                             <ul class="social-links__list">
                                 <li class="social-links__item social-links__item--vk">
                                     <a class="social-links__link" href="#" aria-label="VK">
-                                        <svg aria-hidden="true" class="social-links__icon social-links__icon--vk" width="28" height="22">
+                                        <svg aria-hidden="true" class="social-links__icon social-links__icon--vk"
+                                            width="28" height="22">
                                             <use xlink:href="img/sprite.svg#vk"></use>
                                         </svg>
                                     </a>
                                 </li>
                                 <li class="social-links__item social-links__item--youtube">
                                     <a class="social-links__link" href="#" aria-label="Youtube">
-                                        <svg aria-hidden="true" class="social-links__icon social-links__icon--youtube" width="28" height="22">
+                                        <svg aria-hidden="true" class="social-links__icon social-links__icon--youtube"
+                                            width="28" height="22">
                                             <use xlink:href="img/sprite.svg#youtube"></use>
                                         </svg>
                                     </a>
                                 </li>
                                 <li class="social-links__item social-links__item--telegram">
                                     <a class="social-links__link" href="#" aria-label="Telegram">
-                                        <svg aria-hidden="true" class="social-links__icon social-links__icon--telegram" width="28" height="22">
+                                        <svg aria-hidden="true" class="social-links__icon social-links__icon--telegram"
+                                            width="28" height="22">
                                             <use xlink:href="img/sprite.svg#telegram"></use>
                                         </svg>
                                     </a>

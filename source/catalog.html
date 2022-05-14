@@ -14,9 +14,7 @@
     <link rel="apple-touch-icon" href="img/favicons/apple.png"> <!-- 180×180 -->
     <link rel="manifest" href="manifest.webmanifest">
 
-    <link rel="preload" href="fonts/oswaldmedium.woff" as="font" type="font/woff" crossorigin>
     <link rel="preload" href="fonts/oswaldmedium.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="fonts/oswaldregular.woff" as="font" type="font/woff" crossorigin>
     <link rel="preload" href="fonts/oswaldregular.woff2" as="font" type="font/woff2" crossorigin>
 </head>
 
@@ -24,7 +22,7 @@
     <div class="center-container">
         <header class="header header--with-border header--no-js">
             <div class="header__container">
-                <a class="header__logo" href="index.html">
+                <a class="header__logo" href="index.html" aria-label="Сайт Cat Energy">
                     <svg class="header__img header__img--logo-phone" width="33" height="38">
                         <use xlink:href="img/sprite.svg#logo-phone"></use>
                     </svg>
@@ -35,12 +33,12 @@
                         <use xlink:href="img/sprite.svg#logo-desktop"></use>
                     </svg>
                 </a>
-                <a class="header__text-logo" href="index.html">
+                <a class="header__text-logo" href="index.html" aria-label="Сайт Cat Energy">
                     <svg class="header__img" width="101" height="18">
                         <use xlink:href="img/sprite.svg#text-logo"></use>
                     </svg>
                 </a>
-                <button class="header__toggle header__toggle--closed" type="button">
+                <button class="header__toggle header__toggle--closed" type="button" aria-label="Показать/скрыть меню">
                     <svg class="header__toggle-icon header__toggle-icon--open" width="24" height="18">
                         <use xlink:href="img/sprite.svg#toggle-open"></use>
                     </svg>
@@ -68,7 +66,7 @@
                 <h2 class="visually-hidden">Основные товары</h2>
                 <ul class="products__list">
                     <li class="products__item product">
-                        <h3 class="visually-hidden">Cat Energy PRO 500 г со вкусом курицы</h3>
+                        <h3 class="visually-hidden">Cat Energy&nbsp;<br class="product__br product__br--phone">PRO&nbsp;<br class="product__br product__br--desktop">500 г со вкусом курицы</h3>
                         <div class="product__info">
                             <div class="product__column-left">
                                 <a href="#">
@@ -82,7 +80,7 @@
                                 </a>
                             </div>
                             <div class="product__column-right">
-                                <a class="product__name" href="#">Cat Energy<br class="product__br product__br--phone"> PRO&nbsp;<br class="product__br product__br--desktop">500 г</a>
+                                <a class="product__name" href="#">Cat Energy&nbsp;<br class="product__br product__br--phone">PRO&nbsp;<br class="product__br product__br--desktop">500 г</a>
                                 <dl class="product__details product-details">
                                     <dt class="product-details__attribute">Масса</dt>
                                     <dd class="product-details__value">500 г</dd>
@@ -93,10 +91,10 @@
                                 </dl>
                             </div>
                         </div>
-                        <button class="product__button button button--primary button--slim" type="button">Заказать</button>
+                        <a class="product__button button button--primary button--slim" href="#">Заказать</a>
                     </li>
                     <li class="products__item product">
-                        <h3 class="visually-hidden">Cat Energy PRO 1000 г со вкусом курицы</h3>
+                        <h3 class="visually-hidden">Cat Energy&nbsp;<br class="product__br product__br--phone">PRO&nbsp;<br class="product__br product__br--desktop">1000 г со вкусом курицы</h3>
                         <div class="product__info">
                             <div class="product__column-left">
                                 <a href="#">
@@ -110,7 +108,7 @@
                                 </a>
                             </div>
                             <div class="product__column-right">
-                                <a class="product__name" href="#">Cat Energy<br class="product__br product__br--phone"> PRO&nbsp;<br class="product__br product__br--desktop">1000 г</a>
+                                <a class="product__name" href="#">Cat Energy&nbsp;<br class="product__br product__br--phone">PRO&nbsp;<br class="product__br product__br--desktop">1000 г</a>
                                 <dl class="product__details product-details">
                                     <dt class="product-details__attribute">Масса</dt>
                                     <dd class="product-details__value">1000 г</dd>
@@ -121,10 +119,10 @@
                                 </dl>
                             </div>
                         </div>
-                        <button class="product__button button button--primary button--slim" type="button">Заказать</button>
+                        <a class="product__button button button--primary button--slim" href="#">Заказать</a>
                     </li>
                     <li class="products__item product">
-                        <h3 class="visually-hidden">Cat Energy PRO 500 г со вкусом рыбы</h3>
+                        <h3 class="visually-hidden">Cat Energy&nbsp;<br class="product__br product__br--phone">PRO&nbsp;<br class="product__br product__br--desktop">500 г со вкусом рыбы</h3>
                         <div class="product__info">
                             <div class="product__column-left">
                                 <a href="#">
@@ -138,7 +136,7 @@
                                 </a>
                             </div>
                             <div class="product__column-right">
-                                <a class="product__name" href="#">Cat Energy<br class="product__br product__br--phone"> PRO&nbsp;<br class="product__br product__br--desktop">500 г</a>
+                                <a class="product__name" href="#">Cat Energy&nbsp;<br class="product__br product__br--phone">PRO&nbsp;<br class="product__br product__br--desktop">500 г</a>
                                 <dl class="product__details product-details">
                                     <dt class="product-details__attribute">Масса</dt>
                                     <dd class="product-details__value">500 г</dd>
@@ -149,10 +147,10 @@
                                 </dl>
                             </div>
                         </div>
-                        <button class="product__button button button--primary button--slim" type="button">Заказать</button>
+                        <a class="product__button button button--primary button--slim" href="#">Заказать</a>
                     </li>
                     <li class="products__item product">
-                        <h3 class="visually-hidden">Cat Energy PRO 1000 г со вкусом рыбы</h3>
+                        <h3 class="visually-hidden">Cat Energy&nbsp;<br class="product__br product__br--phone">PRO&nbsp;<br class="product__br product__br--desktop">1000 г со вкусом рыбы</h3>
                         <div class="product__info">
                             <div class="product__column-left">
                                 <a href="#">
@@ -166,7 +164,7 @@
                                 </a>
                             </div>
                             <div class="product__column-right">
-                                <a class="product__name" href="#">Cat Energy<br class="product__br product__br--phone"> PRO&nbsp;<br class="product__br product__br--desktop">1000 г</a>
+                                <a class="product__name" href="#">Cat Energy&nbsp;<br class="product__br product__br--phone">PRO&nbsp;<br class="product__br product__br--desktop">1000 г</a>
                                 <dl class="product__details product-details">
                                     <dt class="product-details__attribute">Масса</dt>
                                     <dd class="product-details__value">1000 г</dd>
@@ -177,7 +175,7 @@
                                 </dl>
                             </div>
                         </div>
-                        <button class="product__button button button--primary button--slim" type="button">Заказать</button>
+                        <a class="product__button button button--primary button--slim" href="#">Заказать</a>
                     </li>
                     <li class="products__item product">
                         <h3 class="visually-hidden">Cat Energy SLIM 500 г со вкусом гречки</h3>
@@ -192,7 +190,7 @@
                                 </picture>
                             </div>
                             <div class="product__column-right">
-                                <a class="product__name" href="#">Cat Energy<br class="product__br product__br--phone"> SLIM&nbsp;<br class="product__br product__br--desktop">500 г</a>
+                                <a class="product__name" href="#">Cat Energy&nbsp;<br class="product__br product__br--phone">SLIM&nbsp;<br class="product__br product__br--desktop">500 г</a>
                                 <dl class="product__details product-details">
                                     <dt class="product-details__attribute">Масса</dt>
                                     <dd class="product-details__value">500 г</dd>
@@ -203,7 +201,7 @@
                                 </dl>
                             </div>
                         </div>
-                        <button class="product__button button button--primary button--slim" type="button">Заказать</button>
+                        <a class="product__button button button--primary button--slim" href="#">Заказать</a>
                     </li>
                     <li class="products__item product">
                         <h3 class="visually-hidden">Cat Energy SLIM 1000 г со вкусом гречки</h3>
@@ -220,7 +218,7 @@
                                 </a>
                             </div>
                             <div class="product__column-right">
-                                <a class="product__name">Cat Energy<br class="product__br product__br--phone"> SLIM&nbsp;<br class="product__br product__br--desktop">1000 г</a>
+                                <a class="product__name">Cat Energy&nbsp;<br class="product__br product__br--phone">SLIM&nbsp;<br class="product__br product__br--desktop">1000 г</a>
                                 <dl class="product__details product-details">
                                     <dt class="product-details__attribute">Масса</dt>
                                     <dd class="product-details__value">1000 г</dd>
@@ -231,7 +229,7 @@
                                 </dl>
                             </div>
                         </div>
-                        <button class="product__button button button--primary button--slim" type="button">Заказать</button>
+                        <a class="product__button button button--primary button--slim" href="#">Заказать</a>
                     </li>
                     <li class="products__item product">
                         <h3 class="visually-hidden">Cat Energy SLIM 500 г со вкусом риса</h3>
@@ -248,7 +246,7 @@
                                 </a>
                             </div>
                             <div class="product__column-right">
-                                <a class="product__name" href="#">Cat Energy<br class="product__br product__br--phone"> SLIM&nbsp;<br class="product__br product__br--desktop">500 г</a>
+                                <a class="product__name" href="#">Cat Energy&nbsp;<br class="product__br product__br--phone">SLIM&nbsp;<br class="product__br product__br--desktop">500 г</a>
                                 <dl class="product__details product-details">
                                     <dt class="product-details__attribute">Масса</dt>
                                     <dd class="product-details__value">500 г</dd>
@@ -259,7 +257,7 @@
                                 </dl>
                             </div>
                         </div>
-                        <button class="product__button button button--primary button--slim" type="button">Заказать</button>
+                        <a class="product__button button button--primary button--slim" href="#">Заказать</a>
                     </li>
                     <li class="products__item product product--next">
                         <div class="product__icon" aria-hidden="true"></div>
