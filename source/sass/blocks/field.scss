@@ -105,7 +105,7 @@
 
 .field__hidden-input:focus + .field__label--radio {
     &::before {
-        border-color: variables.$special-grey-3;
+        outline: 1px solid variables.$special-dark-grey;
     }
 }
 
@@ -171,7 +171,7 @@
 
 .field__hidden-input:focus + .field__label--checkbox {
     &::before {
-        border-color: variables.$special-grey-3;
+        outline: 1px solid variables.$special-dark-grey;
     }
 }
 
